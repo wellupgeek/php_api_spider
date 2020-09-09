@@ -1,12 +1,17 @@
 import requests
 import json
+from urllib.parse import quote
 
 class Web_api:
-    def __init__(self, pname):
+    def __init__(self, pname, ip, port):  # ip = 111.42.40.137   port = 8083
         self.proj_name = pname
-        self.login_url = "http://111.42.40.137:8083/login/%2Fq%2Fstatus%3Aopen"
+        base_ip = "http://" + ip + ":" + port
         self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"}
-        self.subproj_url = "http://111.42.40.137:8083/changes/?O=81&S={}&n=25&q=project%3A{}"
+        self.login_url = base_ip + "/login/%2Fq%2Fstatus%3Aopen"
+        self.subproj_url = base_ip + "/changes/?O=81&S={}&n=25&q=project%3A{}"
+        self.detail_url = base_ip + "/changes/{}~{}/detail?O=516714"
+        self.files_url = base_ip + "/changes/{}~{}/revisions/{}/files"
+        # self.diff_url = "/{}/diff?context=ALL&intraline&whitespace=IGNORE_NONE"
         self.session = None
 
     def login(self):
@@ -37,18 +42,38 @@ class Web_api:
                 break
         return plink_list, page
 
-    def save(self, plink_list):
-        with open("test.txt", "w", encoding="utf-8") as f:
-            f.write(json.dumps(plink_list, ensure_ascii=False, indent=2))
-        print("ok")
+    def path_judge(self, file_path):
+        test_list = ["app/", "public/heu_assets/", "resources/views/alarm/"]
+        for t in test_list:
+            if t in file_path:
+                return True
+        return False
 
-    def run(self): # 主要逻辑实现
-        # 1. 登陆
-        self.session = self.login()
-        # 2. 获取所有的当前页面链接信息
-        plink_list, pages = self.get_link_list()  # 默认从第一页开始
-        self.save(plink_list)
-        # 测试看看能否成功
-        # 3. ...
-        # 4. 生成下一页链接，开始循环，直至页面结束
-        pass
+    # def save(self, plink_list):
+    #     with open("test.txt", "w", encoding="utf-8") as f:
+    #         f.write(json.dumps(plink_list, ensure_ascii=False, indent=2))
+    #     print("ok")
+
+    def run(self):
+        self.session = self.login() # 登陆
+        plink_list, pages = self.get_link_list()  # 获取所有的当前页面链接信息, 默认从第一页开始
+        # self.save(plink_list) # 测试
+        for i, p in enumerate(plink_list):
+            for j in p[i + 1]:
+                detail_url = self.detail_url.format(self.proj_name, j["number"])
+                # 获取patch个数
+                detail = self.deal_json(self.parse_url(detail_url))
+                patchs = len(detail["revisions"])
+                for patch in range(1, patchs + 1): # 遍历每个patch
+                    files_url = self.files_url.format(self.proj_name, j["number"], patch)
+                    files = self.deal_json(self.parse_url(files_url))
+                    files_list = files.keys()
+                    for f in files_list:    # 遍历每个文件
+                        if f.split(".")[-1] in ["js", "php"]:
+                            if self.path_judge(f):
+                                diff_url = files_url + "/{}/diff?context=ALL&intraline&whitespace=IGNORE_NONE".format(quote(f, "utf-8"))
+                                diff_data = self.deal_json(self.parse_url(diff_url))    # 开始获取diff数据
+
+                                pass
+
+        # 关于缓存，我个人的意见是把已经确定的文件链接进行标记（包含patch），然后每次遍历时可以防止重复从而减少时间
