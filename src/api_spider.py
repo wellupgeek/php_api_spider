@@ -1,6 +1,7 @@
 import requests
 import json
 from urllib.parse import quote
+import re
 
 class Web_api:
     def __init__(self, pname, ip, port):  # ip = 111.42.40.137   port = 8083
@@ -48,20 +49,37 @@ class Web_api:
                 return True
         return False
 
-    def api_judge_in(self, code_type): # 判断变更代码中是否有api接口信息
-        return False
+    def judge_is_api(self, regex, cont):
+        for line, code_str in enumerate(cont):
+            r = regex.search(code_str)
+            if r:
+                return r[0], True, line
+        return "", False, len(cont)
 
-    def api_judge_out(self, code_type):    # 判断变更代码是否属于api接口代码
-        return False
+    def api_judge_in(self, cont, code_type, regex_js, regex_php): # 判断变更代码中是否有api接口信息
+        self.judge_is_api(regex_js, cont) if code_type == "js" else self.judge_is_api(regex_php, cont)
 
-    def judge_code(self, pre_cont, cont, code_type):
-        if not self.api_judge_in():
-            if self.api_judge_out():    # 变更代码中没有，但被包含在api接口代码中的
-                pass
+    def api_judge_out(self, pre_cont, cont, code_type, regex_js, regex_php):    # 判断变更代码是否属于api接口代码
+        # 先从pre_cont中倒着找，看能不能找到(看代码长度，可以往前找不超过300行，如果超过忽略)
+        length = len(pre_cont)
+        start = 0 if length <= 300 else length - 300
+        copy_cont = cont[start:length]
+        copy_cont.reverse()
+        self.judge_is_api(regex_js, copy_cont) if code_type == "js" else self.judge_is_api(regex_php, copy_cont)
+
+    def get_api_msg(self):  # 确认为api接口代码后，找寻api描述信息
+        pass
+
+    def judge_code(self, pre_cont, cont, code_type, regex_js, regex_php):
+        flag, status, line = self.api_judge_in(cont, code_type, regex_js, regex_php)
+        if not status:  # 注意line2的行号为ab公共代码从后往前数的行号
+            flag2, status2, line2 = self.api_judge_out(pre_cont, cont, code_type, regex_js, regex_php)    # 变更代码中没有，但被包含在api接口代码中的
+            if status2:
+                self.get_api_msg()
             else:   # 不在api接口代码中的
                 pass
         else:   # 变更代码中有api接口的
-            pass
+            self.get_api_msg()
 
     # def save(self, plink_list):
     #     with open("test.txt", "w", encoding="utf-8") as f:
@@ -72,6 +90,7 @@ class Web_api:
         self.session = self.login() # 登陆
         plink_list, pages = self.get_link_list()  # 获取所有的当前页面链接信息, 默认从第一页开始
         # self.save(plink_list) # 测试
+        regex = re.compile(r"\bapi\.|(?<!\w)\$\.ajax(?!\w)|(?<!\w)\$http(?!\w)")    # 将正则对象提前准备好，优化时间
         for i, p in enumerate(plink_list):
             for j in p[i + 1]:
                 detail_url = self.detail_url.format(self.proj_name, j["number"])
@@ -97,17 +116,17 @@ class Web_api:
                                         linea += length
                                         lineb += length
                                     elif "a" in cont and "b" not in cont:   # 删除, 判断a, 记录代码行号
-                                        self.judge_code(temp, cont["a"], code_type)
+                                        self.judge_code(temp, cont["a"], code_type, regex)
                                         linea += len(cont["a"])
                                         pass
                                     elif "b" in cont and "a" not in cont:   # 新增，判断b，记录代码行号
-                                        self.judge_code(temp, cont["b"], code_type)
+                                        self.judge_code(temp, cont["b"], code_type, regex)
                                         lineb += len(cont["b"])
                                         pass
                                     else:   # 修改，调用删除，新增接口
-                                        self.judge_code(temp, cont["a"], code_type)
+                                        self.judge_code(temp, cont["a"], code_type, regex)
                                         linea += len(cont["a"])
-                                        self.judge_code(temp, cont["b"], code_type)
+                                        self.judge_code(temp, cont["b"], code_type, regex)
                                         lineb += len(cont["b"])
                                         pass
                                 pass
