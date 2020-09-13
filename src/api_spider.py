@@ -88,17 +88,75 @@ class Web_api:
             else:
                 return True
 
+        elif flag == "$.ajax":  # $.ajax(...)   需要注意的是url这个参数，判断一下/api/是否在其中，如果在则说明这是和api接口有关的，否则则说明无关
+            cont[0], stack, flag, in_flag = cont[0][endpos: len(cont[0])], [], False, False
+            for code_str in cont:
+                if "url:" in code_str:
+                    if "/api/" in code_str[code_str.index("url:") + 4, len(code_str)]:
+                        in_flag = True
+                for c in code_str:
+                    if c == "(":
+                        stack.append("(")
+                        flag = True
+                    if c == ")" and flag:
+                        stack.pop()
+                    if len(stack) == 0 and flag:
+                        break
+            if len(stack) == 0:
+                return False
+            else:
+                return True if in_flag else False
 
-        elif flag == "$.ajax":  # $.ajax(...)
+        elif flag == "$http":   # 同上，只不过结构和api.的相同
+            cont[0], stack, flag, in_flag = cont[0][endpos: len(cont[0])], [], False, False
+            num = 1
+            for code_str in cont:
+                p = -1
+                if "url:" in code_str:
+                    if "/api/" in code_str[code_str.index("url:") + 4, len(code_str)]:
+                        in_flag = True
+                for index, c in enumerate(code_str):
+                    if num:
+                        if c == "(":
+                            stack.append("(")
+                            flag = True
+                        if c == ")" and flag:
+                            stack.pop()
+                            p = index
+                        if len(stack) == 0 and flag:  # ".then" or ".catch" or ".finally"   api.func().then()
+                            num -= 1
+                            length = len(code_str)
+                            for k in [".then", ".catch", ".finally"]:
+                                if k in code_str[p + 1:length]:
+                                    num += 1
+                                    break
+                    else:
+                        break
+                if num == 0:
+                    break
+            if len(stack) == 0:  # 意味着stack为空，则说明api接口代码结构已经匹配完成
+                return False
+            else:
+                return True if in_flag else False
 
-            pass
-        elif flag == "$http":
-            pass
-
-        else:   # flag == "public function"
-
-            pass
-        pass
+        else:   # flag == "public function", php型，找$rules, 结构就是public function xxx {...}
+            cont[0], stack, flag, in_flag = cont[0][endpos: len(cont[0])], [], False, False
+            for code_str in cont:
+                if "$rules" in code_str:
+                    if "=" in code_str[code_str.index("$rules") + 6, len(code_str)]:
+                        in_flag = True
+                for c in code_str:
+                    if c == "{":
+                        stack.append("{")
+                        flag = True
+                    if c == "}" and flag:
+                        stack.pop()
+                    if len(stack) == 0 and flag:
+                        break
+            if len(stack) == 0:
+                return False
+            else:
+                return True if in_flag else False
 
     def api_judge_in(self, cont, code_type, regex_js, regex_php): # 判断变更代码中是否有api接口信息
         self.judge_is_api(regex_js, cont) if code_type == "js" else self.judge_is_api(regex_php, cont)
