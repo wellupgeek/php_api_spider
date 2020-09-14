@@ -58,7 +58,7 @@ class Web_api:
 
     def judge_in_api(self, flag, endpos, cont): # 此处的cont就是从api标志往下一直到变更代码开头
         if flag == "api.":   # api.function(...).then(...) | $http(...).then(...) or .catch(...) .finally()
-        # 一般来说是 api.function().then()|catch()|finally(), 如果cont遍历完，括号没匹配完则说明变更代码包含在api接口代码中，否则就是不包含
+            # 一般来说是 api.function().then()|catch()|finally(), 如果cont遍历完，括号没匹配完则说明变更代码包含在api接口代码中，否则就是不包含
             # 先找到api.后面的(，然后压入栈中，遇见)就弹出
             cont[0], stack, flag = cont[0][endpos : len(cont[0])], [], False
             num = 1
@@ -171,24 +171,57 @@ class Web_api:
         # 如果有，则开始判断cont代码是否包含在该api接口代码结构中
         if status:
             copy_cont2 = copy_cont[0 : line + 1].reverse()
-            self.judge_in_api(flag, endpos, copy_cont2)
-            pass    # 根据不同的代码类型，以及不同的标志来决定不同的代码结构
+            if self.judge_in_api(flag, endpos, copy_cont2):
+                return flag, True, line
+        return flag, False, line
+
+    def judge_has_msg(self, pre_cont):
+        # 往前找30行，如果找到"*/"，则开始往前找一直到找到"/**"为止，往上找的过程中需要进行记录
+        # 对于像//这种的话，我们不予记录
+        length = len(pre_cont)
+        end = 0 if length <= 30 else length - 30
+        flag, record = False, 0
+        for i in range(length - 1, end - 1, -1):
+            if "*/" in pre_cont[i]:
+                flag, record = True, i
+                break
+        if flag:
+            end_flag = False
+            for j in range(record - 1, -1, -1):
+                if not end_flag:
+                    if ":" in pre_cont[j]:
+                        msg_list = pre_cont[j].split(":")
+                        key, value = msg_list[0].split("*")[-1].strip(), msg_list[-1].strip()
+                pass
+        else:
+            return False
+
+    def produce_msg(self, flag, pre_cont):
+        #
         pass
 
-    def get_api_msg(self):  # 确认为api接口代码后，找寻api描述信息---注释
+    def get_api_msg(self, flag, pre_cont, line):  # 确认为api接口代码后，找寻api描述信息---注释，这里pre_cont为api接口代码前一行开始往前的代码段, line是api标志的行号
+        # 不同的注释要求信息还不太一样，先分类看看
+        # 判断是否有注释信息，我们可以默认如果有注释信息则表明
+        # api.标志前的代码段
+        api_pre_cont = pre_cont[0:line]
+        if self.judge_has_msg(api_pre_cont):
 
-        pass
+            pass
+        else:   # 没有就自动生成
+            self.produce_msg(flag, pre_cont)
 
-    def judge_code(self, pre_cont, cont, code_type, regex_js, regex_php):
+    def judge_code(self, pre_cont, cont, code_type, regex_js, regex_php):   # 这里pre_cont代表的就是ab公共代码
         flag, endpos, status, line = self.api_judge_in(cont, code_type, regex_js, regex_php)
         if not status:  # 注意line2的行号为ab公共代码从后往前数的行号
-            flag2, endpos, status2, line2 = self.api_judge_out(pre_cont, code_type, regex_js, regex_php)    # 变更代码中没有，但被包含在api接口代码中的
-            if status2:
-                self.get_api_msg()
-            else:   # 不在api接口代码中的
+            if len(pre_cont) != 0:
+                flag2, status2, line2 = self.api_judge_out(pre_cont, code_type, regex_js, regex_php)    # 变更代码中没有，但被包含在api接口代码中的
+                if status2:
+                    self.get_api_msg(flag2, pre_cont)
+            else:   # 不在api接口代码中的;
                 pass
         else:   # 变更代码中有api接口的，直接找注释信息即可
-            self.get_api_msg()
+            self.get_api_msg(flag, pre_cont)
 
     # def save(self, plink_list):
     #     with open("test.txt", "w", encoding="utf-8") as f:
