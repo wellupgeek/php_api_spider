@@ -1,0 +1,6163 @@
+[
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter19": " saveStatus,description:1 添加 2 修改"
+            },
+            {
+                "parameter18": " supplement,description:补充内容"
+            },
+            {
+                "parameter17": " driverid,description:司机信息表关联id"
+            },
+            {
+                "parameter16": " birthData,description:出生日期"
+            },
+            {
+                "parameter15": " internship,description:培训情况"
+            },
+            {
+                "parameter14": " sickLeave,description:病假记录"
+            },
+            {
+                "parameter13": " featuresInfo,description:特征异常情况"
+            },
+            {
+                "parameter12": " characterInfo,description:情绪性格情况"
+            },
+            {
+                "parameter11": " chronicDiseaseInfo,description:慢性病情况"
+            },
+            {
+                "parameter10": " examinationData,description:体检时间 0000:00:00 00:00:00"
+            },
+            {
+                "parameter9": " bloodOxygen,description:血氧"
+            },
+            {
+                "parameter8": " bloodPressureType,description:血压类别：1正常,2高血压,3低血压"
+            },
+            {
+                "parameter7": " bloodPressure,description:血压"
+            },
+            {
+                "parameter6": " pulse,description:脉搏"
+            },
+            {
+                "parameter5": " heartbeat,description:心跳"
+            },
+            {
+                "parameter4": " systolicPressure,description:收缩压"
+            },
+            {
+                "parameter3": " diastolicPressure,description:舒张压"
+            },
+            {
+                "parameter2": " heartRate,description:心率"
+            },
+            {
+                "parameter1": " archivesNum,description:档案编号"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": "lijin"
+            },
+            {
+                "@name": " 添加/修改 司机健康信息"
+            },
+            {
+                "API": " api/dataManagement/DriverInfoSave"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "let": "module_name = \"alarm_remind_list_component\";"
+            },
+            {
+                "var": "alarmLevel;"
+            },
+            {
+                "ctrl.alarmSlight": "= 0;"
+            },
+            {
+                "ctrl.alarmTCount": "= 0;"
+            },
+            {
+                "ctrl.alarmLCount": "= 0;"
+            },
+            {
+                "ctrl.alarmSCount": "= 0;"
+            },
+            {
+                "ctrl.ExpireData": "= [];"
+            },
+            {
+                "ctrl.alarmData": "= [];"
+            },
+            {
+                "ctrl.showAlarmView": "= false;"
+            },
+            {
+                "ctrl.active": "= 0;"
+            },
+            {
+                "$scope.languageDict": "= $rootScope.languageDict;"
+            },
+            {
+                "$scope.languageOption": "= $rootScope.languageOption;"
+            },
+            {
+                "var": "ctrl = this;"
+            },
+            {
+                "function": "alarmRemindController(Nav, $http, ngTableParams, expire, stomp, $timeout, $scope, $rootScope, alarmResolver, api, util) {"
+            },
+            {
+                "controller": " ['Nav', '$http', 'ngTableParams', 'expire', 'stomp', '$timeout', '$scope', '$rootScope', 'alarmResolver', 'api', 'util',"
+            },
+            {
+                "templateUrl": " '/heu_assets/component/alarm-remind-list/alarm-remind-list.template.html',"
+            },
+            {
+                "angular.module('app').component('alarmRemindList',": "{"
+            },
+            {
+                "'use": "strict';"
+            },
+            {
+                "Created": "by mfy-PC on 2016/12/10."
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.showDiv.gaikuang.batteryErayWarningStatisics.isShow": "= false;"
+            },
+            {
+                "closeDetail": " function () {"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.guzhang.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.dianchi.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.gaikuang.isShow": "= false;"
+            },
+            {
+                "clearDiv": " function () {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "nenghao": " {"
+            },
+            {
+                "//": "vm.weigui_index_two_method();"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "weigui": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.guzhang.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "guzhang": " {"
+            },
+            {
+                "vm.showDiv.dianchi.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "dianchi": " {"
+            },
+            {
+                "vm.showDiv.gaikuang.batteryErayWarningStatisics.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "batteryErayWarningStatisics": " {"
+            },
+            {
+                "//": "vm.gaikuangTwo_method();"
+            },
+            {
+                "//": "vm.weigui_index_two_method();"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.gaikuang.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " true,"
+            },
+            {
+                "gaikuang": " {"
+            },
+            {
+                "vm.showDiv": "= {"
+            },
+            {
+                "return": "dateTime;"
+            },
+            {
+                "+ hh + '": "' + mm + ':' + ss;"
+            },
+            {
+                "let": "dateTime = yyyy + '-' + MM + '-' + dd + ' '"
+            },
+            {
+                "let": "ss = add0(dt.getSeconds());"
+            },
+            {
+                "let": "mm = add0(dt.getMinutes());"
+            },
+            {
+                "let": "hh = add0(dt.getHours());"
+            },
+            {
+                "let": "dd = add0(dt.getDate());"
+            },
+            {
+                "let": "MM = add0(dt.getMonth() + 1);"
+            },
+            {
+                "let": "yyyy = dt.getFullYear()"
+            },
+            {
+                "let": "dt = new Date(temp);"
+            },
+            {
+                "let temp = flag == '-' ? timeStamp - timeq ": " timeStamp + timeq;"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "let": "dt = new Date(timeStamp - timeq);"
+            },
+            {
+                "let": "timeStamp = Date.parse(new Date());"
+            },
+            {
+                "if": "(timeStamp == null) {"
+            },
+            {
+                "return m < 10 ? '0' + m ": " m"
+            },
+            {
+                "function": "add0(m) {"
+            },
+            {
+                "function": "getTime(timeStamp, flag, timeq) {"
+            },
+            {
+                "return": "startDate;"
+            },
+            {
+                "let": "startDate = da.getFullYear() + '-' + mon + '-' + da.getDate();"
+            },
+            {
+                "let mon = da.getMonth() + 1 > 9 ? da.getMonth() + 1 ": " '0' + (da.getMonth() + 1);"
+            },
+            {
+                "let": "da = new Date(tmp);"
+            },
+            {
+                "let": "end = Date.parse(new Date(ymd));"
+            },
+            {
+                "function": "datePro(day) {"
+            },
+            {
+                "return": "monDay.getDate();"
+            },
+            {
+                "let": "monDay = new Date(ye, mon, 0);"
+            },
+            {
+                "function": "addDay(ye, mon) {"
+            },
+            {
+                "return": "addMon;"
+            },
+            {
+                "let addMon = mon > 9 ? mon ": " '0' + mon;"
+            },
+            {
+                "function": "addDate(mon) {"
+            },
+            {
+                "return": "years + '-' + months"
+            },
+            {
+                "months = months > 9 ? months ": " '0' + (months);"
+            },
+            {
+                "months": "= 12;"
+            },
+            {
+                "years": "= dt.getFullYear() - 1;"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "years": "= year;"
+            },
+            {
+                "months": "= mon;"
+            },
+            {
+                "if": "(mon > 0) {"
+            },
+            {
+                "let": "years;"
+            },
+            {
+                "let": "months;"
+            },
+            {
+                "function": "yearsAndMonthPro(year, mon) {"
+            },
+            {
+                "},": "1000);"
+            },
+            {
+                "startTime": " dateProStart, endTime: dateProEnd"
+            },
+            {
+                "deptId": " vm.isDept_id, timeType: vm.isTimeType, identification: true, lineName: vm.isLineName,"
+            },
+            {
+                "$rootScope.$broadcast('nenghaoJUMP',": "{"
+            },
+            {
+                "$timeout(function": "() {"
+            },
+            {
+                "dateProEnd": "= ye + '-' + '12' + '-' + monDay;"
+            },
+            {
+                "monDay": "= addDay(ye, 12);"
+            },
+            {
+                "dateProStart": "= ye + '-' + '01' + '-' + '01';"
+            },
+            {
+                "ye": "= dt.getFullYear() - 1;"
+            },
+            {
+                "case 5": ""
+            },
+            {
+                "dateProEnd": "= yearParam + '-' + (day - 1);"
+            },
+            {
+                "yearParam": "= yearsAndMonthPro(dt.getFullYear(), dt.getMonth() + 1 - 1);"
+            },
+            {
+                "dateProStart": "= year + '01' + '-' + '01';"
+            },
+            {
+                "case 4": ""
+            },
+            {
+                "dateProEnd": "= ye + timeMon + '-' + monDay;"
+            },
+            {
+                "dateProStart": "= ye + timeMon + '-01';"
+            },
+            {
+                "let": "monDay = addDay(yearParam, mon);"
+            },
+            {
+                "let": "timeMon = addDate(mon);"
+            },
+            {
+                "mon": "= 12;"
+            },
+            {
+                "yearParam": "= dt.getFullYear() - 1;"
+            },
+            {
+                "ye": "= dt.getFullYear() - 1 + '-';"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "yearParam": "= dt.getFullYear();"
+            },
+            {
+                "ye": "= year;"
+            },
+            {
+                "mon": "= dt.getMonth() + 1 - 1;"
+            },
+            {
+                "if": "(dt.getMonth() + 1 - 1 > 0) {"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "dateProEnd": "= year + mon + '-' + (day - 1);"
+            },
+            {
+                "dateProStart": "= year + mon + '-' + '01';"
+            },
+            {
+                "mon": "= addDate(mon);"
+            },
+            {
+                "mon": "= dt.getMonth() + 1;"
+            },
+            {
+                "case 2": ""
+            },
+            {
+                "dateProEnd": "= datePro(1);"
+            },
+            {
+                "dateProStart": "= datePro(7);"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "dateProEnd": "= datePro(1);"
+            },
+            {
+                "dateProStart": "= datePro(1);"
+            },
+            {
+                "case 0": ""
+            },
+            {
+                "switch": "(vm.isTimeType) {"
+            },
+            {
+                "if": "(isTreeNode()) {"
+            },
+            {
+                "vm.energyJump": "= function (url) {"
+            },
+            {
+                "return": "ret;"
+            },
+            {
+                "let ret = {'head'": " head, 'body': sortedBody, 'total': total};"
+            },
+            {
+                "vm.buttonDetail = (vm.maxColNum < vm.showFieldsSum) ? true ": " false;"
+            },
+            {
+                "if": "(head[key].show == 1) {"
+            },
+            {
+                "for": "(let key = 0; key < head.length; key++) {"
+            },
+            {
+                "vm.showFieldsSum": "= 0;"
+            },
+            {
+                "head[key].index": "= index;"
+            },
+            {
+                "let index = (head[key].show == 1) ? count++ ": " -1;"
+            },
+            {
+                "if": "(head[key].show == 1) {"
+            },
+            {
+                "for": "(let key = 0; key < head.length; key++) {"
+            },
+            {
+                "count": "= 0;"
+            },
+            {
+                "//": "newRecord[ 'checked']=false;//存储页面表格前checkbox值"
+            },
+            {
+                "newRecord[head[key].field]": "= temp;"
+            },
+            {
+                "head[key].index": "= index;"
+            },
+            {
+                "'index'": " index,"
+            },
+            {
+                "'field'": " head[key].field,"
+            },
+            {
+                "'show'": " head[key].show,"
+            },
+            {
+                "'data'": " (body[record][head[key].field] == null) ? '-' : body[record][head[key].field],"
+            },
+            {
+                "let": "temp = {"
+            },
+            {
+                "let index = (head[key].show == 1) ? count++ ": " -1;"
+            },
+            {
+                "for": "(let key = 0; key < head.length; key++) {"
+            },
+            {
+                "var": "count = 0;"
+            },
+            {
+                "let": "newRecord = new Object();"
+            },
+            {
+                "for": "(let record = 0; record < body.length; record++) {"
+            },
+            {
+                "let": "sortedBody = [];"
+            },
+            {
+                "head": "= data.data.head;"
+            },
+            {
+                "total": "= data.data.body.total;"
+            },
+            {
+                "body": "= data.data.body.data;"
+            },
+            {
+                "vm.selectlist": "= false;"
+            },
+            {
+                "function": "dataProcessOnSelect(data) {"
+            },
+            {
+                "//": "api数据处理"
+            },
+            {
+                "callAPI('dashboard/getSeriesDetailList',": "queryParams, 4, callback);"
+            },
+            {
+                "vm.head": "= ret.head;"
+            },
+            {
+                "vm.dataBody": "= ret.body;"
+            },
+            {
+                "let": "callback = function (ret) {"
+            },
+            {
+                "timeType": " vm.isTimeType // 时间类型"
+            },
+            {
+                "sortVal": " \"ASC\", // 升序"
+            },
+            {
+                "sortKey": " \"vehicleNo\",// 排序字段"
+            },
+            {
+                "deptId": " vm.isDept_id, // 查询id"
+            },
+            {
+                "count": " params.count(), // 行数"
+            },
+            {
+                "page": " params.page(), // 页码"
+            },
+            {
+                "let": "queryParams = {"
+            },
+            {
+                "getData": " function ($defer, params) {"
+            },
+            {
+                "// total": " 0, // length of data"
+            },
+            {
+                "},": "{"
+            },
+            {
+                "count": " count, // count per page"
+            },
+            {
+                "page": " page, // show first page"
+            },
+            {
+                "vm.tableParams": "= new ngTableParams({"
+            },
+            {
+                "vm.waiting": "= true;"
+            },
+            {
+                "if": "(isTreeNode()) {"
+            },
+            {
+                "vm.getSeriesData": "= () => {"
+            },
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter7": " timeType,description:类型，0=昨天，1=近七天，2=本月，3=上月，4=今年，5=去年"
+            },
+            {
+                "parameter6": " sortVal,description:升序降序"
+            },
+            {
+                "parameter5": " sortKey,description:排序类型"
+            },
+            {
+                "parameter3": " deptid,description:线路id"
+            },
+            {
+                "parameter2": " count,description:条数"
+            },
+            {
+                "parameter1": " page,description:页码"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post（传输方式）"
+            },
+            {
+                "@edittime": " 2020-06-05"
+            },
+            {
+                "@author": " 魏泽宇  （作者信息）"
+            },
+            {
+                "@name": " 首页--严重故障 （接口描述）"
+            },
+            {
+                "API": " api/dashboard/getSeriesDetailList （接口地址）"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryDrivingViolationRegulation"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryDrivingViolationRegulation"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "//": "按具体日期查询"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "vm.query(\"deviceId\",": "vm.treeDeviceId, 10);"
+            },
+            {
+                "//": "getAlarmStatistics();"
+            },
+            {
+                "//": "按时间类型查询"
+            },
+            {
+                "if": "(vm.timeCheck) {"
+            },
+            {
+                "if": "(vm.checkarr[1].val == '') {"
+            },
+            {
+                "//": "}"
+            },
+            {
+                "//": "    return;"
+            },
+            {
+                "//": "    Toast.warn('请选择查询条件!');"
+            },
+            {
+                "//": "if (vm.checkarr[0].val == '' && vm.checkarr[1].val == '') {"
+            },
+            {
+                "vm.timeTypeOrDateQuery": "= function () {"
+            },
+            {
+                "vm.dateSerach": "= true;"
+            },
+            {
+                "vm.seniorShow": "= function () {"
+            },
+            {
+                "callAPI('statistic/getAlarmSummary',": "queryParams, 5, callback);"
+            },
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter7": " timeType,description:时间类型"
+            },
+            {
+                "parameter6": " sortVal,description:排序Val"
+            },
+            {
+                "parameter5": " sortKey,description:排序Key"
+            },
+            {
+                "parameter4": " count,description:条数"
+            },
+            {
+                "parameter3": " page,description:页码"
+            },
+            {
+                "parameter2": " findValEqual1,description:查询Val"
+            },
+            {
+                "parameter1": " findKeyEqual1,description:查询Key"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": " 2019-11-11"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 车辆画像-故障列表"
+            },
+            {
+                "API": " api/statistic/getAlarmSummary"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "@param": "deptId，vehicleType"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 违规类型批量设置"
+            },
+            {
+                "API": " api/dataManagement/updateViolationSetting"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " deptid,description:机构ID"
+            },
+            {
+                "@param": ""
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 查询违规类型"
+            },
+            {
+                "API": " api/dataManagement/queryViolationType"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " Excel"
+            },
+            {
+                "parameter11": " timeType,description:时间类型，0=昨天，-1=今天，1=近7天，2=本月"
+            },
+            {
+                "parameter10": " companyName,description:公司名称"
+            },
+            {
+                "parameter9": " vehicledeviceid,description:车辆设备ID"
+            },
+            {
+                "parameter8": " groupName,description:组名称"
+            },
+            {
+                "parameter7": " lineName,description:线路名称"
+            },
+            {
+                "parameter6": " exportData,description:以数据形式导出"
+            },
+            {
+                "parameter5": " indicatorscname,description:指标中文名"
+            },
+            {
+                "parameter4": " indicators,description:指标"
+            },
+            {
+                "parameter3": " vehicledeviceid,description:车辆ID"
+            },
+            {
+                "parameter2": " stopTime,description:结束时间"
+            },
+            {
+                "parameter1": " startTime,description:开始时间"
+            },
+            {
+                "@param": " \\Illuminate\\Http\\Request $request"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 行车图表数据导出"
+            },
+            {
+                "API": " api/statistic/exportDrivingChartData"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter10": " status,description:账号是否可用"
+            },
+            {
+                "parameter9": " email,description:邮箱"
+            },
+            {
+                "parameter8": " remark,description:备注"
+            },
+            {
+                "parameter7": " certificateid,description:身份证号码"
+            },
+            {
+                "parameter6": " mobilephone,description:手机号码"
+            },
+            {
+                "parameter5": " roleId,description:角色ID"
+            },
+            {
+                "parameter4": " deptId,description:组织ID"
+            },
+            {
+                "parameter3": " real_name,description:真实姓名"
+            },
+            {
+                "parameter2": " password,description:密码"
+            },
+            {
+                "parameter1": " username,description:用户名"
+            },
+            {
+                "@param": " Mauth\\User $user"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": ""
+            },
+            {
+                "@author": ""
+            },
+            {
+                "@name": " 修改用户."
+            },
+            {
+                "API": " api/mauth/editUser"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " timeType,description:时间类型，0=昨天，1=近七天"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " get"
+            },
+            {
+                "@edittime": " 2019-06-13"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路故障分析-时间段查询"
+            },
+            {
+                "API": " api/statistic/getTime"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " timeType,description:时间类型，0=昨天，1=近七天"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " get"
+            },
+            {
+                "@edittime": " 2019-06-13"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路故障分析-时间段查询"
+            },
+            {
+                "API": " api/statistic/getTime"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "{value": " '3', label: '默认'},"
+            },
+            {
+                "{value": " '2', label: '三级'},"
+            },
+            {
+                "{value": " '1', label: '二级'},"
+            },
+            {
+                "{value": " '0', label: '一级'},"
+            },
+            {
+                "vm.failureType": "= ["
+            },
+            {
+                "vm.selectedViolation2": "= [];"
+            },
+            {
+                "vm.selectedViolation1": "= [];"
+            },
+            {
+                "vm.selectedViolation": "= [];"
+            },
+            {
+                "vm.showSum3": "= false;"
+            },
+            {
+                "vm.showSum2": "= false;"
+            },
+            {
+                "vm.showSum1": "= false;"
+            },
+            {
+                "vm.showSum": "= true;"
+            },
+            {
+                "vm.findOptions": "= ["
+            },
+            {
+                "$scope.language": "= $rootScope.languageOption;"
+            },
+            {
+                "$scope.languageDict": "= $rootScope.languageDict;"
+            },
+            {
+                "vm.alarmToAdd": "= {};"
+            },
+            {
+                "var": "m = 0;"
+            },
+            {
+                "var": "count = 8;"
+            },
+            {
+                "var": "page = 1;"
+            },
+            {
+                "vm.Level": "= '';"
+            },
+            {
+                "var": "findVal = undefined;"
+            },
+            {
+                "var": "findKey = undefined;"
+            },
+            {
+                "vm.alarmLevel": "= {};"
+            },
+            {
+                "vm.alarmTypeSet2": "= {};"
+            },
+            {
+                "vm.alarmTypeSet1": "= {};"
+            },
+            {
+                "vm.alarmTypeSet": "= {};"
+            },
+            {
+                "vm.alarmTypeSum2": "= [];"
+            },
+            {
+                "vm.alarmTypeSum1": "= [];"
+            },
+            {
+                "vm.dataBody": "= [];"
+            },
+            {
+                "vm.depId": "= \"\";"
+            },
+            {
+                "var": "vm = this;"
+            },
+            {
+                "var": "url = '/api/';"
+            },
+            {
+                "function": "($scope, $http, $uibModal, ngTableParams, $scope, $window, $cacheFactory, $filter, $element, $rootScope, shareData, api) {"
+            },
+            {
+                "[\"$scope\",": "\"$http\", \"$uibModal\", \"ngTableParams\", \"$scope\", \"$window\", \"$cacheFactory\", \"$filter\", \"$element\", \"$rootScope\",'shareData','api',"
+            },
+            {
+                "Created": "by lichuyan on 2018/10/12."
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@param": "vehicleId 车辆id"
+            },
+            {
+                "@param": "setting 开关项全集数据"
+            },
+            {
+                "@name": "/api/dataManagement/editUserSetting"
+            },
+            {
+                "@desc": "修改开关项"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@param": "vehicleId 车辆id"
+            },
+            {
+                "@name": "/api/dataManagement/getUserSetting"
+            },
+            {
+                "@desc": "获取开关项"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter2": " top,description:数据类型"
+            },
+            {
+                "parameter2": " type,description:图形类型"
+            },
+            {
+                "parameter2": " violationtype,description:查询类型"
+            },
+            {
+                "parameter2": " timeType,description:类型，0=昨天，1=近七天，2=本月，3=上月，4=今年，5=去年"
+            },
+            {
+                "parameter1": " deptid,description:线路id"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " get（传输方式）"
+            },
+            {
+                "@edittime": " 2020-06-05"
+            },
+            {
+                "@author": " 魏泽宇  （作者信息）"
+            },
+            {
+                "@name": " 首页--违规比例图 （接口描述）"
+            },
+            {
+                "API": " api/statistic/getViolationTrendsForType （接口地址）"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$ret;"
+            },
+            {
+                "$ret": "= $this->setJsonResponse(SUCCESS,$records[0]);"
+            },
+            {
+                "$ret": "= $this->setJsonResponse(0, ['msg'=>'查询失败']);"
+            },
+            {
+                "$records=DB": ":table('t_canmoduleinfo')"
+            },
+            {
+                "default": ""
+            },
+            {
+                "$selectArray": "= array(\"vehicleType\",\"canSlaveInfo\",\"canSlaveTopMuduleInfo\",\"canSlaveFrontMuduleInfo\",\"canSlaveRearMuduleInfo\");"
+            },
+            {
+                "case \"1\"": ""
+            },
+            {
+                "$selectArray": "= array(\"vehicleType\",\"canMatserInfo\");"
+            },
+            {
+                "case \"0\"": ""
+            },
+            {
+                "switch": "($this->params['siteType']){"
+            },
+            {
+                "'siteType'=>'required|in": "0,1',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function getVehicleMasterSlaveInfoByVehicleType(){"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@param": "vehicleId 车辆id"
+            },
+            {
+                "@name": "/api/dataManagement/getVehicleStateCodeByVehicleKey"
+            },
+            {
+                "@desc": "获取状态码信息"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@Date 2019/3/14 21": "29"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "获取系统大小分类,修改为来自t_vehiclesystemtypeinfo"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, true);"
+            },
+            {
+                "\\Log": ":info(\"执行新增用户配置，主键\" . $id);"
+            },
+            {
+                "$id = DB": ":table(\"t_user_setting\")->insertGetId($insertInfo);"
+            },
+            {
+                "$insertInfo": "= array(\"protocolVersion\" => $protocolVersion, \"setting\" => $setting);"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "\\Log": ":info(\"执行修改用户配置\");"
+            },
+            {
+                "DB": ":update(DB::raw(\"update t_user_setting set setting='$setting' where  protocolVersion = '$protocolVersion' \"));"
+            },
+            {
+                "if": "($checkUserSettingInfo != null) {"
+            },
+            {
+                "->where('protocolVersion',": "$protocolVersion)"
+            },
+            {
+                "$checkUserSettingInfo = DB": ":table('t_user_setting')"
+            },
+            {
+                "if": "($protocolVersion != '') {"
+            },
+            {
+                "$protocolVersion": "= $vehicleInfo->protocolVersion;"
+            },
+            {
+                "if": "($vehicleInfo != null && !empty($vehicleInfo->protocolVersion)) {"
+            },
+            {
+                "->where(\"vehicleId\",": "$vehicleId)"
+            },
+            {
+                "$vehicleInfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "$vehicleId": "= $this->params['vehicleId'];"
+            },
+            {
+                "if": "(isset($this->params['vehicleId']) && !empty($this->params['vehicleId'])) {"
+            },
+            {
+                "$protocolVersion": "= '';"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, ['用户开关json字符串格式不正确']);"
+            },
+            {
+                "if": "(!$this->isJson($setting)) {"
+            },
+            {
+                "//": "校验json格式是否正确 json对象"
+            },
+            {
+                "$setting": "= $this->params['setting'];"
+            },
+            {
+                "'vehicleId'": "=> 'required'"
+            },
+            {
+                "'setting'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function editUserSetting_old()"
+            },
+            {
+                "@Date 2019/4/19 14": "36"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "选中车辆后，编辑用户设置"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@param": "vehicleId 车辆id"
+            },
+            {
+                "@param": "setting 开关项全集数据"
+            },
+            {
+                "@name": "/api/dataManagement/editUserSetting"
+            },
+            {
+                "@desc": "修改开关项"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter2": " timeType,description:类型，0=昨天，1=近七天，2=本月，3=上月，4=今年，5=去年"
+            },
+            {
+                "parameter1": " deptid,description:线路id"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " get（传输方式）"
+            },
+            {
+                "@edittime": " 2020-06-05"
+            },
+            {
+                "@author": " 魏泽宇  （作者信息）"
+            },
+            {
+                "@name": " 首页--故障比例图 （接口描述）"
+            },
+            {
+                "API": " api/statistic/getAlarmChart （接口地址）"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "endTime": "结束日期"
+            },
+            {
+                "startTime": "开始日期"
+            },
+            {
+                "findVal": "  \"271\"/\"0000000000000000\"/\"303\""
+            },
+            {
+                "参数：": "findKey  lineId /deviceId/driverId 线路id，设备id，驾驶员id"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "endTime": "结束日期"
+            },
+            {
+                "startTime": "开始日期"
+            },
+            {
+                "findVal": "  \"271\"/\"0000000000000000\"/\"303\""
+            },
+            {
+                "参数：": "findKey  lineId /deviceId/driverId 线路id，设备id，驾驶员id"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "endTime": "结束日期"
+            },
+            {
+                "startTime": "开始日期"
+            },
+            {
+                "findVal": "  \"271\"/\"0000000000000000\"/\"303\""
+            },
+            {
+                "参数：": "findKey  lineId /deviceId/driverId 线路id，设备id，驾驶员id"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "默认": "false 不显示"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, true);"
+            },
+            {
+                "\\Log": ":info(\"执行新增用户配置，主键\" . $id);"
+            },
+            {
+                "$id = DB": ":table(\"t_user_setting_order\")->insertGetId($insertInfo);"
+            },
+            {
+                "$insertInfo": "= array(\"protocol_version\" => $protocolVersion, \"order_setting\" => $setting);"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "\\Log": ":info(\"执行修改用户配置\");"
+            },
+            {
+                "DB": ":update(DB::raw(\"update t_user_setting_order set order_setting='\" . json_encode($settingInfo) . \"' where  protocol_version = '$protocolVersion' \"));"
+            },
+            {
+                "$settingInfo->$subSystem": "= json_decode($setting);"
+            },
+            {
+                "$settingInfo": "= json_decode($checkUserSettingInfo->order_setting);"
+            },
+            {
+                "if": "($checkUserSettingInfo != null) {"
+            },
+            {
+                "->where('protocol_version',": "$protocolVersion)"
+            },
+            {
+                "$checkUserSettingInfo = DB": ":table('t_user_setting_order')"
+            },
+            {
+                "if": "(!empty($protocolVersion)) {"
+            },
+            {
+                "$protocolVersion": "= $vehicleInfo->protocolVersion;"
+            },
+            {
+                "if": "($vehicleInfo != null && !empty($vehicleInfo->protocolVersion)) {"
+            },
+            {
+                "->where(\"vehicleId\",": "$vehicleId)"
+            },
+            {
+                "$vehicleInfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "$vehicleId": "= $this->params['vehicleId'];"
+            },
+            {
+                "if": "(isset($this->params['vehicleId']) && !empty($this->params['vehicleId'])) {"
+            },
+            {
+                "$protocolVersion": "= '';"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, ['用户开关json字符串格式不正确']);"
+            },
+            {
+                "if": "(!$this->isJson($setting)) {"
+            },
+            {
+                "//": "校验json格式是否正确 json对象"
+            },
+            {
+                "$subSystem": "= $this->params['subSystem'];"
+            },
+            {
+                "$setting": "= $this->params['setting'];"
+            },
+            {
+                "'subSystem'": "=> 'required'"
+            },
+            {
+                "'vehicleId'": "=> 'required',"
+            },
+            {
+                "'setting'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function editJsonUserSetting()"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, true);"
+            },
+            {
+                "\\Log": ":info(\"执行新增用户配置，主键\" . $id);"
+            },
+            {
+                "$id = DB": ":table(\"t_user_setting\")->insertGetId($insertInfo);"
+            },
+            {
+                "$insertInfo": "= array(\"protocolVersion\" => $protocolVersion, \"setting\" => $setting);"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "\\Log": ":info(\"执行修改用户配置\");"
+            },
+            {
+                "DB": ":update(DB::raw(\"update t_user_setting set setting='$setting' where  protocolVersion = '$protocolVersion' \"));"
+            },
+            {
+                "if": "($checkUserSettingInfo != null) {"
+            },
+            {
+                "->where('protocolVersion',": "$protocolVersion)"
+            },
+            {
+                "$checkUserSettingInfo = DB": ":table('t_user_setting')"
+            },
+            {
+                "if": "($protocolVersion != '') {"
+            },
+            {
+                "$protocolVersion": "= $vehicleInfo->protocolVersion;"
+            },
+            {
+                "if": "($vehicleInfo != null && !empty($vehicleInfo->protocolVersion)) {"
+            },
+            {
+                "->where(\"vehicleId\",": "$vehicleId)"
+            },
+            {
+                "$vehicleInfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "$vehicleId": "= $this->params['vehicleId'];"
+            },
+            {
+                "if": "(isset($this->params['vehicleId']) && !empty($this->params['vehicleId'])) {"
+            },
+            {
+                "$protocolVersion": "= '';"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, ['用户开关json字符串格式不正确']);"
+            },
+            {
+                "if": "(!$this->isJson($setting)) {"
+            },
+            {
+                "//": "校验json格式是否正确 json对象"
+            },
+            {
+                "$setting": "= $this->params['setting'];"
+            },
+            {
+                "'vehicleId'": "=> 'required'"
+            },
+            {
+                "'setting'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function editUserSetting()"
+            },
+            {
+                "@Date 2019/4/19 14": "36"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "选中车辆后，编辑用户设置"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "endTime": "结束日期"
+            },
+            {
+                "startTime": "开始日期"
+            },
+            {
+                "findVal": "  \"271\"/\"0000000000000000\"/\"303\""
+            },
+            {
+                "参数：": "findKey  lineId /deviceId/driverId 线路id，设备id，驾驶员id"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $varResult);"
+            },
+            {
+                "if($varInfo->ename": "== $varable[\"key\"] && $varable[\"show\"]){"
+            },
+            {
+                "foreach": "($userSettingJsonObject[$subSystemEnParam] as $varable){"
+            },
+            {
+                "//": "循环判断 当前元素是否为用户true配置"
+            },
+            {
+                "foreach": "($categoryFieldParentJson->{\"sub\"} as $varInfo) {"
+            },
+            {
+                "$userSettingJsonObject": "= json_decode($userSettingJsonInfo->order_setting,true);"
+            },
+            {
+                "if($userSettingJsonInfo": "!= null){"
+            },
+            {
+                "$varResult[\"state\"]": "= array();"
+            },
+            {
+                "$varResult[\"alarm\"]": "= array();"
+            },
+            {
+                "$varResult[\"analog\"]": "= array();"
+            },
+            {
+                "$categoryFieldParentJson": "= $categoryFieldJson->$parentSystemEn->{\"sub\"}->$subSystemEnParam;"
+            },
+            {
+                "$categoryFieldJson": "= json_decode(file_get_contents($path));"
+            },
+            {
+                "->where(\"protocol_version\",": "$protocolVersion)"
+            },
+            {
+                "$userSettingJsonInfo = DB": ":table(\"t_user_setting_order\")"
+            },
+            {
+                "exec(\"cd": "\".storage_path(\"json-repos\").\" && git pull \");"
+            },
+            {
+                "//": "切换目录并更新json文件"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT,\"协议不存在\");"
+            },
+            {
+                "exec(\"cd \".storage_path().\" && git clone http": "//zhangzhufu:11294151@code.cellpies.com:8888/zhangzhufu/json-repos.git\");"
+            },
+            {
+                "$path": "= storage_path('json-repos/company-json/'.$protocolVersion.'.json');"
+            },
+            {
+                "//": "判断json文件存在，更新后再获取信息"
+            },
+            {
+                "$protocolVersion": "= $vehilceinfo->protocolVersion;"
+            },
+            {
+                "if": "(!empty($vehilceinfo->protocolVersion)) {"
+            },
+            {
+                "->orWhere(\"vehicleNo\", isset($this->params[\"vehicleNo\"]) ? $this->params[\"vehicleNo\"] ": " \"\")"
+            },
+            {
+                "->where(\"vehicleId\", isset($this->params[\"vehicleId\"]) ? $this->params[\"vehicleId\"] ": " \"\")"
+            },
+            {
+                "$vehilceinfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "if": "(!empty($this->params[\"vehicleId\"]) || !empty($this->params[\"vehicleNo\"])) {"
+            },
+            {
+                "$subSystemEnParam": "= $this->params[\"subSystemEn\"];"
+            },
+            {
+                "$parentSystemEn": "= $this->params[\"parentSystemEn\"];"
+            },
+            {
+                "$protocolVersion": "= $this->params[\"companySign\"];"
+            },
+            {
+                "$protocolVersion": "= \"__\";"
+            },
+            {
+                "'subSystemEn'": "=> 'required'"
+            },
+            {
+                "'parentSystemEn'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function getAnalogStateAlarmBySmallSystemEn()"
+            },
+            {
+                "@Date 2019/3/14 21": "32"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "根据小分类获取模拟量/状态量/报警量"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $varResult);"
+            },
+            {
+                "if($varInfo->ename": "== $varable[\"key\"] && $varable[\"show\"]){"
+            },
+            {
+                "foreach": "($userSettingJsonObject[$subSystemEnParam] as $varable){"
+            },
+            {
+                "//": "循环判断 当前元素是否为用户true配置"
+            },
+            {
+                "foreach": "($categoryFieldParentJson->{\"sub\"} as $varInfo) {"
+            },
+            {
+                "$userSettingJsonObject": "= json_decode($userSettingJsonInfo->order_setting,true);"
+            },
+            {
+                "if($userSettingJsonInfo": "!= null){"
+            },
+            {
+                "$varResult[\"state\"]": "= array();"
+            },
+            {
+                "$varResult[\"alarm\"]": "= array();"
+            },
+            {
+                "$varResult[\"analog\"]": "= array();"
+            },
+            {
+                "$categoryFieldParentJson": "= $categoryFieldJson->$parentSystemEn->{\"sub\"}->$subSystemEnParam;"
+            },
+            {
+                "$categoryFieldJson": "= json_decode(file_get_contents($path));"
+            },
+            {
+                "->where(\"protocol_version\",": "$protocolVersion)"
+            },
+            {
+                "$userSettingJsonInfo = DB": ":table(\"t_user_setting_order\")"
+            },
+            {
+                "exec(\"cd": "\".storage_path(\"json-repos\").\" && git pull \");"
+            },
+            {
+                "//": "切换目录并更新json文件"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT,\"协议不存在\");"
+            },
+            {
+                "exec(\"cd \".storage_path().\" && git clone http": "//zhangzhufu:11294151@code.cellpies.com:8888/zhangzhufu/json-repos.git\");"
+            },
+            {
+                "$path": "= storage_path('json-repos/company-json/'.$protocolVersion.'.json');"
+            },
+            {
+                "//": "判断json文件存在，更新后再获取信息"
+            },
+            {
+                "$protocolVersion": "= $vehilceinfo->protocolVersion;"
+            },
+            {
+                "if": "(!empty($vehilceinfo->protocolVersion)) {"
+            },
+            {
+                "->orWhere(\"vehicleNo\", isset($this->params[\"vehicleNo\"]) ? $this->params[\"vehicleNo\"] ": " \"\")"
+            },
+            {
+                "->where(\"vehicleId\", isset($this->params[\"vehicleId\"]) ? $this->params[\"vehicleId\"] ": " \"\")"
+            },
+            {
+                "$vehilceinfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "if": "(!empty($this->params[\"vehicleId\"]) || !empty($this->params[\"vehicleNo\"])) {"
+            },
+            {
+                "$subSystemEnParam": "= $this->params[\"subSystemEn\"];"
+            },
+            {
+                "$parentSystemEn": "= $this->params[\"parentSystemEn\"];"
+            },
+            {
+                "$protocolVersion": "= $this->params[\"companySign\"];"
+            },
+            {
+                "$protocolVersion": "= \"__\";"
+            },
+            {
+                "'subSystemEn'": "=> 'required'"
+            },
+            {
+                "'parentSystemEn'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function getAnalogStateAlarmBySmallSystemEn()"
+            },
+            {
+                "@Date 2019/3/14 21": "32"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "根据小分类获取模拟量/状态量/报警量"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $varResult);"
+            },
+            {
+                "if($varInfo->ename": "== $varable[\"key\"] && $varable[\"show\"]){"
+            },
+            {
+                "foreach": "($userSettingJsonObject[$subSystemEnParam] as $varable){"
+            },
+            {
+                "//": "循环判断 当前元素是否为用户true配置"
+            },
+            {
+                "foreach": "($categoryFieldParentJson->{\"sub\"} as $varInfo) {"
+            },
+            {
+                "$userSettingJsonObject": "= json_decode($userSettingJsonInfo->order_setting,true);"
+            },
+            {
+                "if($userSettingJsonInfo": "!= null){"
+            },
+            {
+                "$varResult[\"state\"]": "= array();"
+            },
+            {
+                "$varResult[\"alarm\"]": "= array();"
+            },
+            {
+                "$varResult[\"analog\"]": "= array();"
+            },
+            {
+                "$categoryFieldParentJson": "= $categoryFieldJson->$parentSystemEn->{\"sub\"}->$subSystemEnParam;"
+            },
+            {
+                "$categoryFieldJson": "= json_decode(file_get_contents($path));"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $varResult);"
+            },
+            {
+                "if($varInfo->ename": "== $varable[\"key\"] && $varable[\"show\"]){"
+            },
+            {
+                "foreach": "($userSettingJsonObject[$subSystemEnParam] as $varable){"
+            },
+            {
+                "//": "循环判断 当前元素是否为用户true配置"
+            },
+            {
+                "foreach": "($categoryFieldParentJson->{\"sub\"} as $varInfo) {"
+            },
+            {
+                "$userSettingJsonObject": "= json_decode($userSettingJsonInfo->order_setting,true);"
+            },
+            {
+                "if($userSettingJsonInfo": "!= null){"
+            },
+            {
+                "$varResult[\"state\"]": "= array();"
+            },
+            {
+                "$varResult[\"alarm\"]": "= array();"
+            },
+            {
+                "$varResult[\"analog\"]": "= array();"
+            },
+            {
+                "$categoryFieldParentJson": "= $categoryFieldJson->$parentSystemEn->{\"sub\"}->$subSystemEnParam;"
+            },
+            {
+                "$categoryFieldJson": "= json_decode(file_get_contents($path));"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@Date 2019/2/27 9": "40"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "严重故障获取详情列表"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@param": "dept_id 线路、车队、分公司、总公司ID"
+            },
+            {
+                "line": "线路"
+            },
+            {
+                "group": "车队"
+            },
+            {
+                "subcompany": "分公司"
+            },
+            {
+                "company": "总公司"
+            },
+            {
+                "@param": "type 评比类型"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "deferred.promise;"
+            },
+            {
+                "params.companyName,": "params.subCompanyName, params.groupName);"
+            },
+            {
+                "params.lineName,": "params.level, params.vehicleId, params.vehicleType, params.alarm, params.online, params.driverId,"
+            },
+            {
+                "params.deviceId,": "params.open, params.isHidden, [], params.driverName, params.vehicleNo, params.vehicleSN,"
+            },
+            {
+                "let": "node = This._generateZtreeNode(params.name, params.icon, params.isParent, params.nocheck, params.deptId, params.chkDisabled,"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter4": " page,description:页码"
+            },
+            {
+                "parameter3": " count,description:条数"
+            },
+            {
+                "parameter2": " findVal,description:查询Val"
+            },
+            {
+                "parameter1": " findKey,description:查询Key"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": " 2020-06-18"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路模拟地图-线路车辆查询"
+            },
+            {
+                "API": " api/dataManagement/queryVehicleList"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, true);"
+            },
+            {
+                "\\Log": ":info(\"执行新增用户配置，主键\" . $id);"
+            },
+            {
+                "$id = DB": ":table(\"t_user_setting\")->insertGetId($insertInfo);"
+            },
+            {
+                "$insertInfo": "= array(\"protocolVersion\" => $protocolVersion, \"setting\" => $setting);"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "\\Log": ":info(\"执行修改用户配置\");"
+            },
+            {
+                "DB": ":update(DB::raw(\"update t_user_setting set setting='$setting' where  protocolVersion = '$protocolVersion' \"));"
+            },
+            {
+                "if": "($checkUserSettingInfo != null) {"
+            },
+            {
+                "->where('protocolVersion',": "$protocolVersion)"
+            },
+            {
+                "$checkUserSettingInfo = DB": ":table('t_user_setting')"
+            },
+            {
+                "if": "($protocolVersion != '') {"
+            },
+            {
+                "$protocolVersion": "= $vehicleInfo->protocolVersion;"
+            },
+            {
+                "if": "($vehicleInfo != null && !empty($vehicleInfo->protocolVersion)) {"
+            },
+            {
+                "->where(\"vehicleId\",": "$vehicleId)"
+            },
+            {
+                "$vehicleInfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "$vehicleId": "= $this->params['vehicleId'];"
+            },
+            {
+                "if": "(isset($this->params['vehicleId']) && !empty($this->params['vehicleId'])) {"
+            },
+            {
+                "$protocolVersion": "= '';"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, ['用户开关json字符串格式不正确']);"
+            },
+            {
+                "//": "校验json格式是否正确 json对象"
+            },
+            {
+                "$setting": "= $this->params['setting'];"
+            },
+            {
+                "'vehicleId'": "=> 'required'"
+            },
+            {
+                "'setting'": "=> 'required',"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function editUserSetting()"
+            },
+            {
+                "@Date 2019/4/19 14": "36"
+            },
+            {
+                "@Author": "zhangzhufu"
+            },
+            {
+                "@Description": "选中车辆后，编辑用户设置"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter4": " page,description:页码"
+            },
+            {
+                "parameter3": " count,description:条数"
+            },
+            {
+                "parameter2": " findVal,description:查询Val"
+            },
+            {
+                "parameter1": " findKey,description:查询Key"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": " 2020-06-18"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路模拟地图-线路车辆查询"
+            },
+            {
+                "API": " api/dataManagement/queryVehicleList"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter1": " page,description:页码"
+            },
+            {
+                "parameter1": " count,description:条数"
+            },
+            {
+                "parameter1": " findVal,description:查询Val"
+            },
+            {
+                "parameter1": " findKey,description:查询Key"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": " 2020-06-18"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路模拟地图-线路车辆查询"
+            },
+            {
+                "API": " api/dataManagement/queryVehicleList"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            },
+            {
+                "parameter4": " page,description:页码"
+            },
+            {
+                "parameter3": " count,description:条数"
+            },
+            {
+                "parameter2": " findVal,description:查询Val"
+            },
+            {
+                "parameter1": " findKey,description:查询Key"
+            },
+            {
+                "@param": " \\Http\\Request $request （请求参数）"
+            },
+            {
+                "@mode": " post"
+            },
+            {
+                "@edittime": " 2020-06-18"
+            },
+            {
+                "@author": " 高伶"
+            },
+            {
+                "@name": " 线路画像-线路模拟地图-线路车辆查询"
+            },
+            {
+                "API": " api/dataManagement/queryVehicleList"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": " \\App\\Exception\\ParamException"
+            },
+            {
+                "@return": " \\Illuminate\\Http\\JsonResponse|mixed"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter2": " deptVal ,description: 机构Id"
+            },
+            {
+                "@parameter1": " deptType ,description: 机构类型"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/15 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " queryLastGpsByDeptId"
+            },
+            {
+                "@description": " 根据机构Id获取机构所属车辆当前时间最后一条gps数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@throws": "ParamException"
+            },
+            {
+                "@return": "\\Illuminate\\Http\\JsonResponse"
+            },
+            {
+                "@parameter1": " deptId ,description: 线路Id"
+            },
+            {
+                "@mode": " GET"
+            },
+            {
+                "@edittime": " 2020/6/5 10:49"
+            },
+            {
+                "@author": " BHLO"
+            },
+            {
+                "@name": " getVehicleMotorTypeByLineDeptId"
+            },
+            {
+                "@description": " 根据线路deptId获取线路上车辆类型"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@return": "{Array}"
+            },
+            {
+                "@name": "api/statistic/getVehicleInfoSystemType 接口名称"
+            },
+            {
+                "@desc": "明细报表--标签数据"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "构造函数": "初始化params 请求参数."
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.showDiv.gaikuang.batteryErayWarningStatisics.isShow": "= false;"
+            },
+            {
+                "closeDetail": " function () {"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.guzhang.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.dianchi.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.gaikuang.isShow": "= false;"
+            },
+            {
+                "clearDiv": " function () {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "nenghao": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "weigui": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.showDiv.gaikuang.batteryErayWarningStatisics.isShow": "= false;"
+            },
+            {
+                "closeDetail": " function () {"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.guzhang.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.dianchi.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.gaikuang.isShow": "= false;"
+            },
+            {
+                "clearDiv": " function () {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "nenghao": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "weigui": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "{value": " '3', label: '默认'},"
+            },
+            {
+                "{value": " '2', label: '三级'},"
+            },
+            {
+                "{value": " '1', label: '二级'},"
+            },
+            {
+                "{value": " '0', label: '一级'},"
+            },
+            {
+                "vm.failureType": "= ["
+            },
+            {
+                "vm.selectedViolation2": "= [];"
+            },
+            {
+                "vm.selectedViolation1": "= [];"
+            },
+            {
+                "vm.selectedViolation": "= [];"
+            },
+            {
+                "vm.showSum3": "= false;"
+            },
+            {
+                "vm.showSum2": "= false;"
+            },
+            {
+                "vm.showSum1": "= false;"
+            },
+            {
+                "vm.showSum": "= true;"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.showDiv.gaikuang.batteryErayWarningStatisics.isShow": "= false;"
+            },
+            {
+                "closeDetail": " function () {"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.guzhang.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.dianchi.isShow": "= false;"
+            },
+            {
+                "vm.showDiv.gaikuang.isShow": "= false;"
+            },
+            {
+                "clearDiv": " function () {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.nenghao.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "nenghao": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            },
+            {
+                "vm.showDiv.weigui.isShow": "= true;"
+            },
+            {
+                "show": " function () {"
+            },
+            {
+                "isShow": " false,"
+            },
+            {
+                "weigui": " {"
+            },
+            {
+                "if": "('' == vm.isDept_id) return;"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "{value": " '3', label: '默认'},"
+            },
+            {
+                "{value": " '2', label: '三级'},"
+            },
+            {
+                "{value": " '1', label: '二级'},"
+            },
+            {
+                "{value": " '0', label: '一级'},"
+            },
+            {
+                "vm.failureType": "= ["
+            },
+            {
+                "vm.selectedViolation2": "= [];"
+            },
+            {
+                "vm.selectedViolation1": "= [];"
+            },
+            {
+                "vm.selectedViolation": "= [];"
+            },
+            {
+                "vm.showSum3": "= false;"
+            },
+            {
+                "vm.showSum2": "= false;"
+            },
+            {
+                "vm.showSum1": "= false;"
+            },
+            {
+                "vm.showSum": "= true;"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "@return": "array|\\Illuminate\\Database\\Query\\Builder[]|\\Illuminate\\Http\\JsonResponse"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $arr1);"
+            },
+            {
+                "$arr1": "= $arr3;"
+            },
+            {
+                "$arr3[1][$temp[$value]]": "= $data;"
+            },
+            {
+                "$data": "= $arr1[1][$key];"
+            },
+            {
+                "foreach": "($arr1[0] as $key => $value) {"
+            },
+            {
+                "$temp[$val]": "= $key;"
+            },
+            {
+                "foreach": "($arrtime as $key => $val) {"
+            },
+            {
+                "$temp": "= [];"
+            },
+            {
+                "},": "$arrtime);"
+            },
+            {
+                "return": "'0';"
+            },
+            {
+                "$arr3[1]": "= array_map(function () {"
+            },
+            {
+                "$arr3[0]": "= $arrtime;"
+            },
+            {
+                "if": "(isset($arrtime)) {"
+            },
+            {
+                "$arr1[0][$i]": "= $records[$i]->stat_date;"
+            },
+            {
+                "$arr1[1][$i]": "= $records[$i]->cnt;"
+            },
+            {
+                "for": "($i = 0; $i < $cnt; $i++) {"
+            },
+            {
+                "$arr1": "= array();"
+            },
+            {
+                "$cnt": "= count($records);"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, $records);"
+            },
+            {
+                "if": "($i<10){"
+            },
+            {
+                "for": "($i = 1; $i <= $cnt; $i++) {"
+            },
+            {
+                "$cnt": "= $records[0]->date1;"
+            },
+            {
+                "$records = DB": ":select ( \" select (DATEDIFF(DATE_ADD(curdate(), INTERVAL - DAY(curdate())+ 1 DAY), date_add(curdate()- DAY(curdate())+ 1, INTERVAL -1 MONTH))) as date1 \");"
+            },
+            {
+                "//where": "DATE_ADD(t1.dayed ,INTERVAL t2.number DAY))time WHERE SUBSTRING(date,1,7)=SUBSTRING(CURDATE(),1,7) \");"
+            },
+            {
+                "//(SELECT @xi": "=-1) xc0 ) t2"
+            },
+            {
+                "//(SELECT": "1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6 UNION SELECT 7 UNION SELECT 8) xc2,"
+            },
+            {
+                "//": "                   (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4) xc1,"
+            },
+            {
+                "//(SELECT @xi": "=@xi+1 as number from"
+            },
+            {
+                "//": "                   (select DATE_ADD(curdate(),interval -day(curdate())+1 day) dayed) t1,"
+            },
+            {
+                "//DATE_ADD(t1.dayed,INTERVAL": "t2.number DAY) date from"
+            },
+            {
+                "//": "                   (select"
+            },
+            {
+                "//                        $records = DB": ":select ( \"SELECT SUBSTRING_INDEX(date,'-',-1) as date1 FROM"
+            },
+            {
+                "$data=[];": "$data1=[];"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "$records = DB": ":select(\"SELECT DAYOFMONTH(CURRENT_DATE()- INTERVAL \".$i.\" DAY )as date1\");"
+            },
+            {
+                "$records = DB": ":select(\"SELECT DAYOFMONTH(CURRENT_DATE()) as date1\");"
+            },
+            {
+                "if": "($i == 0){"
+            },
+            {
+                "for": "($i = 7; $i > 0; $i--) {"
+            },
+            {
+                "$data=[];": "$data1=[];"
+            },
+            {
+                "//": "7day"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "$data[]=$i.\"": "00\";"
+            },
+            {
+                "$data[]=\"0\".$i.\"": "00\";"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "if": "(empty($records)) {"
+            },
+            {
+                "$records = DB": ":select($sql);"
+            },
+            {
+                "$sql": ".= $fixedCondtion . \" and \" . $dataconditon . $fixed;"
+            },
+            {
+                "$fixedCondtion": "= \" where 1=1 )\";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$fixedCondtion": "= \" where  $depttype = '$deptid' ) \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $arr1);"
+            },
+            {
+                "$arr1": "= $arr3;"
+            },
+            {
+                "$arr3[1][$temp[$value]]": "=  $data;"
+            },
+            {
+                "$data": "= $arr1[1][$key];"
+            },
+            {
+                "foreach": "($arr1[0] as $key => $value) {"
+            },
+            {
+                "$temp[$val]": "= $key;"
+            },
+            {
+                "foreach": "($arrtime as $key => $val) {"
+            },
+            {
+                "$temp": "= [];"
+            },
+            {
+                "},": "$arrtime);"
+            },
+            {
+                "return": "'0';"
+            },
+            {
+                "$arr3[1]": "= array_map(function () {"
+            },
+            {
+                "$arr3[0]": "= $arrtime;"
+            },
+            {
+                "if": "(isset($arrtime)) {"
+            },
+            {
+                "$arr1[0][$i]": "= $records[$i]->stat_date;"
+            },
+            {
+                "$arr1[1][$i]": "= $records[$i]->cnt;"
+            },
+            {
+                "for": "($i = 0; $i < $cnt; $i++) {"
+            },
+            {
+                "$arr1": "= array();"
+            },
+            {
+                "$cnt": "= count($records);"
+            },
+            {
+                "//": "return $this->setJsonResponse(REPEAT, $records);"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $records);"
+            },
+            {
+                "if": "($i<10){"
+            },
+            {
+                "for": "($i = 1; $i <= $cnt; $i++) {"
+            },
+            {
+                "$cnt": "= $records[0]->date1;"
+            },
+            {
+                "$records = DB": ":select ( \" select (DATEDIFF(DATE_ADD(curdate(), INTERVAL - DAY(curdate())+ 1 DAY), date_add(curdate()- DAY(curdate())+ 1, INTERVAL -1 MONTH))) as date1 \");"
+            },
+            {
+                "//where": "DATE_ADD(t1.dayed ,INTERVAL t2.number DAY))time WHERE SUBSTRING(date,1,7)=SUBSTRING(CURDATE(),1,7) \");"
+            },
+            {
+                "//(SELECT @xi": "=-1) xc0 ) t2"
+            },
+            {
+                "//(SELECT": "1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5 UNION SELECT 6 UNION SELECT 7 UNION SELECT 8) xc2,"
+            },
+            {
+                "//": "                   (SELECT 1 UNION SELECT 2 UNION SELECT 3 UNION SELECT 4) xc1,"
+            },
+            {
+                "//(SELECT @xi": "=@xi+1 as number from"
+            },
+            {
+                "//": "                   (select DATE_ADD(curdate(),interval -day(curdate())+1 day) dayed) t1,"
+            },
+            {
+                "//DATE_ADD(t1.dayed,INTERVAL": "t2.number DAY) date from"
+            },
+            {
+                "//": "                   (select"
+            },
+            {
+                "//                        $records = DB": ":select ( \"SELECT SUBSTRING_INDEX(date,'-',-1) as date1 FROM"
+            },
+            {
+                "$data=[];": "$data1=[];"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "$records = DB": ":select(\"SELECT DAYOFMONTH(CURRENT_DATE()- INTERVAL \".$i.\" DAY )as date1\");"
+            },
+            {
+                "$records = DB": ":select(\"SELECT DAYOFMONTH(CURRENT_DATE()) as date1\");"
+            },
+            {
+                "if": "($i == 0){"
+            },
+            {
+                "for": "($i = 7; $i > 0; $i--) {"
+            },
+            {
+                "$data=[];": "$data1=[];"
+            },
+            {
+                "//": "7day"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "$data[]=$i.\"": "00\";"
+            },
+            {
+                "$data[]=\"0\".$i.\"": "00\";"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "if": "(empty($records)) {"
+            },
+            {
+                "$records = DB": ":select($sql);"
+            },
+            {
+                "$sql": ".= $fixedCondtion . \" and \" . $dataconditon . $fixed;"
+            },
+            {
+                "$fixedCondtion": "= \" where $deptlevel=$id ) \";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$fixedCondtion": "= \" where $deptlevel=$id and $depttype = '$deptid'  ) \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "if": "($deptlevel != null) {"
+            },
+            {
+                "//": "如果用户等级不是 顶级 则"
+            },
+            {
+                "$arrtime[$i]": "=$starttime->add($interval)->format('Y-m-d');;"
+            },
+            {
+                "$interval= \\DateInterval": ":createFromDateString(\"+1 days\");"
+            },
+            {
+                "for": "($i = 1; $i < $days+1; $i++) {"
+            },
+            {
+                "$arrtime[0]": "=$starttime->format('Y-m-d');;"
+            },
+            {
+                "$days": "= $starttime->diff($endtime)->days;"
+            },
+            {
+                "$endtime=new": "\\DateTime($enddate);"
+            },
+            {
+                "$starttime=new": "\\DateTime($startdate);"
+            },
+            {
+                "$dataconditon": "= \"  stat_date>='$startdate' and stat_date<='$enddate' \";"
+            },
+            {
+                "$enddate": "= $this->params['endDate'];"
+            },
+            {
+                "$startdate": "= $this->params['startDate'];"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId    \";"
+            },
+            {
+                "and": " vehicleno IN( SELECT vehicleno FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype'  )"
+            },
+            {
+                "SELECT": "total, stat_date AS stat_date FROM api_breakdowns WHERE alarmtypename in"
+            },
+            {
+                "SELECT": "SUM(total) AS cnt, stat_date FROM ("
+            },
+            {
+                "$sql": "= \"SELECT IFNULL(cnt,0) as cnt ,  stat_date FROM"
+            },
+            {
+                "case 6": ""
+            },
+            {
+                "(SELECT @a": "=CURRENT_DATE() - INTERVAL DAY(CURRENT_DATE())-1 DAY - INTERVAL MONTH(CURRENT_DATE())  MONTH -interval 1 year )c)d ON  b.stat_date=d.month\";"
+            },
+            {
+                "$fixed .= \"RIGHT JOIN (SELECT @a": "=@a+INTERVAL 1 MONTH AS MONTH FROM t_monthfortrend  a  INNER JOIN"
+            },
+            {
+                "//": "为显示  每月数据"
+            },
+            {
+                "stat_date<": "CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month\";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month - interval 1 year and"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId    \";"
+            },
+            {
+                "and": "vehicleno IN( SELECT vehicleno FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype'  )"
+            },
+            {
+                "SELECT": "total, DATE_FORMAT(stat_date,'%Y-%m-01') AS stat_date FROM api_breakdowns WHERE alarmtypename in"
+            },
+            {
+                "SELECT": "SUM(total) AS cnt, stat_date FROM ("
+            },
+            {
+                "$sql": "= \"SELECT IFNULL(cnt,0) as cnt , date_format(`month`,'%m月') as stat_date FROM"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "(SELECT @a": "=CURRENT_DATE() - INTERVAL DAY(CURRENT_DATE())-1 DAY - INTERVAL MONTH(CURRENT_DATE())  MONTH )c)d ON  b.stat_date=d.month limit $currentMonth\";"
+            },
+            {
+                "$fixed .= \"RIGHT JOIN (SELECT @a": "=@a+INTERVAL 1 MONTH AS MONTH FROM t_monthfortrend  a  INNER JOIN"
+            },
+            {
+                "//": "为显示 到当前月的 每月数据"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId    \";"
+            },
+            {
+                "and": "vehicleno IN( SELECT vehicleno FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype'  )"
+            },
+            {
+                "SELECT": "total, DATE_FORMAT(stat_date,'%Y-%m-01') AS stat_date FROM api_breakdowns WHERE alarmtypename in"
+            },
+            {
+                "SELECT": "SUM(total) AS cnt, stat_date FROM ("
+            },
+            {
+                "$sql": "= \"SELECT IFNULL(cnt,0) as cnt , date_format(`month`,'%m月') as stat_date FROM"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$arrtime[]": "= date('d', strtotime(\"-$k day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $days; $i++) {"
+            },
+            {
+                "$k": "= $k + $days - 1;"
+            },
+            {
+                "$days": "= intval($days);"
+            },
+            {
+                "$k": "= date(\"d\");"
+            },
+            {
+                "$days": "= date('t', strtotime(\"$y-$j-1\"));"
+            },
+            {
+                "$y": "= date(\"Y\");"
+            },
+            {
+                "$j": "= date(\"m\") - 1;"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval 1 month and stat_date< CURRENT_DATE() - interval day(CURRENT_DATE())-1 day\";"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$arrtime[]": "= date('d', strtotime(\"-$inttime day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $inttime2; $i++) {"
+            },
+            {
+                "$inttime2": "= $inttime;"
+            },
+            {
+                "$inttime": "= intval($inttime) - 1;"
+            },
+            {
+                "$inttime": "= date('d');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day and stat_date< CURRENT_DATE()\";"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "//": "关联表"
+            },
+            {
+                "$arrtime[]": "= date('d', strtotime(\"-$inttime day\", time()));"
+            },
+            {
+                "for": "($i = 0; $i < 7; $i++) {"
+            },
+            {
+                "$inttime": "= 7;"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 7 day and stat_date< CURRENT_DATE()\";"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$arrtime[] = date(\"0$i": "00\");"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$arrtime[] = date(\"$i": "00\");"
+            },
+            {
+                "if": "($i > 9) {"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "$fixed": "= \" )a GROUP BY  stat_date ORDER BY stat_date   \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 1 day  and stat_date<CURRENT_DATE() \";"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId \";"
+            },
+            {
+                "and": "vehicleNo IN (SELECT vehicleNo FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype'  )"
+            },
+            {
+                "alarmtypename": "in"
+            },
+            {
+                "SELECT  DATE_FORMAT(stat_date,'%H": "00')  AS stat_date FROM api_breakdowns_hour"
+            },
+            {
+                "$sql": "= \"SELECT COUNT(1) AS cnt, stat_date FROM ("
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "$datatype": "= $request->get('timeType');"
+            },
+            {
+                "if": "($jj != null) {"
+            },
+            {
+                "$jj": "= $request->get('timeType');"
+            },
+            {
+                "$datatype": "= 0;"
+            },
+            {
+                "//": "确定时间参数"
+            },
+            {
+                "$fixed": "= \" )a GROUP BY  stat_date ORDER BY stat_date) b    \";"
+            },
+            {
+                "$depttype": "= 'lineDeptid';"
+            },
+            {
+                "if": "(empty($depttype)) {"
+            },
+            {
+                "//": "为了首页 只显示线路"
+            },
+            {
+                "$depttype": "= $request->get('depttype');"
+            },
+            {
+                "$deptid": "= $request->get('deptid');"
+            },
+            {
+                "//": "要查询的机构"
+            },
+            {
+                "$currentMonth": "= intval(DATE('n'));"
+            },
+            {
+                "//": "用作 limit, 只有在时间为今年的时候有"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId    \";"
+            },
+            {
+                "and": " vehicleno IN( SELECT vehicleno FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype'  )"
+            },
+            {
+                "SELECT": "total, stat_date AS stat_date FROM api_breakdowns WHERE alarmtypename in"
+            },
+            {
+                "SELECT": "SUM(total) AS cnt, stat_date FROM ("
+            },
+            {
+                "$sql": "= \"SELECT IFNULL(cnt,0) as cnt , date_format(stat_date,'%d') as stat_date FROM"
+            },
+            {
+                "//": "sql 头部"
+            },
+            {
+                "$breaktype": "= \"%\";"
+            },
+            {
+                "if": "(empty($breaktype)) {"
+            },
+            {
+                "$breaktype": "= $request->get('batteryAlarm');"
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"lineDeptId\";"
+            },
+            {
+                "case 4": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"groupDeptId\";"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"subCompanyDeptId\";"
+            },
+            {
+                "case 2": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"companyDeptId\";"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "case 0": ""
+            },
+            {
+                "switch": "($dept['level']) {"
+            },
+            {
+                "$deptlevel": "= null;"
+            },
+            {
+                "//": "确定用户等级机构参数"
+            },
+            {
+                "$dept = Mauth\\User": ":find(Auth::user()->user_id)"
+            },
+            {
+                "$dept['level']": "= 0;"
+            },
+            {
+                "//": "需要改回，"
+            },
+            {
+                "//": "判断用户等级"
+            },
+            {
+                "//": "针对司机"
+            },
+            {
+                "public": "function getBatteryAlarmData(\\Illuminate\\Http\\Request $request)"
+            },
+            {
+                "return": "$data;"
+            },
+            {
+                "'data'": "=> $records"
+            },
+            {
+                "'last_page'": "=> (int)ceil($total['total'] / $count),"
+            },
+            {
+                "'total'": "=> $total['total'],"
+            },
+            {
+                "'to'": "=> $offset + $count,"
+            },
+            {
+                "'per_page'": "=> $count,"
+            },
+            {
+                "'prev_page_url'": "=> '',"
+            },
+            {
+                "'next_page_url'": "=> '',"
+            },
+            {
+                "'from'": "=> $offset + 1,"
+            },
+            {
+                "'current_page'": "=> $page,"
+            },
+            {
+                "$data": "= ["
+            },
+            {
+                "$records = (array)CacheUtil": ":getDataFromCacheOrDatabaseAndSetTime($selectSql . $sql, 20);"
+            },
+            {
+                "$sql": ".= \" limit $offset , $count\";"
+            },
+            {
+                "($page": "- 1);"
+            },
+            {
+                "$total = (array)CacheUtil": ":getDataFromCacheOrDatabase($countSql . $sql)[0];"
+            },
+            {
+                "$sql": ".= \"and\" . $dataconditon . $fixedcondition;"
+            },
+            {
+                "$sql": ".= \" where 1=1 )\";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$sql": ".= \" where  $depttype = '$deptid') \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "return": "$data;"
+            },
+            {
+                "'data'": "=> $records"
+            },
+            {
+                "'last_page'": "=> (int)ceil($total['total'] / $count),"
+            },
+            {
+                "'total'": "=> $total['total'],"
+            },
+            {
+                "'to'": "=> $offset + $count,"
+            },
+            {
+                "'per_page'": "=> $count,"
+            },
+            {
+                "'prev_page_url'": "=> '',"
+            },
+            {
+                "'next_page_url'": "=> '',"
+            },
+            {
+                "'from'": "=> $offset + 1,"
+            },
+            {
+                "'current_page'": "=> $page,"
+            },
+            {
+                "$data": "= ["
+            },
+            {
+                "$records = (array)CacheUtil": ":getDataFromCacheOrDatabaseAndSetTime($selectSql . $sql, 20);"
+            },
+            {
+                "$sql": ".= \" limit $offset , $count\";"
+            },
+            {
+                "($page": "- 1);"
+            },
+            {
+                "$total = (array)CacheUtil": ":getDataFromCacheOrDatabase($countSql . $sql)[0];"
+            },
+            {
+                "$sql": ".= \"and\" . $dataconditon . $fixedcondition;"
+            },
+            {
+                "$sql": ".= \" where $deptlevel=$id) \";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$sql": ".= \" where $deptlevel=$id and $depttype = '$deptid') \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "if": "($deptlevel != null) {"
+            },
+            {
+                "$fixedcondition = \"GROUP BY vehicleNo   ) a  INNER JOIN v_lineinfo c ON a.deptid=c.`lineDeptId` ORDER BY total DESC) d INNER JOIN (SELECT @r": "=0) b) m \";"
+            },
+            {
+                "stat_date<": "CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month - interval 1 year and"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval 1 month and stat_date< CURRENT_DATE() - interval day(CURRENT_DATE())-1 day \";"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 7 day and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$dataconditon": "= \" stat_date= CURRENT_DATE()-interval 1 day \";"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "//": "       $depttype=$params['depttype'];"
+            },
+            {
+                "//": " $deptid=$params['deptid'];"
+            },
+            {
+                "$depttype": "= $params['depttype'];"
+            },
+            {
+                "if": "(isset($params['depttype'])) {"
+            },
+            {
+                "$deptid": "= $params['deptid'];"
+            },
+            {
+                "if": "(isset($params['deptid'])) {"
+            },
+            {
+                "$datatype": "= $params['timeType'];"
+            },
+            {
+                "if": "(isset($params['timeType'])) {"
+            },
+            {
+                "$depttype": "= 'lineDeptid';"
+            },
+            {
+                "$datatype": "= 0;"
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"lineDeptId\";"
+            },
+            {
+                "case 4": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"groupDeptId\";"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"subCompanyDeptId\";"
+            },
+            {
+                "case 2": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"companyDeptId\";"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "case 0": ""
+            },
+            {
+                "switch": "($dept['level']) {"
+            },
+            {
+                "$deptlevel": "= null;"
+            },
+            {
+                "INNER": "JOIN v_lineinfo c ON b.deptId = c.lineDeptId  \";"
+            },
+            {
+                "and": "vehicleNo IN(SELECT vehicleNo FROM t_vehicleinfo b"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` )"
+            },
+            {
+                "(SELECT": "c.lineName,a.vehicleNo,a.total   as batterytimes FROM (SELECT deptid, vehicleNo, SUM(total) AS total  FROM api_breakdowns WHERE alarmtypename in"
+            },
+            {
+                "$sql": "= \" FROM ("
+            },
+            {
+                ")": "as total \";"
+            },
+            {
+                "$dept = Mauth\\User": ":find(Auth::user()->user_id)"
+            },
+            {
+                "$page = isset($params['page']) ? $params['page'] ": " 1;"
+            },
+            {
+                "$count = isset($params['count']) ? $params['count'] ": " 8;"
+            },
+            {
+                "public": "function getRecordsfromBatteryHighDangerRank($params)"
+            },
+            {
+                "return": "$ret;"
+            },
+            {
+                "$ret": "= $this->setJsonResponse(SUCCESS, $records);"
+            },
+            {
+                "$records": "= $this->addDeptHeader('beijing_battery_highdanger', $records, $this->params);//添加中英文表头"
+            },
+            {
+                "$records": "= $this->getRecordsfromBatteryHighDangerRank($this->params);//分页"
+            },
+            {
+                "public": "function getBatteryHighDangerRank(\\Illuminate\\Http\\Request $request){"
+            },
+            {
+                "return": "$returnStrArray;"
+            },
+            {
+                "$valueInfo->data": "=  array_values($value);"
+            },
+            {
+                "$valueInfo->name": "= $key;"
+            },
+            {
+                "$valueInfo": "= new \\stdClass();"
+            },
+            {
+                "foreach": "($returnStr as $key=>$value){"
+            },
+            {
+                "$returnStrArray": "= array();"
+            },
+            {
+                "foreach": "($dbResult as $item){"
+            },
+            {
+                "$returnStr": "= array();"
+            },
+            {
+                "$dbResult = DB": ":select($countSql);"
+            },
+            {
+                "GROUP": "BY vehicleNo,stat_date\";"
+            },
+            {
+                "and": "vehicleNo is not null"
+            },
+            {
+                "WHERE": "$depttype='$deptid' and stat_date  >= '$startEndTimeInfo[0]' AND stat_date < '$startEndTimeInfo[1]'"
+            },
+            {
+                "INNER": "JOIN t_mauth_dept tm ON abh.deptId = tm.lineDeptId"
+            },
+            {
+                "alarm": "ON abh.alarmtypename = alarm.alarmtypename"
+            },
+            {
+                "(SELECT": "alarmtypename FROM `t_vehiclebatteryalarmtype` WHERE parenttype LIKE '$breaktype')"
+            },
+            {
+                "FROM": "$tableStr abh INNER JOIN"
+            },
+            {
+                "$countSql": "= \"SELECT  vehicleNo as tname,sum(total) as cnt, stat_date"
+            },
+            {
+                "default": ""
+            },
+            {
+                "$tableStr": "= \"api_breakdowns_month\";"
+            },
+            {
+                "case 2": ""
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "$tableStr": "= \"api_breakdowns_hour\";"
+            },
+            {
+                "case 0": ""
+            },
+            {
+                "switch": "($startEndTimeInfo[3])"
+            },
+            {
+                "$tableStr": "= \"api_breakdowns\";"
+            },
+            {
+                "$startEndTimeInfo": "= $this->getStartEndTimeByTimeType($timeType,true);"
+            },
+            {
+                "$timeType": "= $data['timeType'];"
+            },
+            {
+                "$systmeType": "= $data['systemType'];"
+            },
+            {
+                "if": "(isset($data['systemType'])) {"
+            },
+            {
+                "$systmeType": "= '%';"
+            },
+            {
+                "$breaktype": "= $data['breaktype'];"
+            },
+            {
+                "if": "(isset($data['breaktype'])) {"
+            },
+            {
+                "$breaktype": "= '%';"
+            },
+            {
+                "$deptid": "= \"\";"
+            },
+            {
+                "$deptid": "= $vehicleInfo->vehicleNo;"
+            },
+            {
+                "if($vehicleInfo": "!= null){"
+            },
+            {
+                "$vehicleInfo = DB": ":table(\"t_vehicleinfo\")"
+            },
+            {
+                "$depttype": "= \"vehicleNo\";"
+            },
+            {
+                "if(\"deviceId\"": "== $depttype){"
+            },
+            {
+                "$deptid": "= $data['deptid'];"
+            },
+            {
+                "$depttype": "= $data['depttype'];"
+            },
+            {
+                "if": "(isset($data['depttype'])) {"
+            },
+            {
+                "$depttype": "= 'lineDeptid';"
+            },
+            {
+                "public": "function getRecordsCarBatteryAlarmTrends($data)"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $records);"
+            },
+            {
+                "//": "       $data=[$ret,$time];"
+            },
+            {
+                "//": "       $time=$this->getTimeFunction($timeType);"
+            },
+            {
+                "//": "      $timeType=$request->get('timeType');"
+            },
+            {
+                "return": "$this->setJsonResponse(REPEAT, $ret);"
+            },
+            {
+                "if": "(empty($ret)) {"
+            },
+            {
+                "$ret": "= $this->getRecordsCarBatteryAlarmTrends($this->params);"
+            },
+            {
+                "$middle[$i]": " = $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < 12; $i++) {"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "$middle[$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < $month; $i++) {"
+            },
+            {
+                "$month": "= date(\"m\");"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$middle[$i]": "= date('d', strtotime(\"-$k day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $days; $i++) {"
+            },
+            {
+                "$k": "= $k + $days - 1;"
+            },
+            {
+                "$days": "= intval($days);"
+            },
+            {
+                "$k": "= date(\"d\");"
+            },
+            {
+                "$days": "= date('t', strtotime(\"$y-$j-1\"));"
+            },
+            {
+                "$y": "= date(\"Y\");"
+            },
+            {
+                "$j": "= date(\"m\") - 1;"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$middle[$i]": "= $i;"
+            },
+            {
+                "for": "($i = 0; $i < $day; $i++) {"
+            },
+            {
+                "$day=(int)": "date('d');"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "$middle[$i]": "= date('d', strtotime(\"-$inttime day\", time()));"
+            },
+            {
+                "for": "($i = 0; $i < 7; $i++) {"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$middle[$i]": "= $i;"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "$datatype": "= $request->get('timeType');"
+            },
+            {
+                "if": "($jj != null) {"
+            },
+            {
+                "$jj": "= $request->get('timeType');"
+            },
+            {
+                "$datatype": "= 0;"
+            },
+            {
+                "'timeType' => 'required|in": "0,1,2,3,4,5', // 时间类型"
+            },
+            {
+                "'deptid'": "=> 'required', // 机构ID"
+            },
+            {
+                "//": "    'depttype' , // 机构类型"
+            },
+            {
+                "$rules": "= ["
+            },
+            {
+                "public": "function getCarAlarmTrendsBattery(\\Illuminate\\Http\\Request $request)"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $middle);"
+            },
+            {
+                "$middle['temp'][$key1]=": "$recordsArr['temp'][$key]  ;"
+            },
+            {
+                "$middle['volt'][$key1]=": "$recordsArr['volt'][$key]  ;"
+            },
+            {
+                "foreach": "($middle['time'] as $key1 => $val1) {"
+            },
+            {
+                "foreach": "($recordsArr['time'] as $key => $val) {"
+            },
+            {
+                "$recordsArr['time'][]": "= $records[$i]->stat_date;"
+            },
+            {
+                "$recordsArr['volt'][]": "= $records[$i]->volt;"
+            },
+            {
+                "$recordsArr['temp'][]": "= $records[$i]->temp;"
+            },
+            {
+                "for": "($i = 0; $i < $cnt; $i++) {"
+            },
+            {
+                "$recordsArr": "= [];"
+            },
+            {
+                "$cnt": "= count($records);"
+            },
+            {
+                "//return": "$this->setJsonResponse(REPEAT, $records);"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $middle);"
+            },
+            {
+                "$middle['temp'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['time'][$i-$firstDay]": "= $i+1;"
+            },
+            {
+                "for": "($i = $firstDay; $i < $days+$firstDay; $i++) {"
+            },
+            {
+                "$days": "= $starttime->diff($endtime)->days;"
+            },
+            {
+                "$endtime=new": "\\DateTime($enddate);"
+            },
+            {
+                "$starttime=new": "\\DateTime($startdate);"
+            },
+            {
+                "$dataconditon": "= \"  stat_date>='$startdate' and stat_date<='$enddate' \";"
+            },
+            {
+                "$enddate": "= $this->params['endDate'];"
+            },
+            {
+                "$startdate": "= $this->params['startDate'];"
+            },
+            {
+                "case 6": ""
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < 12; $i++) {"
+            },
+            {
+                "stat_date<": "CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month - interval 1 year and"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < $month; $i++) {"
+            },
+            {
+                "$month=(int)": "date('m');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$k day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $days; $i++) {"
+            },
+            {
+                "$k": "= $k + $days - 1;"
+            },
+            {
+                "$days": "= intval($days);"
+            },
+            {
+                "$k": "= date(\"d\");"
+            },
+            {
+                "$days": "= date('t', strtotime(\"$y-$j-1\"));"
+            },
+            {
+                "$y": "= date(\"Y\");"
+            },
+            {
+                "$j": "= date(\"m\") - 1;"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval 1 month and stat_date< CURRENT_DATE() - interval day(CURRENT_DATE())-1 day \";"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i;"
+            },
+            {
+                "for": "($i = 0; $i < $day; $i++) {"
+            },
+            {
+                "$day=(int)": "date('d');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$inttime day\", time()));"
+            },
+            {
+                "for": "($i = 0; $i < 7; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 7 day and stat_date< CURRENT_DATE()\";"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = $i.\"": "00\";"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = \"0\".$i.\"": "00\";"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$fixed": "= \"  group by hour \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date= CURRENT_DATE()-interval 1 day  \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, `hour`  AS stat_date FROM `stat_battery_analyse_voltandtemp_hour`  WHERE"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "if": "(empty($records)) {"
+            },
+            {
+                "$records = DB": ":select($sql);"
+            },
+            {
+                "$sql": ".= $fixedCondtion . \" and \" . $dataconditon . $fixed;"
+            },
+            {
+                "$fixedCondtion": "= \" where 1=1 )\";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$fixedCondtion": "= \" where  $depttype = '$deptid') \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $middle);"
+            },
+            {
+                "$middle['temp'][$key1]=": "$recordsArr['temp'][$key]  ;"
+            },
+            {
+                "$middle['volt'][$key1]=": "$recordsArr['volt'][$key]  ;"
+            },
+            {
+                "foreach": "($middle['time'] as $key1 => $val1) {"
+            },
+            {
+                "foreach": "($recordsArr['time'] as $key => $val) {"
+            },
+            {
+                "$recordsArr['time'][]": "= $records[$i]->stat_date;"
+            },
+            {
+                "$recordsArr['volt'][]": "= $records[$i]->volt;"
+            },
+            {
+                "$recordsArr['temp'][]": "= $records[$i]->temp;"
+            },
+            {
+                "for": "($i = 0; $i < $cnt; $i++) {"
+            },
+            {
+                "$recordsArr": "= [];"
+            },
+            {
+                "$cnt": "= count($records);"
+            },
+            {
+                "//": "return $this->setJsonResponse(REPEAT, $records);"
+            },
+            {
+                "return": "$this->setJsonResponse(SUCCESS, $middle);"
+            },
+            {
+                "$middle['temp'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['time'][$i-$firstDay]": "= $i+1;"
+            },
+            {
+                "for": "($i = $firstDay; $i < $days+$firstDay; $i++) {"
+            },
+            {
+                "$days": "= $starttime->diff($endtime)->days;"
+            },
+            {
+                "$endtime=new": "\\DateTime($enddate);"
+            },
+            {
+                "$starttime=new": "\\DateTime($startdate);"
+            },
+            {
+                "$dataconditon": "= \"  stat_date>='$startdate' and stat_date<='$enddate' \";"
+            },
+            {
+                "$enddate": "= $this->params['endDate'];"
+            },
+            {
+                "$startdate": "= $this->params['startDate'];"
+            },
+            {
+                "case 6": ""
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < 12; $i++) {"
+            },
+            {
+                "stat_date<": "CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month - interval 1 year and"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < $month; $i++) {"
+            },
+            {
+                "$month=(int)": "date('m');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$k day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $days; $i++) {"
+            },
+            {
+                "$k": "= $k + $days - 1;"
+            },
+            {
+                "$days": "= intval($days);"
+            },
+            {
+                "$k": "= date(\"d\");"
+            },
+            {
+                "$days": "= date('t', strtotime(\"$y-$j-1\"));"
+            },
+            {
+                "$y": "= date(\"Y\");"
+            },
+            {
+                "$j": "= date(\"m\") - 1;"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval 1 month and stat_date< CURRENT_DATE() - interval day(CURRENT_DATE())-1 day \";"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i;"
+            },
+            {
+                "for": "($i = 0; $i < $day; $i++) {"
+            },
+            {
+                "$day=(int)": "date('d');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$inttime day\", time()));"
+            },
+            {
+                "for": "($i = 0; $i < 7; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 7 day and stat_date< CURRENT_DATE()\";"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = $i.\"": "00\";"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = \"0\".$i.\"": "00\";"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$fixed": "= \"  group by hour \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date= CURRENT_DATE()-interval 1 day  \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, `hour`  AS stat_date FROM `stat_battery_analyse_voltandtemp_hour`  WHERE"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "if": "(empty($records)) {"
+            },
+            {
+                "$records = DB": ":select($sql);"
+            },
+            {
+                "$sql": ".= $fixedCondtion . \" and \" . $dataconditon . $fixed;"
+            },
+            {
+                "$fixedCondtion": "= \" where $deptlevel=$id) \";"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "$fixedCondtion": "= \" where $deptlevel=$id and $depttype = '$deptid') \";"
+            },
+            {
+                "if": "($deptid != null && $depttype != null) {"
+            },
+            {
+                "if": "($deptlevel != null) {"
+            },
+            {
+                "$middle['temp'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i-$firstDay]": "= '0';"
+            },
+            {
+                "$middle['time'][$i-$firstDay]": "= $i+1;"
+            },
+            {
+                "for": "($i = $firstDay; $i < $days+$firstDay; $i++) {"
+            },
+            {
+                "$days": "= $starttime->diff($endtime)->days;"
+            },
+            {
+                "$endtime=new": "\\DateTime($enddate);"
+            },
+            {
+                "$starttime=new": "\\DateTime($startdate);"
+            },
+            {
+                "$dataconditon": "= \"  stat_date>='$startdate' and stat_date<='$enddate' \";"
+            },
+            {
+                "$enddate": "= $this->params['endDate'];"
+            },
+            {
+                "$startdate": "= $this->params['startDate'];"
+            },
+            {
+                "case 6": ""
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < 12; $i++) {"
+            },
+            {
+                "stat_date<": "CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month - interval 1 year and"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 5": " // last year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i+1;"
+            },
+            {
+                "for": "($i = 0; $i < $month; $i++) {"
+            },
+            {
+                "$month=(int)": "date('m');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval month(CURRENT_DATE()) -1 month and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%m')  AS stat_date FROM `stat_battery_analyse_voltandtemp_month`  WHERE"
+            },
+            {
+                "case 4": " // this year"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$k day \", time()));"
+            },
+            {
+                "for": "($i = 0; $i < $days; $i++) {"
+            },
+            {
+                "$k": "= $k + $days - 1;"
+            },
+            {
+                "$days": "= intval($days);"
+            },
+            {
+                "$k": "= date(\"d\");"
+            },
+            {
+                "$days": "= date('t', strtotime(\"$y-$j-1\"));"
+            },
+            {
+                "$y": "= date(\"Y\");"
+            },
+            {
+                "$j": "= date(\"m\") - 1;"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day - interval 1 month and stat_date< CURRENT_DATE() - interval day(CURRENT_DATE())-1 day \";"
+            },
+            {
+                "case 3": "  // last month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= $i;"
+            },
+            {
+                "for": "($i = 0; $i < $day; $i++) {"
+            },
+            {
+                "$day=(int)": "date('d');"
+            },
+            {
+                "$dataconditon": "= \" stat_date>=CURRENT_DATE() - interval day(CURRENT_DATE())-1 day and stat_date< CURRENT_DATE() \";"
+            },
+            {
+                "case 2": "  // this month"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i]": "= date('d', strtotime(\"-$inttime day\", time()));"
+            },
+            {
+                "for": "($i = 0; $i < 7; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$dataconditon": "= \" stat_date>= CURRENT_DATE()-interval 7 day and stat_date< CURRENT_DATE()\";"
+            },
+            {
+                "case 1": "  // 7day"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = $i.\"": "00\";"
+            },
+            {
+                "$middle['temp'][$i]": "= '0';"
+            },
+            {
+                "$middle['volt'][$i]": "= '0';"
+            },
+            {
+                "$middle['time'][$i] = \"0\".$i.\"": "00\";"
+            },
+            {
+                "for": "($i = 0; $i < 24; $i++) {"
+            },
+            {
+                "$middle": "= [];"
+            },
+            {
+                "$fixed": "= \"  group by hour \";"
+            },
+            {
+                "$dataconditon": "= \" stat_date= CURRENT_DATE()-interval 1 day  \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, `hour`  AS stat_date FROM `stat_battery_analyse_voltandtemp_hour`  WHERE"
+            },
+            {
+                "case 0": " //last day"
+            },
+            {
+                "switch": "($datatype) {"
+            },
+            {
+                "$datatype": "= $request->get('timeType');"
+            },
+            {
+                "if": "($jj != null) {"
+            },
+            {
+                "$jj": "= $request->get('timeType');"
+            },
+            {
+                "$datatype": "= 0;"
+            },
+            {
+                "$depttype": "= 'lineDeptId';"
+            },
+            {
+                "if": "(empty($depttype)) {"
+            },
+            {
+                "//": "为了首页 只显示线路"
+            },
+            {
+                "$depttype": "= $request->get('depttype');"
+            },
+            {
+                "$deptid": "= $request->get('deptid');"
+            },
+            {
+                "$fixed": "= \" group by stat_date \";"
+            },
+            {
+                "deviceId": "IN (SELECT deviceid FROM t_vehicleinfo a INNER JOIN v_lineinfo b ON a.`deptId`=b.`lineDeptId` \";"
+            },
+            {
+                "$sql": "= \"SELECT ROUND(AVG(volt),0) AS volt, ROUND(AVG(temp),0) AS temp, DATE_FORMAT(stat_date,'%d')  AS stat_date FROM `stat_battery_analyse_voltandtemp_day`  WHERE"
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"lineDeptId\";"
+            },
+            {
+                "case 4": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"groupDeptId\";"
+            },
+            {
+                "case 3": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"subCompanyDeptId\";"
+            },
+            {
+                "case 2": ""
+            },
+            {
+                "$id": "= $dept['dept_id'];"
+            },
+            {
+                "$deptlevel": "= \"companyDeptId\";"
+            },
+            {
+                "case 1": ""
+            },
+            {
+                "case 0": ""
+            },
+            {
+                "switch": "($dept['level']) {"
+            },
+            {
+                "$deptlevel": "= null;"
+            },
+            {
+                "//": "确定用户等级机构参数"
+            },
+            {
+                "$dept = Mauth\\User": ":find(Auth::user()->user_id)"
+            },
+            {
+                "public": "function getMaxVoltTemp(\\Illuminate\\Http\\Request $request)"
+            },
+            {
+                "$this->params = Request": ":all();"
+            },
+            {
+                "public": "function __construct()"
+            },
+            {
+                "use": "TraitDeptDetailUtils;"
+            },
+            {
+                "class": "ApiBatteryStatisticController extends Controller"
+            },
+            {
+                "use": "App\\PdoCache\\CacheUtil;"
+            },
+            {
+                "use": "Request;"
+            },
+            {
+                "use": "Auth;"
+            },
+            {
+                "use": "DB;"
+            },
+            {
+                "use": "App\\Http\\Controllers\\Controller;"
+            },
+            {
+                "use": "App\\Models\\BussinessModels\\Mauth;"
+            },
+            {
+                "use": "App\\Traits\\TraitDeptDetailUtils;"
+            },
+            {
+                "namespace": "App\\Http\\Controllers\\Api;"
+            },
+            {
+                "Time": " 9:51"
+            },
+            {
+                "Date": " 2018/11/27"
+            },
+            {
+                "User": " 18204"
+            },
+            {
+                "Created": "by PhpStorm."
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "包含": "车牌号、签入时间、签出时间、设备编号"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "callAPI('statistic/getChaoSuDetail',": "queryParams, 4, callBack);"
+            },
+            {
+                "vm.head": "= ret.head;"
+            },
+            {
+                "vm.dataBody": "= ret.body;"
+            },
+            {
+                "let": "callBack = function (ret) {"
+            },
+            {
+                "startTime": " obtain_date,"
+            },
+            {
+                "endTime": "obtain_date,"
+            },
+            {
+                "startTime": "vm.isbegin_time,"
+            },
+            {
+                "vehicleNo": " obtain_vehicleNo,"
+            },
+            {
+                "count": " params.count(),"
+            },
+            {
+                "page": " params.page(),"
+            },
+            {
+                "let": "queryParams = {"
+            },
+            {
+                "getData": " function ($defer, params) {"
+            },
+            {
+                "},": "{"
+            },
+            {
+                "count": " count,"
+            },
+            {
+                "page": " page,"
+            },
+            {
+                "vm.ob_tableParams": "= new ngTableParams({"
+            },
+            {
+                "let": "obtain_date = data.begin_time;"
+            },
+            {
+                "let": "obtain_vehicleNo = data.vehicleNo;"
+            },
+            {
+                "vm.violationDetail": "= false;"
+            },
+            {
+                "vm.obt_tableShow": "= true;"
+            },
+            {
+                "vm.obtain_history": "= function (data) {"
+            },
+            {
+                "if": "(i >0) $(tr[i]).remove();"
+            },
+            {
+                "for": "(let i in tr){"
+            },
+            {
+                "let": "tr = $(\"#driverNostandarTable\").children().children().children();"
+            },
+            {
+                "vm.modalClick": "= function () {"
+            },
+            {
+                "groupName": " vm.groupName,companyName : vm.companyName,lineName: vm.lineName});"
+            },
+            {
+                "$scope.$broadcast('driverNoStanddetail-quzheng', {vehicleNo": " data.vehicleNo, beginTime: data.begin_time ,judgement: data.judgement,"
+            },
+            {
+                "vm.obtain_evidence": "= function (data) {"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "callAPI('statistic/getChaoSuDetail',": "queryParams, 4, callBack);"
+            },
+            {
+                "vm.head": "= ret.head;"
+            },
+            {
+                "vm.dataBody": "= ret.body;"
+            },
+            {
+                "let": "callBack = function (ret) {"
+            },
+            {
+                "startTime": " obtain_date,"
+            },
+            {
+                "endTime": "obtain_date,"
+            },
+            {
+                "startTime": "vm.isbegin_time,"
+            },
+            {
+                "vehicleNo": " obtain_vehicleNo,"
+            },
+            {
+                "count": " params.count(),"
+            },
+            {
+                "page": " params.page(),"
+            },
+            {
+                "let": "queryParams = {"
+            },
+            {
+                "getData": " function ($defer, params) {"
+            },
+            {
+                "},": "{"
+            },
+            {
+                "count": " count,"
+            },
+            {
+                "page": " page,"
+            },
+            {
+                "vm.ob_tableParams": "= new ngTableParams({"
+            },
+            {
+                "let": "obtain_date = data.begin_time;"
+            },
+            {
+                "let": "obtain_vehicleNo = data.vehicleNo;"
+            },
+            {
+                "vm.violationDetail": "= false;"
+            },
+            {
+                "vm.obt_tableShow": "= true;"
+            },
+            {
+                "vm.obtain_history": "= function (data) {"
+            },
+            {
+                "if": "(i >0) $(tr[i]).remove();"
+            },
+            {
+                "for": "(let i in tr){"
+            },
+            {
+                "let": "tr = $(\"#driverNostandarTable\").children().children().children();"
+            },
+            {
+                "vm.modalClick": "= function () {"
+            },
+            {
+                "groupName": " vm.groupName,companyName : vm.companyName,lineName: vm.lineName});"
+            },
+            {
+                "$scope.$broadcast('driverNoStanddetail-quzheng', {vehicleNo": " data.vehicleNo, beginTime: data.begin_time ,judgement: data.judgement,"
+            },
+            {
+                "vm.obtain_evidence": "= function (data) {"
+            },
+            {
+                "vm.waiting": "= false;"
+            },
+            {
+                "}).finally(function": "() {"
+            },
+            {
+                "vm.violationDetail": "= true;"
+            },
+            {
+                "vm.viewForm": "= false;"
+            },
+            {
+                "params.tablePageDisabled": "= false;"
+            },
+            {
+                "params.TF": "= true;"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "params.TF": "= false;"
+            },
+            {
+                "if": "(params.total2 == 0 && queryParams.page == 1) {"
+            },
+            {
+                "params.total2": "= data.flag;"
+            },
+            {
+                "params.length": " = data.data.length;"
+            },
+            {
+                "$HttpClient.getDriverActionDetail(queryParams).then(function": "(data) {"
+            },
+            {
+                "count": " params.count(),"
+            },
+            {
+                "page": " params.page(),"
+            },
+            {
+                "violationType": " vm.violationType,"
+            },
+            {
+                "endDate": " vm.selEndDate,"
+            },
+            {
+                "startDate": " vm.selStatDate,"
+            },
+            {
+                "driverId": " driverId,"
+            },
+            {
+                "let": "queryParams = {"
+            },
+            {
+                "params['tablePageDisabled']": "= true;"
+            },
+            {
+                "getData": " function ($defer, params) {"
+            },
+            {
+                "total": " 0,"
+            },
+            {
+                "},": "{"
+            },
+            {
+                "count": "count, // count per page"
+            },
+            {
+                "page": " page, // show first page"
+            },
+            {
+                "vm.detailTable=new": "ngTableParams({"
+            },
+            {
+                "vm.waitingDriverId": "= driverId;"
+            },
+            {
+                "vm.waiting": "= true;"
+            },
+            {
+                "vm.driver_id": "= driverId;"
+            },
+            {
+                "vm.sel_val": "= '';"
+            },
+            {
+                "vm.lineName": "= item.lineName.data;"
+            },
+            {
+                "vm.companyName": "= item.companyName.data;"
+            },
+            {
+                "}": "else {"
+            },
+            {
+                "vm.companyName": "= '无法获取总公司';"
+            },
+            {
+                "if": "(undefined === item.companyName) {"
+            },
+            {
+                "vm.groupName": "= item.groupName.data;"
+            },
+            {
+                "vm.getDetail": "=function (driverId,item) {"
+            },
+            {
+                "//": "chartAllViolation.setOption(chartAllViolationOption, true);"
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "//": "vm.zongxiang_driver = val.son;"
+            },
+            {
+                "vm.ZXXLCli": "= $($event.target);"
+            },
+            {
+                "vm.line_sel": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_line": "= val.son;"
+            },
+            {
+                "vm.ZXCDCli": "= $($event.target);"
+            },
+            {
+                "vm.cheduiSel": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_fen_son": "= val.son;"
+            },
+            {
+                "vm.ZXFGSCli": "= $($event.target);"
+            },
+            {
+                "vm.zongxiang_fen_company": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_office_son": "= val.son;"
+            },
+            {
+                "vm.ZXGSCli": "= $($event.target);"
+            },
+            {
+                "vm.zongxiang_company": "= function (val, id,$event) {"
+            },
+            {
+                "vm.driverList": "= data;"
+            },
+            {
+                "}).then(function": "(data) {"
+            },
+            {
+                "findVal": "vm.Vline.dept_id,"
+            },
+            {
+                "findKey": "'lineDeptId',"
+            },
+            {
+                "vm.getDriverList": "= function () {"
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsD=new": "ngTableParams({ },{"
+            },
+            {
+                "case 'driver'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsL=new": "ngTableParams({ },{"
+            },
+            {
+                "case 'line'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsG=new": "ngTableParams({},{"
+            },
+            {
+                "case 'group'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsS=new": "ngTableParams({},{"
+            },
+            {
+                "case 'subcompany'": ""
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "//": "vm.zongxiang_driver = val.son;"
+            },
+            {
+                "vm.ZXXLCli": "= $($event.target);"
+            },
+            {
+                "vm.line_sel": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_line": "= val.son;"
+            },
+            {
+                "vm.ZXCDCli": "= $($event.target);"
+            },
+            {
+                "vm.cheduiSel": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_fen_son": "= val.son;"
+            },
+            {
+                "vm.ZXFGSCli": "= $($event.target);"
+            },
+            {
+                "vm.zongxiang_fen_company": "= function (val, id,$event) {"
+            },
+            {
+                "'border-radius'": " '4px',"
+            },
+            {
+                "'color'": " 'white',"
+            },
+            {
+                "'padding'": " '5px 8px 4px 11px',"
+            },
+            {
+                "'background'": " '#4caf50',"
+            },
+            {
+                "'font-size'": " '14px',"
+            },
+            {
+                "vm.zongxiang_deptId": "= id;"
+            },
+            {
+                "vm.zongxiang_office_son": "= val.son;"
+            },
+            {
+                "vm.ZXGSCli": "= $($event.target);"
+            },
+            {
+                "vm.zongxiang_company": "= function (val, id,$event) {"
+            },
+            {
+                "vm.driverList": "= data;"
+            },
+            {
+                "}).then(function": "(data) {"
+            },
+            {
+                "findVal": "vm.Vline.dept_id,"
+            },
+            {
+                "findKey": "'lineDeptId',"
+            },
+            {
+                "vm.getDriverList": "= function () {"
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsD=new": "ngTableParams({ },{"
+            },
+            {
+                "case 'driver'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsL=new": "ngTableParams({ },{"
+            },
+            {
+                "case 'line'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsG=new": "ngTableParams({},{"
+            },
+            {
+                "case 'group'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsS=new": "ngTableParams({},{"
+            },
+            {
+                "case 'subcompany'": ""
+            },
+            {
+                "getData": " getDriverActionVCompareData"
+            },
+            {
+                "vm.VtableParamsC=new": "ngTableParams({},{"
+            },
+            {
+                "case 'company'": ""
+            },
+            {
+                "switch": "(vm.zongxiang_type) {"
+            },
+            {
+                "if": "(undefined === vm.Vstat_datEYear || '' === vm.Vstat_datEYear || null === vm.Vstat_datEYear) {"
+            },
+            {
+                "if": "( '' === vm.option_val ) {"
+            },
+            {
+                "vm.VqueryCompareData": "= function(){"
+            },
+            {
+                "vm.Hdetail": "= true;"
+            },
+            {
+                "if": "(null == vm.zongxiang_deptId || undefined == vm.zongxiang_deptId) {"
+            },
+            {
+                "vm.Hdetail": "= false;"
+            },
+            {
+                "vm.review2": "= function () {"
+            },
+            {
+                "vm.Hdetail": "= true;"
+            },
+            {
+                "if": "(null == vm.HdeptId || undefined == vm.HdeptId) {"
+            },
+            {
+                "vm.review": "= function () {"
+            },
+            {
+                "vm.zongxiang_showUL5": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "vm.zongxiang_type": "= 'driver';"
+            },
+            {
+                "case 'driver'": ""
+            },
+            {
+                "vm.zongxiang_showUL5": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "case 'line'": ""
+            },
+            {
+                "vm.zongxiang_showUL5": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "case 'group'": ""
+            },
+            {
+                "vm.zongxiang_showUL5": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= true;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "case 'subcompany'": ""
+            },
+            {
+                "vm.zongxiang_showUL5": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "case 'company'": ""
+            },
+            {
+                "switch": "(data) {"
+            },
+            {
+                "vm.zongxiangDataStatic": "= data;"
+            },
+            {
+                "vm.zongxiang_type": "= data;"
+            },
+            {
+                "if": "('' != vm.ZXSJCli) { //"
+            },
+            {
+                "if": "('' != vm.ZXXLCli) { //"
+            },
+            {
+                "if": "('' != vm.ZXCDCli) { //"
+            },
+            {
+                "if": "('' != vm.ZXFGSCli) { //"
+            },
+            {
+                "if": "('' != vm.ZXGSCli) { //"
+            },
+            {
+                "vm.zongxiang_deptId": "= null;"
+            },
+            {
+                "vm.zongxiang_click": "= function (data) {"
+            },
+            {
+                "vm.zongxiang_showUL5": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL4": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL3": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL2": "= false;"
+            },
+            {
+                "vm.zongxiang_showUL1": "= true;"
+            },
+            {
+                "vm.show_ul3": "= true;"
+            },
+            {
+                "vm.show_ul2": "= true;"
+            },
+            {
+                "vm.show_ul1": "= true;"
+            },
+            {
+                "case 'line'": ""
+            },
+            {
+                "vm.show_ul3": "= false;"
+            },
+            {
+                "vm.show_ul2": "= true;"
+            },
+            {
+                "vm.show_ul1": "= true;"
+            },
+            {
+                "case 'group'": ""
+            },
+            {
+                "vm.show_ul3": "= false;"
+            },
+            {
+                "vm.show_ul2": "= false;"
+            },
+            {
+                "vm.show_ul1": "= true;"
+            },
+            {
+                "case 'subcompany'": ""
+            },
+            {
+                "vm.show_ul3": "= false;"
+            },
+            {
+                "vm.show_ul2": "= false;"
+            },
+            {
+                "vm.show_ul1": "= false;"
+            },
+            {
+                "case 'company'": ""
+            },
+            {
+                "switch": "(data) {"
+            },
+            {
+                "vm.dataStatic=": "data;"
+            },
+            {
+                "vm.HselectWay": "= data;"
+            },
+            {
+                "vm.Hdetail": "= true;"
+            },
+            {
+                "if": "('' != vm.HXXlCli) { // 线路"
+            },
+            {
+                "if": "('' != vm.HXCDCli) { // 车队"
+            },
+            {
+                "if": "('' != vm.HXFGSCli) { // 分公司"
+            },
+            {
+                "if": "('' != vm.HXGSCli) { // 公司"
+            },
+            {
+                "vm.HdeptId": "= null;"
+            },
+            {
+                "vm.sel_one": "= function (data) {"
+            },
+            {
+                "}).finally(function": "() {"
+            },
+            {
+                "if(vm.Vdata.length": "<= 0){"
+            },
+            {
+                "vm.Vdate": "=  data;"
+            },
+            {
+                "vm.Vdata": "= data;"
+            },
+            {
+                "$HttpClient.getDriverActionVCompare(queryParams).then(function": "(data) {"
+            },
+            {
+                "stat_date": " vm.Vstat_datEYear,"
+            },
+            {
+                "ctype": " vm.option_val,"
+            },
+            {
+                "type": " vm.zongxiang_type,"
+            },
+            {
+                "dept_id": " vm.zongxiang_deptId,"
+            },
+            {
+                "var": "queryParams = {"
+            },
+            {
+                "// var date = vm.ctype == \"yearOnYear\" ? vm.Vstat_date_month ": " vm.Vstat_date_year;"
+            },
+            {
+                "var": "getDriverActionVCompareData = function($defer, params){"
+            },
+            {
+                "@return": "{Array}"
+            },
+            {
+                "@param": "{string} stat_date 时间"
+            },
+            {
+                "@param": "{string} ctype 比较规则"
+            },
+            {
+                "@param": "{string} type 类型"
+            },
+            {
+                "@param": "{string} dept_id id"
+            },
+            {
+                "@name": "api/statistic/driverActionVCompare 接口名称"
+            },
+            {
+                "@desc": "明细报表--考核报表"
+            }
+        ]
+    ]
+]

@@ -1,0 +1,20 @@
+{
+  "/COMMIT_MSG": {
+    "status": "A",
+    "lines_inserted": 9,
+    "size_delta": 415,
+    "size": 415
+  },
+  "public/heu_assets/component/analog-map/analog-map.component.js": {
+    "lines_inserted": 14,
+    "lines_deleted": 7,
+    "size_delta": 608,
+    "size": 18603
+  },
+  "public/heu_assets/component/analog-map/analog-map.template.html": {
+    "lines_inserted": 9,
+    "lines_deleted": 3,
+    "size_delta": 259,
+    "size": 14696
+  }
+}

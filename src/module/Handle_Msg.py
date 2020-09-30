@@ -1,55 +1,12 @@
-import requests
-import json
-from urllib.parse import quote
 import re
 
-class Web_api:
-    def __init__(self, pname, ip, port):  # ip = 111.42.40.137   port = 8083
-        self.proj_name = pname
-        base_ip = "http://" + ip + ":" + port
-        self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"}
-        self.login_url = base_ip + "/login/%2Fq%2Fstatus%3Aopen"
-        self.subproj_url = base_ip + "/changes/?O=81&S={}&n=25&q=project%3A{}"
-        self.detail_url = base_ip + "/changes/{}~{}/detail?O=516714"
-        self.files_url = base_ip + "/changes/{}~{}/revisions/{}/files"
-        self.session = None
 
-    def login(self):
-        account = {"username":"liuqingli", "password":"liuqingli"}
-        session = requests.session()
-        session.post(self.login_url, headers=self.headers, data=account)
-        return session
-
-    def deal_json(self, json_str):
-        return json.loads(json_str.split(")]}'")[-1])
-
-    def parse_url(self, url):
-        r = self.session.get(url)
-        if r.status_code == 200:
-            return r.content.decode()
-        return ""
-
-    def get_link_list(self, page = 0):
-        plink_list = []
-        while True:
-            p_url = self.subproj_url.format(page * 25, self.proj_name)
-            print("当前的url： ", p_url)
-            r, t_dict = self.deal_json(self.parse_url(p_url)), {}
-            if len(r) > 0:
-                temp_list = [{"id":i["id"], "subject":i["subject"], "number":i["_number"]} for i in r]
-                t_dict[page + 1] = temp_list
-                plink_list.append(t_dict)
-                page += 1
-            else:
-                break
-        return plink_list, page
-
-    def path_judge(self, file_path):
-        test_list = ["app/", "public/heu_assets/", "resources/views/alarm/"]
-        for t in test_list:
-            if t in file_path:
-                return True
-        return False
+class Handle_Msg:
+    def __init__(self, pre_content, content, type):
+        self.pre_content = pre_content
+        self.content = content
+        self.type = type
+        pass
 
     def judge_is_api(self, regex, cont):
         flag, find, is_flag = "", False, False
@@ -114,9 +71,7 @@ class Web_api:
             for code_str in cont:
                 if "url:" in code_str:
                     if "/api/" in code_str[code_str.index("url:") + 4: len(code_str)]:
-                        # print("code_str = ", code_str)
                         in_flag = True
-                        # print(in_flag)
                 for c in code_str:
                     if c == "(":
                         stack.append("(")
@@ -379,85 +334,34 @@ class Web_api:
             ans = self.get_api_msg(flag, pre_cont, cont, line, "in")
         return ans
 
-    def cache(self):
-        pass
+    # def run(self):
+    #     temp, linea, lineb = [], 0, 0
+    #     code_type = "js" if suffix == "js" else "php"
+    #     for cont in diff_data["content"]:
+    #         if "ab" in cont:  # 公共代码, 记录代码行号，同时记录
+    #             temp = cont["ab"]
+    #             length = len(temp)
+    #             linea += length
+    #             lineb += length
+    #         elif "a" in cont and "b" not in cont:  # 删除, 判断a, 记录代码行号
+    #             temp_save = self.judge_code(temp, cont["a"], code_type, regex_js, regex_php)
+    #             if len(temp_save) > 0:
+    #                 real_ans.append(temp_save)
+    #             linea += len(cont["a"])
+    #         elif "b" in cont and "a" not in cont:  # 新增，判断b，记录代码行号
+    #             temp_save = self.judge_code(temp, cont["b"], code_type, regex_js, regex_php)
+    #             if len(temp_save) > 0:
+    #                 real_ans.append(temp_save)
+    #             lineb += len(cont["b"])
+    #         else:  # 修改，调用删除，新增接口
+    #             temp_save = self.judge_code(temp, cont["a"], code_type, regex_js, regex_php)
+    #             if len(temp_save) > 0:
+    #                 real_ans.append(temp_save)
+    #             else:
+    #                 temp_save_two = self.judge_code(temp, cont["b"], code_type, regex_js,
+    #                                                 regex_php)
+    #                 if len(temp_save_two) > 0:
+    #                     real_ans.append(temp_save_two)
+    #             linea += len(cont["a"])
+    #             lineb += len(cont["b"])
 
-    # def save(self, plink_list):
-    #     with open("test.txt", "w", encoding="utf-8") as f:
-    #         f.write(json.dumps(plink_list, ensure_ascii=False, indent=2))
-    #     print("ok")
-
-    def run(self):
-        self.session = self.login() # 登陆
-        plink_list, pages = self.get_link_list()  # 获取所有的当前页面链接信息, 默认从第一页开始
-        # self.save(plink_list) # 测试
-        regex_js = re.compile(r"\bapi\.|(?<!\w)\$\.ajax(?!\w)|^\s*\$http(?!\w)")    # 将正则对象提前准备好，优化时间
-        regex_php = re.compile(r"\bpublic\s+function(?!\w)") #
-        real_ans, cache = [], []
-        # with open("analysis.json", "w", encoding="utf-8") as f:
-        #     f.write(json.dumps(plink_list, ensure_ascii=False, indent=4))
-        # print(plink_list)
-        for i, p in enumerate(plink_list):
-            for j in p[i + 1]:
-                detail_url = self.detail_url.format(self.proj_name, j["number"])
-                print("detail_url === ", detail_url)
-                # 获取patch个数
-                d_temp, detail = self.parse_url(detail_url), ""
-                if d_temp != "":
-                    detail = self.deal_json(d_temp)
-                    patchs = len(detail["revisions"])
-                    for patch in range(1, patchs + 1):  # 遍历每个patch
-                        files_url = self.files_url.format(self.proj_name, j["number"], patch)
-                        print("files_url === ", files_url)
-                        files = self.deal_json(self.parse_url(files_url))
-                        files_list = files.keys()
-                        for f in files_list:  # 遍历每个文件
-                            # print(f)
-                            suffix = f.split(".")[-1]
-                            if suffix in ["js", "php"]:
-                                if self.path_judge(f):
-                                    # print(files_url)
-                                    diff_url = files_url + "/{}/diff?context=ALL&intraline&whitespace=IGNORE_NONE".format(
-                                        quote(f, "utf-8"))
-                                    diff_data = self.deal_json(self.parse_url(diff_url))  # 开始获取diff数据
-                                    temp, linea, lineb = [], 0, 0
-                                    code_type = "js" if suffix == "js" else "php"
-                                    for cont in diff_data["content"]:
-                                        if "ab" in cont:  # 公共代码, 记录代码行号，同时记录
-                                            temp = cont["ab"]
-                                            length = len(temp)
-                                            linea += length
-                                            lineb += length
-                                        elif "a" in cont and "b" not in cont:  # 删除, 判断a, 记录代码行号
-                                            temp_save = self.judge_code(temp, cont["a"], code_type, regex_js, regex_php)
-                                            if len(temp_save) > 0:
-                                                real_ans.append(temp_save)
-                                            linea += len(cont["a"])
-                                        elif "b" in cont and "a" not in cont:  # 新增，判断b，记录代码行号
-                                            temp_save = self.judge_code(temp, cont["b"], code_type, regex_js, regex_php)
-                                            if len(temp_save) > 0:
-                                                real_ans.append(temp_save)
-                                            lineb += len(cont["b"])
-                                        else:  # 修改，调用删除，新增接口
-                                            temp_save = self.judge_code(temp, cont["a"], code_type, regex_js, regex_php)
-                                            if len(temp_save) > 0:
-                                                real_ans.append(temp_save)
-                                            else:
-                                                temp_save_two = self.judge_code(temp, cont["b"], code_type, regex_js,
-                                                                                regex_php)
-                                                if len(temp_save_two) > 0:
-                                                    real_ans.append(temp_save_two)
-                                            linea += len(cont["a"])
-                                            lineb += len(cont["b"])
-                else:
-                    break
-        with open("save.txt", "w", encoding="utf-8") as f:
-            f.write(json.dumps(real_ans, ensure_ascii=False, indent=4))
-
-        # 关于缓存，我个人的意见是把已经确定的文件链接进行标记（包含patch），然后每次遍历时可以防止重复从而减少时间，弄一个缓存文件
-
-if __name__ == "__main__":
-    web_api = Web_api("php_web_api_v0", "111.42.40.137", "8083")
-    print("开始运行！")
-    web_api.run()
-    print("运行结束！")

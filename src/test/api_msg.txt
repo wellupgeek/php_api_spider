@@ -1,0 +1,36 @@
+1. api.function
+    - 可能有注释，那么就直接获取分析注释即可
+    - 如果没有注释，我们也可以进行自主分析，不过没有注释给出的那么全
+    function名、参数
+/**
+* @desc xx
+* @name xxx
+* @param xxx
+* @return
+*/
+
+2. $.ajax
+    同上，有就找注释，没有自行生成
+    其内容信息在$.ajax(...)里面，url、data、type、dataType
+/**
+ * API: api/dataManagement/getNearDaysVehiclesByDriverId
+ * @name: 司机画像-驾驶员行车记录-回放车辆查询
+ * @author: 高伶
+ * @edittime: 2019-11-19
+ * @mode: get
+ *
+ * @param: \Http\Request $request （请求参数）
+ * parameter1: driverId,description:驾驶员Id
+ * parameter2: days,description:时间区间
+ * @return: \Illuminate\Http\JsonResponse|mixed
+ * @throws: \App\Exception\ParamException
+ */
+
+3. $http
+    同上，有注释选注释，没有则自行生成
+    $http()里面，method、url、params
+
+4. public function
+    同上
+    $rules = [...]里面, "xxx"
+    "xxx" => "yyy"

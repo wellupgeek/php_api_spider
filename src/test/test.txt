@@ -1,0 +1,2527 @@
+[
+  {
+    "1": [
+      {
+        "id": "php_web_api_v0~test~Ic1186e4ddf33f780f7cd32019e966a69c08a2bdf",
+        "subject": "VTF-1942 切换线路清空数据",
+        "number": 1207
+      },
+      {
+        "id": "php_web_api_v0~test~I7410ab781dc5c60576b6106d59af737ca967a7ca",
+        "subject": "VTF-1978  VTB-1154  VTF-1920  VTF-1961  首页，故障统计，报警汇总，违规行为设置；",
+        "number": 1208
+      },
+      {
+        "id": "php_web_api_v0~test~Ic208644388813253a43be13747185b38015998bc",
+        "subject": "VTF-1961",
+        "number": 1206
+      },
+      {
+        "id": "php_web_api_v0~test~Ie746ab99f0161ee175f3a03d80cc678b4f570215",
+        "subject": "VTF-1954 修改上一版的bug，查询该线路下无数据的车辆今年与去年数据报错",
+        "number": 1205
+      },
+      {
+        "id": "php_web_api_v0~test~Iaa91a2b0565d0c8e632a14ef01b9cfa8093064dc",
+        "subject": "VTF-1983 修改驾驶员违规分数top5未显示趋势图的问题 VTF-1954 修改上一版的bug，查询该线路下无数据的车辆今年与去年数据报错",
+        "number": 1204
+      },
+      {
+        "id": "php_web_api_v0~test~Iabee982466e3a710c23834eb91a010bf18c9b588",
+        "subject": "VTF-1954 优化耗时Api接口getMilesTrend",
+        "number": 1200
+      },
+      {
+        "id": "php_web_api_v0~test~Ie1a17573501a04d11ddbc9221a3cd6743bd67b80",
+        "subject": "VTF-1860",
+        "number": 1203
+      },
+      {
+        "id": "php_web_api_v0~test~Ic01e63b9ce6e9846a98c3b18a64cc338d76f1127",
+        "subject": "VTF-1920  VTF-1967  报警汇总，驾驶员违规，fix bug;",
+        "number": 1202
+      },
+      {
+        "id": "php_web_api_v0~test~I657f83875a63d8970b7d208b42b8845b09e4302a",
+        "subject": "VTF-1943 提示在没进入页面之前提示(提示过早)",
+        "number": 1201
+      },
+      {
+        "id": "php_web_api_v0~test~I2382266de0e7e15186c55cd4469019966097dc64",
+        "subject": "VTF-1945 模拟地图增加已选中的线路",
+        "number": 1199
+      },
+      {
+        "id": "php_web_api_v0~test~Ifb6fbb9958cc9327b2446f1be1584f4ac001bc5a",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1198
+      },
+      {
+        "id": "php_web_api_v0~test~Ib0fe338ca445e673072d3dec96e7a30072d9fa90",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1197
+      },
+      {
+        "id": "php_web_api_v0~test~I351556c51c42d2402540219b879ea0d57ee2396b",
+        "subject": "VTF-1966  VTF-1959  VTF-1920  VTF-1948  VTF-1938  VTF-1925  VTF-1921  VTF-1896  VTF-1847  页面配置设置，首页，违规行为设置，报警汇总；",
+        "number": 1196
+      },
+      {
+        "id": "php_web_api_v0~test~Id7f30c2856ad077338ce6ae83a4ce6d3bd821a3e",
+        "subject": "VTF-1600 增加api参数判断",
+        "number": 1190
+      },
+      {
+        "id": "php_web_api_v0~test~Ib5622eec15f213d13a3d277f596c5879eae8cbec",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1189
+      },
+      {
+        "id": "php_web_api_v0~test~I42415194ecf6218c0dcd662b17af0ed20c8ec3c6",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1188
+      },
+      {
+        "id": "php_web_api_v0~test~I242a3ae329744a21fda81acd1d0afd7d858089a4",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1187
+      },
+      {
+        "id": "php_web_api_v0~test~Ibea8f76cd984f896772e2b6f87719ab3432031cf",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1186
+      },
+      {
+        "id": "php_web_api_v0~test~I8f59cbdb8f57f2ef6653ffcbda455be75860248f",
+        "subject": "VTF-1969",
+        "number": 1195
+      },
+      {
+        "id": "php_web_api_v0~test~Ie9e936963f09ed4d92e985c18bbc029e897be537",
+        "subject": "VTF-1939",
+        "number": 1194
+      },
+      {
+        "id": "php_web_api_v0~test~Idf3de211e0eaca85f9949b10275e57b532713cc5",
+        "subject": "VTF-1940",
+        "number": 1193
+      },
+      {
+        "id": "php_web_api_v0~test~I04669ab1b504b29342321edfd62200ee4f5678ec",
+        "subject": "VTF-1940",
+        "number": 1192
+      },
+      {
+        "id": "php_web_api_v0~test~Ia24d9c30dabcb91dab6260ad0fef694d6e44fd79",
+        "subject": "VTF-1946",
+        "number": 1191
+      },
+      {
+        "id": "php_web_api_v0~test~I52612239bbff49f48c7eb3bd90aac4d7e0703e8d",
+        "subject": "VTF-1913",
+        "number": 1184
+      },
+      {
+        "id": "php_web_api_v0~test~I7b8633ac9b1ce86a2fd15a3b9dbf4d07b5803223",
+        "subject": "VTF-1814",
+        "number": 1179
+      }
+    ]
+  },
+  {
+    "2": [
+      {
+        "id": "php_web_api_v0~test~I81c4342716bd094e66a6802a1511532270a42f14",
+        "subject": "VTF-1920  VTF-1938  VTF-1831  VTF-1864  VTF-1870  VTF-1873  VTF-1921  VTF-1934  报警汇总、违规设置、fix bug;",
+        "number": 1185
+      },
+      {
+        "id": "php_web_api_v0~test~I35dd7373f54b894d160787b4f701575047964ac2",
+        "subject": "VTF-1916 驾驶员综合评价中增加提示",
+        "number": 1183
+      },
+      {
+        "id": "php_web_api_v0~test~I50961fd1fea689428216fcbbe49254101052bc55",
+        "subject": "VTF-1661 取消勾选车辆增加review操作",
+        "number": 1181
+      },
+      {
+        "id": "php_web_api_v0~test~I6b2cac9ae24a8e53b34670c9b6de7a68d6f3fe19",
+        "subject": "VTF-1916 驾驶员综合评价高级查询没有提示语问题",
+        "number": 1182
+      },
+      {
+        "id": "php_web_api_v0~test~I03801deb63594beb4db6aa58fa531f851cee3a5e",
+        "subject": "VTF-1879 实时地图适配车辆上下线",
+        "number": 1178
+      },
+      {
+        "id": "php_web_api_v0~test~Ie0a24d20790bd5c058a2e6e7913f366a3d194635",
+        "subject": "VTB-1049 修改",
+        "number": 1177
+      },
+      {
+        "id": "php_web_api_v0~test~I071119ffed71820c2cf960c5d2760ccefefce965",
+        "subject": "VTF-1860",
+        "number": 1175
+      },
+      {
+        "id": "php_web_api_v0~test~I02908e6042e9bf3a700f35282668466bc3357bd2",
+        "subject": "VTF-1860",
+        "number": 1173
+      },
+      {
+        "id": "php_web_api_v0~test~I737e168ae9f63a73e66aea1d6daf4c194f56d90b",
+        "subject": "VTF-1831  违规设置",
+        "number": 1171
+      },
+      {
+        "id": "php_web_api_v0~test~I976e2371b363bb9a31d230c0d4482d9e6d851b94",
+        "subject": "VTF-1847  VTF-1727  车辆画像-故障列表",
+        "number": 1170
+      },
+      {
+        "id": "php_web_api_v0~test~I8a044f416bf290f683e88b668eb26f45b5f65ac1",
+        "subject": "VTF-1860",
+        "number": 1168
+      },
+      {
+        "id": "php_web_api_v0~test~I978d1c338bf94f88a41264afd33ab42a5972a362",
+        "subject": "VTF-1860 违规接口",
+        "number": 1155
+      },
+      {
+        "id": "php_web_api_v0~test~I54ddb6451995029b709f3a3904b7f1ac369b5c30",
+        "subject": "VTF-1839 车辆画像->行车图表，导出报错",
+        "number": 1166
+      },
+      {
+        "id": "php_web_api_v0~test~I6888fe863f193b023deb759523e86258dc010223",
+        "subject": "VTF-1833 api测试用例编写以及添加接口注释",
+        "number": 1169
+      },
+      {
+        "id": "php_web_api_v0~test~Ica16feda7fc5bd92e1b3e7f96c07e057d89b0194",
+        "subject": "VTF-1848 限速问题修改",
+        "number": 1167
+      },
+      {
+        "id": "php_web_api_v0~test~I366c6eb9db1a4a2ede7adaabee2c27d3d7526c6d",
+        "subject": "VTF-1837 比例图跳转",
+        "number": 1165
+      },
+      {
+        "id": "php_web_api_v0~test~I257dbfc0c2c46e719b23e2e2a59241fe806eadf1",
+        "subject": "VTF-1867 ,VTF-1869 ， VTF-1872 ，VTF-1874 车辆能耗统计修改",
+        "number": 1164
+      },
+      {
+        "id": "php_web_api_v0~test~I2ecd2fdd4d5c5722ddbf0730166ee1c0cf4b1543",
+        "subject": "VTF-1837 比例图跳转",
+        "number": 1148
+      },
+      {
+        "id": "php_web_api_v0~test~If3082ce26c4c39de8ccd6a7fa70d8f3bc1099071",
+        "subject": "VTF-1851  VTF-1853  驾驶员行为设置，报表导出，站点违规；",
+        "number": 1159
+      },
+      {
+        "id": "php_web_api_v0~test~I4edb7b997e2ecf2a308cf3ada2f4550b64739c1f",
+        "subject": "VTF-1862 线路画像，能耗里程时间居中",
+        "number": 1163
+      },
+      {
+        "id": "php_web_api_v0~test~I7352756db5a9558b98eeefd981fdee332cd4445b",
+        "subject": "VTF-1868 能耗时间居中",
+        "number": 1162
+      },
+      {
+        "id": "php_web_api_v0~test~Ieec7c2353058ddfee3d8bff422d0eaee1e98edd7",
+        "subject": "VTF-1811 报警设置新需求",
+        "number": 1161
+      },
+      {
+        "id": "php_web_api_v0~test~I0aed09be9a2b67861d17124c62402cfaeb3ba566",
+        "subject": "VTF-1856 模拟地图任务修改",
+        "number": 1160
+      },
+      {
+        "id": "php_web_api_v0~test~I277d82abde2967fb76ef106537b26bf80e708cbe",
+        "subject": "VTF-1855 数据管理-线路信息管理-导出站点信息表格增加“总公司、分公司、车队、线路”字段",
+        "number": 1158
+      },
+      {
+        "id": "php_web_api_v0~fix-bug-master-08%2F25~Ib5ff7d2cc6f227f764d0d56ff0d5166ad48084c4",
+        "subject": "VTB-1142",
+        "number": 1157
+      }
+    ]
+  },
+  {
+    "3": [
+      {
+        "id": "php_web_api_v0~test~Id242e430c4ee5c8c9325de2c4a7dbc36fd1dea91",
+        "subject": "VTF-1878 车辆能耗统计修改",
+        "number": 1156
+      },
+      {
+        "id": "php_web_api_v0~test~I6d41314a6e0decdd2ce6f1bd3fbdfdf5d893caf1",
+        "subject": "VTB-1138 接口优化",
+        "number": 1154
+      },
+      {
+        "id": "php_web_api_v0~test~Ie3609a45b8109eba6d0ef66953e656bd67bc6453",
+        "subject": "VTB-1139",
+        "number": 1151
+      },
+      {
+        "id": "php_web_api_v0~test~Ibf327c9cb482744114dce8da29f7f207487d740b",
+        "subject": "VTF-1833 Api测试用例编写以及Api接口注释",
+        "number": 1153
+      },
+      {
+        "id": "php_web_api_v0~test~I41bcd1d9c0f66d41f155fb0259e25c75eeee3c8a",
+        "subject": "测试提交",
+        "number": 1152
+      },
+      {
+        "id": "php_web_api_v0~test~Iae9bec1870a2d4b4f7c1e7e2fe746433a63498e1",
+        "subject": "VTF-1833 api测试用例编写",
+        "number": 1149
+      },
+      {
+        "id": "php_web_api_v0~test~If9a2458967795b8c3a50b98f8ab34cb5dcb697d9",
+        "subject": "VTF-1833 API测试用例编写",
+        "number": 1143
+      },
+      {
+        "id": "php_web_api_v0~test~I67a34d952627bb388c90d3c033a7bc0743223e82",
+        "subject": "VTF-1841、VTF-1842  驾驶员行为设置，违规设置fix bug;",
+        "number": 1147
+      },
+      {
+        "id": "php_web_api_v0~test~Ibe667629a850f681fc6cd86e1c5be0a31083676e",
+        "subject": "VTF-1823 修改整车监控车辆上下线对应的操作",
+        "number": 1145
+      },
+      {
+        "id": "php_web_api_v0~test~I0d68687a3340d819d00f6700df77b7a7f8bd738b",
+        "subject": "VTF-1836  VTF-1826  VTF-1815  VTF-1822  VTF-1825  VTF-1816  VTF-1812  VTF-1737  驾驶员违规、比例图跳转、报警汇总、界面样式优化、持续报警、报表导出；fix bug;",
+        "number": 1144
+      },
+      {
+        "id": "php_web_api_v0~test~I1eb6b11bab4a541b440a5722e88f8c4cd780e72b",
+        "subject": "报警汇总-新增今日按时间查询条件",
+        "number": 1142
+      },
+      {
+        "id": "php_web_api_v0~test~I110744fe7c4e82f45e88d3b17b6ed90e392ceff0",
+        "subject": "VTF-1750 自编号修改 VTF-1751 模拟地图车辆重叠修改",
+        "number": 1140
+      },
+      {
+        "id": "php_web_api_v0~test~I220a8763409090e9f41dd2c02a53a3ae25640143",
+        "subject": "VTF-1820 修改文案",
+        "number": 1139
+      },
+      {
+        "id": "php_web_api_v0~test~Idcd42a45ce0960f3d0d4fa306a2b690d236b6e20",
+        "subject": "VTF-1827 修改整车监控报警页面无法滑动的bug",
+        "number": 1138
+      },
+      {
+        "id": "php_web_api_v0~test~Iac4174b1ff1ef3fc5fea8de700a85381fadf59cb",
+        "subject": "VTF-1823 车辆级别的树切换到驾驶员级别后,机构节点可取消",
+        "number": 1137
+      },
+      {
+        "id": "php_web_api_v0~test~I5e6689a57e4322b5a78edaea90f3b91852de0aab",
+        "subject": "VTF-1742 线路能耗样式修改",
+        "number": 1132
+      },
+      {
+        "id": "php_web_api_v0~test~I14ec0c672b81d3f8bee44c08bc3e0efc48a4043c",
+        "subject": "VTF-1697 驾驶员行为设置页面修改",
+        "number": 1131
+      },
+      {
+        "id": "php_web_api_v0~test~I7ec606d8d622274bee1bdc1de39445f8d4fcc238",
+        "subject": "VTF-1772 黑点管理脏数据处理",
+        "number": 1130
+      },
+      {
+        "id": "php_web_api_v0~bug_fix_test~I11cee0605efa3d420f337af33a9040a9d13c785d",
+        "subject": "test",
+        "number": 1136
+      },
+      {
+        "id": "php_web_api_v0~master~I634ecd58bbdfcd91153524d8e437d56c82ab5c51",
+        "subject": "VTF-1814",
+        "number": 1135
+      },
+      {
+        "id": "php_web_api_v0~test~Ib1407e55d39414dc9d6f8a41ffbaa32d549e976d",
+        "subject": "VTF-1803",
+        "number": 1133
+      },
+      {
+        "id": "php_web_api_v0~test~I804756188f16930d15bb267439733579072b5d79",
+        "subject": "VTF-1767 违规bug修复",
+        "number": 1128
+      },
+      {
+        "id": "php_web_api_v0~test~I0cd4a8ef99b5ecca41bdf63bb28aab7cfc15fb6a",
+        "subject": "VTF-1751 回滚模拟地图代码",
+        "number": 1127
+      },
+      {
+        "id": "php_web_api_v0~test~I4b5d9ceffd3cfc173e0950e44efcd220c7e858b0",
+        "subject": "VTF-1755  VTF-1775  VTF-1802  VTF-1804  报警汇总，首页，考核报表，概况；",
+        "number": 1126
+      },
+      {
+        "id": "php_web_api_v0~test~I8211ccda7f114ddd4e0c8f1f5ec43b8864ce2332",
+        "subject": "调整整车监控小系统位置区分东莞/贵阳,适配1366*768分辨率",
+        "number": 1115
+      }
+    ]
+  },
+  {
+    "4": [
+      {
+        "id": "php_web_api_v0~test~Ib24fa073ee08cf79f1d3e2b71dfbdcd8c0f56de3",
+        "subject": "修复报警位置部分显示为-问题",
+        "number": 1123
+      },
+      {
+        "id": "php_web_api_v0~test~Ic1f2e64a7c0b8f82a77dc391ed1295365f4e2ff3",
+        "subject": "VTF-1800 违规统计->驾驶员违规，无驾驶员线路的违规趋势图、违规比例图、违规top5趋势图有值显示",
+        "number": 1124
+      },
+      {
+        "id": "php_web_api_v0~test~I4af5ea12be0c4bc5d369aa78359776ec9b407ad2",
+        "subject": "VTF-1795 解决车辆画像页面报错",
+        "number": 1125
+      },
+      {
+        "id": "php_web_api_v0~test~Icad0a421a6bf75f7be1c1caa4736929bb91bee07",
+        "subject": "VTF-1774 公司、分公司、车队添加时清空编辑操作赋值",
+        "number": 1119
+      },
+      {
+        "id": "php_web_api_v0~test~Ic9a44ef86f16f6149611c6d114b7283f69d68811",
+        "subject": "VTF-1773 黑点添加默认赋值选中线路",
+        "number": 1118
+      },
+      {
+        "id": "php_web_api_v0~test~Ifad06e1158d537f274bad18c935c9f704fe5a8c3",
+        "subject": "VTF-1751 修复模拟地图车辆重叠问题",
+        "number": 1117
+      },
+      {
+        "id": "php_web_api_v0~test~I50feb64628b85477cb43b1bf02e3601e119a1b59",
+        "subject": "VTF-1787",
+        "number": 1122
+      },
+      {
+        "id": "php_web_api_v0~test~I6aefe22e55d33e7deeeb61098cb390ef5464a4be",
+        "subject": "VTF-1787",
+        "number": 1113
+      },
+      {
+        "id": "php_web_api_v0~test~If8259a3903c90425f1b432402d7a646343209523",
+        "subject": "VTF-1767 报警汇总查询，导出bug修复",
+        "number": 1120
+      },
+      {
+        "id": "php_web_api_v0~test~I372173c87ab8e77e2704423df900a1e14b411c35",
+        "subject": "VTF-1170 行车曲线新增查询接口",
+        "number": 1116
+      },
+      {
+        "id": "php_web_api_v0~test~Ic42b04cde6fbf2b1dd847f7f6309e43d1e5c4bb7",
+        "subject": "VTF-1732  VTF-1744  VTF-1781  VTF-1783  VTF-1785  驾驶员违规、司机信息管理、站点违规、取证调整、报警解决方案;",
+        "number": 1114
+      },
+      {
+        "id": "php_web_api_v0~test~I456645e53195361f0664d6d1851be11c7f216d17",
+        "subject": "VTF-1170 冲突",
+        "number": 1109
+      },
+      {
+        "id": "php_web_api_v0~test~Ifb6c2b7a1313961d04d6d545d4c97e0a0fdc0e1e",
+        "subject": "VTF-1766 模拟地图详情样式",
+        "number": 1108
+      },
+      {
+        "id": "php_web_api_v0~test~I823c55c19a854291f29b35af0f42e8102752d785",
+        "subject": "VTF-1754 车辆轨迹切换车辆再点击原车辆没有轨迹修复",
+        "number": 1107
+      },
+      {
+        "id": "php_web_api_v0~test~Iaa3f3623a4110ddae4bd7e6bca156ffd605e036e",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Iaa3f3623a4110ddae4bd7e6bca156ffd605e036e",
+        "number": 1106
+      },
+      {
+        "id": "php_web_api_v0~test~I68cb214a351dc78827be76ca9930fc10b4b85a7d",
+        "subject": "Merge branch 'test' of D:\\git\\gerrit\\php_web_api_v0 with conflicts.",
+        "number": 1105
+      },
+      {
+        "id": "php_web_api_v0~test~Ia41e491b4a4204a60ae9666fbe53cce3c85e3698",
+        "subject": "VTF-1743",
+        "number": 1112
+      },
+      {
+        "id": "php_web_api_v0~test~I4cdad888cd9c04785661fc6eeeb905c6b0abd70c",
+        "subject": "VTF-1743",
+        "number": 1111
+      },
+      {
+        "id": "php_web_api_v0~test~I1c00f36067d8accbf48947a7aa1ef3f940e53fef",
+        "subject": "VTF-1767",
+        "number": 1103
+      },
+      {
+        "id": "php_web_api_v0~test~I14eb2654ffa6d11a78690a559baff5b244d9c690",
+        "subject": "VTB-1111",
+        "number": 1102
+      },
+      {
+        "id": "php_web_api_v0~test~I6aa2d2f273c1bc099397bd9e1fc14838db36f59d",
+        "subject": "VTF-1734",
+        "number": 1110
+      },
+      {
+        "id": "php_web_api_v0~test~I73129532a2e15feb9198b2c2a0c8dd82ebced69e",
+        "subject": "VTB-1127 VTB-1129",
+        "number": 1093
+      },
+      {
+        "id": "php_web_api_v0~test~Ic03f925b958df292058bb73e4afe9dd03be1c9da",
+        "subject": "修改editusersetting api参数",
+        "number": 1101
+      },
+      {
+        "id": "php_web_api_v0~test~Iedcc5a7be2223c37487794131fcc3b378566ec83",
+        "subject": "VTB-1108 1109 1110 1111",
+        "number": 1100
+      },
+      {
+        "id": "php_web_api_v0~test~I17a99cd5ebee491a212e5c07f24d00ea11f561bb",
+        "subject": "去掉报警汇总alert",
+        "number": 1099
+      }
+    ]
+  },
+  {
+    "5": [
+      {
+        "id": "php_web_api_v0~test~I164df01e06e102c75ff0a0544572be9f8376accd",
+        "subject": "修复车辆跟踪车辆不定位的bug",
+        "number": 1098
+      },
+      {
+        "id": "php_web_api_v0~test~I052c2994f35a82323b695ad86b2fe4e89d367a47",
+        "subject": "VTF-1765 在没有主动安全系统的时候，默认选中小系统ecas",
+        "number": 1097
+      },
+      {
+        "id": "php_web_api_v0~test~I94affcf1080d31e18e51269b324f2e05fe809641",
+        "subject": "VTF-1757 解决无法正确获取设备号的bug，包括实时地图跳转，车辆跟踪的正常显示",
+        "number": 1096
+      },
+      {
+        "id": "php_web_api_v0~test~Ie02407af3872216009cec96848a325bb0abbca4a",
+        "subject": "修复实时地图车辆不可见的bug",
+        "number": 1095
+      },
+      {
+        "id": "php_web_api_v0~test~I44302d9de950bc95cf5e483cc40e818abb32cd35",
+        "subject": "VTF-1755  报警汇总",
+        "number": 1094
+      },
+      {
+        "id": "php_web_api_v0~test~If3d4ce78f4f46e8287b933f918a65b80f365c7ff",
+        "subject": "VTB-1127",
+        "number": 1088
+      },
+      {
+        "id": "php_web_api_v0~test~I22a254b0353286d687660523c6bfe71f9ad92aec",
+        "subject": "VTB-1108 1109 1110 1111",
+        "number": 1090
+      },
+      {
+        "id": "php_web_api_v0~test~I168840ce58d317dfcdf8bfe396349d9f5fe979e3",
+        "subject": "VTF-1742 tab样式修改",
+        "number": 1087
+      },
+      {
+        "id": "php_web_api_v0~test~I8d6c052570ed539229fae4693547bed9d1019ae8",
+        "subject": "VTF-1738 修改车辆信息页面样式",
+        "number": 1086
+      },
+      {
+        "id": "php_web_api_v0~test~Ic855a0468d7733395323975636dfe1fa6a3001e9",
+        "subject": "VTF-1676  状态量;",
+        "number": 1092
+      },
+      {
+        "id": "php_web_api_v0~test~Ib58f6ac6061044ae673ffee90ea4207faee7cc9e",
+        "subject": "VTF-1596 报警设置等级修改",
+        "number": 1063
+      },
+      {
+        "id": "php_web_api_v0~test~I1bf8dfa1363a04a07b200fb2caf0ee8124648475",
+        "subject": "VTB-1115 取证添加站点信息",
+        "number": 1091
+      },
+      {
+        "id": "php_web_api_v0~test~Ia008d2ae2b2a802d471dc3d3d87a1b8655ac09b6",
+        "subject": "VTF-1545",
+        "number": 1085
+      },
+      {
+        "id": "php_web_api_v0~test~I146dc844839a3a615a4bfa6d364b3c79c6ca0fc4",
+        "subject": "VTF-1755  VTF-1749  报警汇总，首页；",
+        "number": 1089
+      },
+      {
+        "id": "php_web_api_v0~test~Ibf80fbb1153e31a32227927fd339df5a7288840d",
+        "subject": "需求待定版本--违规汇总数据",
+        "number": 1064
+      },
+      {
+        "id": "php_web_api_v0~test~I636de020cd70009761c1e22e1714a293bf0d34af",
+        "subject": "VTF-340 修改经纬度计算方式",
+        "number": 1084
+      },
+      {
+        "id": "php_web_api_v0~test~Iab32aa45814be2fc1836b003769619a074f22f0f",
+        "subject": "VTF-340 增加超速打点gps，按照id排序",
+        "number": 1083
+      },
+      {
+        "id": "php_web_api_v0~test~Ibb002d5ffd33c46d2983a8b2d9190a0bbe0029da",
+        "subject": "VTF-1725  报表导出",
+        "number": 1062
+      },
+      {
+        "id": "php_web_api_v0~test~Iaecb741b722d046a024267d58f25758a13952df7",
+        "subject": "VTF-1728",
+        "number": 1082
+      },
+      {
+        "id": "php_web_api_v0~test~I34ee7225c8d1a2529085c4e054ffecfa8a0f5213",
+        "subject": "VTF-340 超速GPS打点修正bug",
+        "number": 1081
+      },
+      {
+        "id": "php_web_api_v0~test~I25fd3c8de3fb5a9d84d3490ca50f7a31ddc62841",
+        "subject": "VTF-1728",
+        "number": 1061
+      },
+      {
+        "id": "php_web_api_v0~test~I49814e5d260a90f855e72c7c689e1f188bd0ef71",
+        "subject": "单体电池温度偏移量判断出错的bug",
+        "number": 1060
+      },
+      {
+        "id": "php_web_api_v0~test~Ib0d766209a23259eb892cd15f451f7f69b39af56",
+        "subject": "VTB-1108 修改组织机构树，增加公司标识返回",
+        "number": 1059
+      },
+      {
+        "id": "php_web_api_v0~test~Ib64354c163e6f051d46d5f78f47752554d1690e4",
+        "subject": "VTF-1453 json文件改为主动推送更新，使用位置不关心更新",
+        "number": 1058
+      },
+      {
+        "id": "php_web_api_v0~test~I726c90e330477cf9e2d187f193d465ccb5075a1f",
+        "subject": "VTF-340 增加超速GPS打点接口",
+        "number": 1057
+      }
+    ]
+  },
+  {
+    "6": [
+      {
+        "id": "php_web_api_v0~test~Ifa5db0e489a543b8309baf80fdf38d444bfe9534",
+        "subject": "VTB-1108 修改deptList2接口增加company_sign返回",
+        "number": 1044
+      },
+      {
+        "id": "php_web_api_v0~test~Ic6d23f6e0c7a50fd3abd12e86a1597c7579e3c6c",
+        "subject": "VTF-1706 修改一次性获取大小系统分类状态量模拟量，==获取用户开关量",
+        "number": 1043
+      },
+      {
+        "id": "php_web_api_v0~test~I27f5aba8a8646eaeda68afbfdf1e21c8be1426b4",
+        "subject": "VTF-1453 大小系统切换json文件接口变化",
+        "number": 1032
+      },
+      {
+        "id": "php_web_api_v0~test~I8d7b30ab83f946f0abe1a52c309017de74f72170",
+        "subject": "VTF-1733  考核报表;",
+        "number": 1056
+      },
+      {
+        "id": "php_web_api_v0~test~I4ee60e23765e70f7afd3fa3ac03dff27913b8785",
+        "subject": "VTF-1699  能耗明细优化;",
+        "number": 1039
+      },
+      {
+        "id": "php_web_api_v0~test~Ic751212415c1161e501b20deec755f895e6f9065",
+        "subject": "VTF-1682 概括类扩展百分比",
+        "number": 1049
+      },
+      {
+        "id": "php_web_api_v0~test~If26a251e087835670e0b9b962ca6c1256ecfec00",
+        "subject": "VTF-1729 修复线路画像-故障分析不显示分页",
+        "number": 1054
+      },
+      {
+        "id": "php_web_api_v0~test~Iab3712d333fb8d76c6c279a19dc9062297f6ed87",
+        "subject": "VTF-1735 首页报警统计数据与详情数据不统一问题修复",
+        "number": 1055
+      },
+      {
+        "id": "php_web_api_v0~test~Ic846dae82b5a09d2bc49b7b2a367126b493ad1dd",
+        "subject": "需求待定版本--故障汇总数据",
+        "number": 1050
+      },
+      {
+        "id": "php_web_api_v0~test~I5041d9a6f4b2b52cb419b5c66f52da1014c5e676",
+        "subject": "VTF-1722 整车监控,雷达系统动画不可见的bug",
+        "number": 1047
+      },
+      {
+        "id": "php_web_api_v0~test~Ife81178a44ff3e67af7c11a7b53e43295d0117db",
+        "subject": "VTF-1724",
+        "number": 1052
+      },
+      {
+        "id": "php_web_api_v0~test~I20906277d0f3913891b9596dfd50fdee14c4cb55",
+        "subject": "VTB-1116 修改编辑报警级别接口，传值为空则删除该报警级别",
+        "number": 1051
+      },
+      {
+        "id": "php_web_api_v0~test~I1852ecf790b64cf5779fa999a345e721e9113b3c",
+        "subject": "VTF-1705",
+        "number": 1048
+      },
+      {
+        "id": "php_web_api_v0~test~I5a802a8faa71dac130312ac811d9209b1301ccbb",
+        "subject": "VTB-1066 热力图数据获取接口修改",
+        "number": 1046
+      },
+      {
+        "id": "php_web_api_v0~test~I440f652b2d200cd789b05093a5f41611258ad612",
+        "subject": "VTF-1664 明细报表->报表导出，故障明细导出文档增加一列“报警发送位置”",
+        "number": 1045
+      },
+      {
+        "id": "php_web_api_v0~test~I2d4f33a0b713287e11a465672e833a4a3e430074",
+        "subject": "VTB-1106,VTB-1105",
+        "number": 1029
+      },
+      {
+        "id": "php_web_api_v0~test~Ie902f9a978d16f2ec6544eb41d0cf7201467f780",
+        "subject": "VTB-1099",
+        "number": 1042
+      },
+      {
+        "id": "php_web_api_v0~test~I13e158cdd49c3eb2fe25791652c63875c4e84757",
+        "subject": "VTF-1698 VTF-1703 VTF-1704 VTF-1705",
+        "number": 1038
+      },
+      {
+        "id": "php_web_api_v0~test~Ia0bc552f77a2f0cbd16ff0354ccd1409fc803a3a",
+        "subject": "VTF-1698",
+        "number": 1034
+      },
+      {
+        "id": "php_web_api_v0~test~Ie753cd134318fcbe96d94462a63d6a3f79ab3c76",
+        "subject": "VTF-1702 主从站权限",
+        "number": 1037
+      },
+      {
+        "id": "php_web_api_v0~test~I2ffffc1304c76da9cae068189ba34a1dd003bd1a",
+        "subject": "VTF-1697 调整驾驶员行为设置页面布局",
+        "number": 1036
+      },
+      {
+        "id": "php_web_api_v0~test~I819ba0a790cc9fc836d05bd5c150d6fcc7aa9f10",
+        "subject": "VTF-1702 主从站权限判断",
+        "number": 1035
+      },
+      {
+        "id": "php_web_api_v0~test~I894327dbe3d81b78362c1de3253d5f3ae56bbc0b",
+        "subject": "测试用例",
+        "number": 1031
+      },
+      {
+        "id": "php_web_api_v0~test~I20a2bbe4631623744feb5cda1bc6804f6147f509",
+        "subject": "VTF-1633 微信号报警详情新增报警解决方案",
+        "number": 1026
+      },
+      {
+        "id": "php_web_api_v0~test~I99e749718a9e4da3c60b50b789d1a216539963ff",
+        "subject": "VTF-1691 修改车辆信息class名称",
+        "number": 1024
+      }
+    ]
+  },
+  {
+    "7": [
+      {
+        "id": "php_web_api_v0~test~I0e19f8f2296458ec8acc65b3dfe9c994ec540a86",
+        "subject": "VTF-1669  VTF-1666  VTF-1565  首页，报表导出,站点违规;",
+        "number": 1030
+      },
+      {
+        "id": "php_web_api_v0~test~I2940e041d2159ff1c4e04eafbf7b5d537401cf54",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 1028
+      },
+      {
+        "id": "php_web_api_v0~test~I6fd18ff13e0e43d0e6646a78d8833b486eb493e8",
+        "subject": "z-tree修复bug 全局选中节点缓存的问题",
+        "number": 1027
+      },
+      {
+        "id": "php_web_api_v0~test~I1c8a4dbb1eb1923566d84df7a06fe582bae52b23",
+        "subject": "VTF-1657 修改取证获取数据接口，添加校验",
+        "number": 1025
+      },
+      {
+        "id": "php_web_api_v0~test~I7e5b522908f4ed2b4979fb3c9f72ba63e7c4807b",
+        "subject": "VTB-1101、VTF-1678、VTB-1102",
+        "number": 1023
+      },
+      {
+        "id": "php_web_api_v0~test~I661bb4a723a7b0008e8b9b636a3968a9837d663e",
+        "subject": "VTF-1666   报表导出",
+        "number": 1017
+      },
+      {
+        "id": "php_web_api_v0~test~I78ba83258b43aedd1724b399cbffbb2df0fc4013",
+        "subject": "VTF-1669  首页百分比显示;",
+        "number": 1022
+      },
+      {
+        "id": "php_web_api_v0~test~I375f4ea53e5c228d99aa18824f33613d561b1a46",
+        "subject": "VTF-1675  VTF-1676  后台程序状态记录,行车图表;",
+        "number": 1008
+      },
+      {
+        "id": "php_web_api_v0~test~Ifa26d3adf422c25998762bbd9fb528bcef4f2f39",
+        "subject": "VTF-1667 故障统计详情跳转失效",
+        "number": 1006
+      },
+      {
+        "id": "php_web_api_v0~test~Id44f73425f9d3a0a6f5f8279dee807424c92e432",
+        "subject": "z-tree修复bug",
+        "number": 1021
+      },
+      {
+        "id": "php_web_api_v0~test~I02879201921b9c03a0ad29fad64e4bb5b6713c89",
+        "subject": "VTB-1099",
+        "number": 1019
+      },
+      {
+        "id": "php_web_api_v0~test~If0a783b5e78056c51708f00ecf4da4fdbb031d1e",
+        "subject": "VTB-1101、VTF-1678、VTB-1102",
+        "number": 1020
+      },
+      {
+        "id": "php_web_api_v0~test~I8f8cbb24340e3b41b5e35d59b2d53ed913ae00ff",
+        "subject": "VTB-1092",
+        "number": 1016
+      },
+      {
+        "id": "php_web_api_v0~test~I1b43b651c2f8b7738b73cd308e506bc3177fa1ad",
+        "subject": "VTB-1092+报表导出：驾驶员违规",
+        "number": 1015
+      },
+      {
+        "id": "php_web_api_v0~test~I50a043448d63347057677bb7a65d288bc11e52fb",
+        "subject": "报表导出：故障-导出自定义时间bug",
+        "number": 1014
+      },
+      {
+        "id": "php_web_api_v0~test~I9d93e61a77743fc8c35a1fec052422619e2af4b3",
+        "subject": "报表导出：时间控件前后加等号",
+        "number": 1013
+      },
+      {
+        "id": "php_web_api_v0~test~Iad4d82702e16833f59a2c0d07957ba4c7b28b1e0",
+        "subject": "报表导出：时间控件前后加等号",
+        "number": 1012
+      },
+      {
+        "id": "php_web_api_v0~test~I0c975d7d786d1295758a32a8a73882b1fc6c46cd",
+        "subject": "报表导出：时间控件前后加等号",
+        "number": 1011
+      },
+      {
+        "id": "php_web_api_v0~test~Ic62f21065712d644db04314c81157136eabfab61",
+        "subject": "VTB-1098",
+        "number": 1007
+      },
+      {
+        "id": "php_web_api_v0~test~I1e438d1b9c07a49a1276957133259c4568a21154",
+        "subject": "VTB-1095",
+        "number": 1004
+      },
+      {
+        "id": "php_web_api_v0~test~Idb3984e8ded65c33395cdec15cce0251beec7e99",
+        "subject": "VTF-1666  报表导出;",
+        "number": 1005
+      },
+      {
+        "id": "php_web_api_v0~test~I42c633c924adf0a07c3b82a151f8803bcea7de99",
+        "subject": "VTF-1643 模拟地图调整最新样式，更改站点逻辑",
+        "number": 999
+      },
+      {
+        "id": "php_web_api_v0~test~Ica60cdcaefb7a35545f5955022dbfff9d7679b8f",
+        "subject": "VTB-1094",
+        "number": 1003
+      },
+      {
+        "id": "php_web_api_v0~test~I9ff3952b687fccbeacc765bde678ef32abef1661",
+        "subject": "VTF-1453 新增4个大小分类查询及修改接口",
+        "number": 1002
+      },
+      {
+        "id": "php_web_api_v0~test~I110de7fa6101df9902a125b66b6b3d19dbe7e22b",
+        "subject": "VTF-1092",
+        "number": 1001
+      }
+    ]
+  },
+  {
+    "8": [
+      {
+        "id": "php_web_api_v0~test~I56410e7a1b988be3ffaeacdec24c35b578d12cbf",
+        "subject": "VTF-1535",
+        "number": 1000
+      },
+      {
+        "id": "php_web_api_v0~test~I5e172e35364e172485b29b9808263ea742517ca7",
+        "subject": "VTB-1090  VTB-1089",
+        "number": 997
+      },
+      {
+        "id": "php_web_api_v0~test~I8a7c734ba3f34741ccccde3f2a60c8ffd9df3060",
+        "subject": "VTF-1622",
+        "number": 996
+      },
+      {
+        "id": "php_web_api_v0~test~Iae53a602e49819de36237703734a5aa15a12d416",
+        "subject": "VTB-1081  报表导出；",
+        "number": 998
+      },
+      {
+        "id": "php_web_api_v0~test~I7c9800cbc02282558944c4a45d829f37bf873881",
+        "subject": "VTF-1659 添加线路，车场为空时不传",
+        "number": 994
+      },
+      {
+        "id": "php_web_api_v0~test~I6af361a95d625385367d5bbc8257d767dea012b4",
+        "subject": "VTB-1066 热力图",
+        "number": 995
+      },
+      {
+        "id": "php_web_api_v0~test~I2935db12d86c385bb36e4d67b2c3782b5bcd970c",
+        "subject": "VTB-1066 热力图",
+        "number": 992
+      },
+      {
+        "id": "php_web_api_v0~test~I31e6785d8069da6ac21dc7b6cbfdbc4c0aee2f20",
+        "subject": "VTF-1649  驾驶员违规取证;",
+        "number": 991
+      },
+      {
+        "id": "php_web_api_v0~test~Ife745772b5258492181612e00e023c1762a7cc56",
+        "subject": "VTB-1088",
+        "number": 993
+      },
+      {
+        "id": "php_web_api_v0~test~I23b503f08f2ed68bc7ae01f35547c703c1d18b06",
+        "subject": "VTF-1655  VTB-1081  报表导出功能优化;",
+        "number": 989
+      },
+      {
+        "id": "php_web_api_v0~test~I87140c52af4e0827f7231d3f163a69ebf57e7d87",
+        "subject": "VTF-1651 VTF-1652 VTF-1653",
+        "number": 987
+      },
+      {
+        "id": "php_web_api_v0~test~I7799b460b22c0c3efcb0009f1b1f173c87ceaba6",
+        "subject": "VTF-1643 还原模拟画像代码",
+        "number": 986
+      },
+      {
+        "id": "php_web_api_v0~test~Id797f1b4936718cdc7e277541ef797936bf5be5f",
+        "subject": "VTF-339 超速分析",
+        "number": 985
+      },
+      {
+        "id": "php_web_api_v0~test~I39711473de33548846a7c5c541009591a1cb976a",
+        "subject": "VTB-1056 司机、车辆、线路画像注释修改",
+        "number": 984
+      },
+      {
+        "id": "php_web_api_v0~test~I3733a2e73247bb41a84e63818cf084717a6d53fd",
+        "subject": "VTF-1071 接口优化",
+        "number": 980
+      },
+      {
+        "id": "php_web_api_v0~test~I8dda49f3218ecadfaa64a76897b9f8b44aae4616",
+        "subject": "VTF-1071 接口优化",
+        "number": 979
+      },
+      {
+        "id": "php_web_api_v0~test~I53da377a2e184c5b8c85e4b5e0e1c8530859a79b",
+        "subject": "VTF-1636 设置中心-页面配置设置--超速分析配置功能",
+        "number": 982
+      },
+      {
+        "id": "php_web_api_v0~test~Ic09033a588292fd2bfe03db82f932dfbbdeae25c",
+        "subject": "VTB-1056 代码添加注释",
+        "number": 983
+      },
+      {
+        "id": "php_web_api_v0~test~I5865ce362767cb406bbf3816a63d4ce4565bef97",
+        "subject": "VTB-1056 线路、车辆、司机画像注释修改",
+        "number": 978
+      },
+      {
+        "id": "php_web_api_v0~test~Idaf578f31b0ce8a8600a5ec61f73b1dbd1b88acd",
+        "subject": "VTF-1620 还原代码",
+        "number": 968
+      },
+      {
+        "id": "php_web_api_v0~test~I8c9d0bf45790f10f3e43c0d32c47ac14b07cf70d",
+        "subject": "VTB-1059  VTF-339  报表导出，超速分析",
+        "number": 981
+      },
+      {
+        "id": "php_web_api_v0~test~I84bfe3f63cd1867b37d9302d5e4ddef100b7dd76",
+        "subject": "VTF-1572 模拟地图点击传参修改",
+        "number": 966
+      },
+      {
+        "id": "php_web_api_v0~test~I7ddee0a44093f067ae189327eaf2bc3878e985b8",
+        "subject": "VTF-1572 模拟地图点击传参修改",
+        "number": 967
+      },
+      {
+        "id": "php_web_api_v0~test~I4be325eb74760592668edee1551f864a49d6a742",
+        "subject": "VTB-1056 代码注释",
+        "number": 975
+      },
+      {
+        "id": "php_web_api_v0~test~Ic5cc7f90b6eec1bcea6c61a3a59b079c58e72c82",
+        "subject": "VTF-1572 调整赋值",
+        "number": 969
+      }
+    ]
+  },
+  {
+    "9": [
+      {
+        "id": "php_web_api_v0~test~I6851d1e4e6a758531e497564a423a791c141a9ce",
+        "subject": "VTF-1572 重写模拟地图",
+        "number": 962
+      },
+      {
+        "id": "php_web_api_v0~test~I29df3af7749c06e4c89a9ffaf8ca06a18a03e045",
+        "subject": "VTB-1056 数据管理注释",
+        "number": 977
+      },
+      {
+        "id": "php_web_api_v0~test~If3b5b829863943d8a2be6523676218ddc94defd7",
+        "subject": "VTF-1572 重写模拟画像解决冲突",
+        "number": 976
+      },
+      {
+        "id": "php_web_api_v0~test~Ia8051c618bf3da7e90c2eb2fb23f6f850bac92c6",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Ia8051c618bf3da7e90c2eb2fb23f6f850bac92c6",
+        "number": 961
+      },
+      {
+        "id": "php_web_api_v0~test~Ieb0855572145ea5e296f199ab3bcad45e8e4f044",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Ieb0855572145ea5e296f199ab3bcad45e8e4f044",
+        "number": 960
+      },
+      {
+        "id": "php_web_api_v0~test~I96fa26a222dcea08c7979d827cdd54b323e12e29",
+        "subject": "VTF-1614 公众号问题修改",
+        "number": 953
+      },
+      {
+        "id": "php_web_api_v0~test~I7aa2ebd08b0e4673d638d33a8234f4de958f91d1",
+        "subject": "VTF-1617 故障列表分页显示不全问题",
+        "number": 952
+      },
+      {
+        "id": "php_web_api_v0~test~I2db5914ff745e555c13d6d2ba2ce37dbfb809f03",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: I2db5914ff745e555c13d6d2ba2ce37dbfb809f03",
+        "number": 951
+      },
+      {
+        "id": "php_web_api_v0~test~Iac1d5ff7eb6b26451b6d59f26bd43a1f7dc549a9",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Iac1d5ff7eb6b26451b6d59f26bd43a1f7dc549a9",
+        "number": 950
+      },
+      {
+        "id": "php_web_api_v0~test~Ic994de847fd13b5c74138385fbd031f709cec352",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Ic994de847fd13b5c74138385fbd031f709cec352",
+        "number": 949
+      },
+      {
+        "id": "php_web_api_v0~test~Idacea7ce2041cd0133b4fbcfc73d1cdc79eaae35",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Idacea7ce2041cd0133b4fbcfc73d1cdc79eaae35",
+        "number": 948
+      },
+      {
+        "id": "php_web_api_v0~test~I28b339cd574bcd9ca0f6a641c5549017c5832210",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: I28b339cd574bcd9ca0f6a641c5549017c5832210",
+        "number": 947
+      },
+      {
+        "id": "php_web_api_v0~test~I7847660c269a964d099196945be0265d155d7e49",
+        "subject": "VTB-1056 司机画像，违规、能耗、故障统计 注释",
+        "number": 946
+      },
+      {
+        "id": "php_web_api_v0~test~Ic07d74a44a68263201c625ba4b27057d9f1f694e",
+        "subject": "VTF-1621  VTF-1635  VTB-1070  车辆违章，能耗明细，站点违规;",
+        "number": 973
+      },
+      {
+        "id": "php_web_api_v0~test~Ic2a325a0d064ebd6adb40862606a1cc930fc8bab",
+        "subject": "VTB-1066 热力图数据提供",
+        "number": 964
+      },
+      {
+        "id": "php_web_api_v0~test~I76dc1ce311d62d19dd4393a9c8fd3efeac27d400",
+        "subject": "VTB-1066 热力图数据提供",
+        "number": 963
+      },
+      {
+        "id": "php_web_api_v0~test~I3caeb5f28a5642fd5fb3a2ee8589fc1acafa593b",
+        "subject": "VTB-1066 热力图数据提供",
+        "number": 956
+      },
+      {
+        "id": "php_web_api_v0~test~I83f153c9af0a1d0e38d3b96894d451e83ec5f5b1",
+        "subject": "VTF-1619  报表导出样式优化;",
+        "number": 959
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ia6fcd9959606ae7540e3d62bcbcbfeae8da2e1dd",
+        "subject": "VTF-976 beijing修改音效预加载",
+        "number": 907
+      },
+      {
+        "id": "php_web_api_v0~test~I384a0a1f72ecea62d35c94ec756adf7f2e62a1c0",
+        "subject": "VTF-1619  VTF-1623  VTF-1626  VTF-1627  VTF-1628  VTF-1629  样式修改，fix bug；",
+        "number": 958
+      },
+      {
+        "id": "php_web_api_v0~test~I0fd75dbf51cad2fe408957b9ea762b8271e221db",
+        "subject": "VTB-1059  报表导出",
+        "number": 957
+      },
+      {
+        "id": "php_web_api_v0~test~If72fe9d7efa4cbd9cc1fec6c4f4e2cfd60475b0b",
+        "subject": "fix bug",
+        "number": 955
+      },
+      {
+        "id": "php_web_api_v0~test~I9398b3b0b55609477c6e650e8da22894b60f4ddc",
+        "subject": "fix bug",
+        "number": 954
+      },
+      {
+        "id": "php_web_api_v0~test~I5e77a758aead39c071237586a372ff68caae9280",
+        "subject": "VTF-1612 报表导出-站点违规支持分公司、车队，修改异常",
+        "number": 941
+      },
+      {
+        "id": "php_web_api_v0~test~Id17deb9c751a3ef3b5201329b53af33e4a2d91ad",
+        "subject": "VTB-940 test删除线路时判断是否存在司机",
+        "number": 936
+      }
+    ]
+  },
+  {
+    "10": [
+      {
+        "id": "php_web_api_v0~test~I5f97375f97c45e25263f210f0171e65d9dba4837",
+        "subject": "VTF-1612 报表导出--站点违规添加分公司、车队支持",
+        "number": 933
+      },
+      {
+        "id": "php_web_api_v0~test~I0e7de46dc1620c6eb76fba39003270381b6cce96",
+        "subject": "VTF-1499 用户管理修改用户名与手机号唯一约束",
+        "number": 935
+      },
+      {
+        "id": "php_web_api_v0~test~Ibe5682780bdc3ec1ec4790fa1bd3bcba64126362",
+        "subject": "fix bug",
+        "number": 937
+      },
+      {
+        "id": "php_web_api_v0~test~I9907cb17ffb99eff4772dca69b643f28a0dc57fa",
+        "subject": "VTB-1056 车辆画像接口注释",
+        "number": 927
+      },
+      {
+        "id": "php_web_api_v0~test~I8abd87152ff9c47734812f2de407625344c8bf71",
+        "subject": "VTF-1524 更换导出接口，修改传参",
+        "number": 932
+      },
+      {
+        "id": "php_web_api_v0~test~Ia4cb3607139cbe9d0f90ad1b8bc3f48185a96dba",
+        "subject": "VTB-1056 司机画像，违规、能耗、故障统计 注释",
+        "number": 934
+      },
+      {
+        "id": "php_web_api_v0~test~I9c932e752eac13759f91434cb1b69d096cd159a7",
+        "subject": "VTF-1524 车辆画像-故障列表添加导出功能",
+        "number": 931
+      },
+      {
+        "id": "php_web_api_v0~test~Ic4862d1ba301a3818c69fe085a8d8520efd2fdac",
+        "subject": "报表导出bug",
+        "number": 930
+      },
+      {
+        "id": "php_web_api_v0~test~I6964a447bd811c501cb498e99f9df3c04252d393",
+        "subject": "VTB-1063 增加系统入口,使其他系统能平滑跳转",
+        "number": 928
+      },
+      {
+        "id": "php_web_api_v0~test~Iadd3bd2b68fc587e4283b4bbf6495d6e2565966c",
+        "subject": "VTB-1056 线路画像接口注释",
+        "number": 926
+      },
+      {
+        "id": "php_web_api_v0~test~I320d93acffc2dd87394aeca9119d409913411613",
+        "subject": "VTF-1571 点击线路获取线路车辆类型，默认选择一个有效车型",
+        "number": 923
+      },
+      {
+        "id": "php_web_api_v0~test~I4f76307536c6d21041652208736943f036022b47",
+        "subject": "VTF-1591 添加异常开车门显示数据",
+        "number": 911
+      },
+      {
+        "id": "php_web_api_v0~test~Ia9adf4bdce2433ac14586e14a807bb41b5c53b29",
+        "subject": "VTF-1583 修改html表格组件为<table-group></table-group>",
+        "number": 910
+      },
+      {
+        "id": "php_web_api_v0~test~Ib67f08687da1f98c3773fb4aa43490e03d436208",
+        "subject": "VTF-1549 电池画像高级查询和快速查询相同日期时的查询结果不同问题修复",
+        "number": 924
+      },
+      {
+        "id": "php_web_api_v0~test~I8277806baa4f9e17e32bdab2d5398a96afd660ba",
+        "subject": "车辆违章导出默认全部",
+        "number": 922
+      },
+      {
+        "id": "php_web_api_v0~test~Ie97258ccbe29de54b4fb0d02a01a5fd0b8b3ac42",
+        "subject": "VTB-1059  VTB-1057  报表导出， 注释;",
+        "number": 919
+      },
+      {
+        "id": "php_web_api_v0~test~Ib158745ee82144fd2376817d838f272a78ea085d",
+        "subject": "VTF-1593 编辑用户提示用户已存在",
+        "number": 918
+      },
+      {
+        "id": "php_web_api_v0~test~I1f63e847d8df4d2718b7089e810c06ab5894dd30",
+        "subject": "报表导出相关bug",
+        "number": 916
+      },
+      {
+        "id": "php_web_api_v0~test~Ica87d24ca353563042b7ed122801f3f769242a82",
+        "subject": "VTF-1586 电池画像折线图修复",
+        "number": 914
+      },
+      {
+        "id": "php_web_api_v0~test~I99c2f731bb087899b2745be177d9b915412d92c8",
+        "subject": "VTF-1589 添加获取线路车型分类接口",
+        "number": 913
+      },
+      {
+        "id": "php_web_api_v0~test~Ib0b0c12baae142a429cd51399025d07a88efc502",
+        "subject": "VTF-1580 修复明细报表->报警汇总，导出数据中全部是一般未显示严重问题",
+        "number": 912
+      },
+      {
+        "id": "php_web_api_v0~test~I2cda7e2a5da13943cba45e1ad93f201b32901e26",
+        "subject": "VTF-1451 getZhiZhan接口返回异常设置deptid默认值-1",
+        "number": 908
+      },
+      {
+        "id": "php_web_api_v0~test~I72d18bd18dd9e35db283ce793ffbeaff23f8ff95",
+        "subject": "VTF-1201 修复站点违规统计没有数据异常",
+        "number": 897
+      },
+      {
+        "id": "php_web_api_v0~test~I1867c69c758f3db9b500e1df7d308e5c8047c597",
+        "subject": "VTF-1535",
+        "number": 901
+      },
+      {
+        "id": "php_web_api_v0~test~I22c31fb023af7eb05f5b9d43eacf84dfd09b82f8",
+        "subject": "VTF-1584 用户管理修改功能增加用户名及手机号唯一约束",
+        "number": 900
+      }
+    ]
+  },
+  {
+    "11": [
+      {
+        "id": "php_web_api_v0~test~Ic6fab0657e9c75d264af67e46a385dd836e98205",
+        "subject": "VTF-1528 高级查询导出与查询数据量不一致修复",
+        "number": 899
+      },
+      {
+        "id": "php_web_api_v0~test~Ia9b9e12cda358d373e24bfc9447d14ea5e05de3a",
+        "subject": "VTF-860 gps为0数据过滤逻辑恢复",
+        "number": 898
+      },
+      {
+        "id": "php_web_api_v0~test~I4523865fc7055ebc38bbd4e7cbe8b7e70f9b4f41",
+        "subject": "VTF-1531 修复线路站点导出站点类型没有转成汉字问题",
+        "number": 896
+      },
+      {
+        "id": "php_web_api_v0~test~I12927d1285ab19534fe986e799d731365cbbecdd",
+        "subject": "VTF-1568 司机画像-综合评价添加时间段查询",
+        "number": 905
+      },
+      {
+        "id": "php_web_api_v0~test~I4ad13eccf3c26bbc01723327d080b900f9f1ad22",
+        "subject": "VTF-1341 车辆基本信息区分",
+        "number": 904
+      },
+      {
+        "id": "php_web_api_v0~test~I501da739cfb5f7985673617efe8600f548cbfa2b",
+        "subject": "VTF-1579 添加功能接口添加参数",
+        "number": 903
+      },
+      {
+        "id": "php_web_api_v0~test~I51a5f86dbaef2663704a2e6bf99f9e1a5748dcbb",
+        "subject": "VTF-1583 页面初始只调用发车计划接口",
+        "number": 902
+      },
+      {
+        "id": "php_web_api_v0~test~I2733b8ee9562c8293895a909ed82703ad3d7ca42",
+        "subject": "VTF-1519 修改线路里程趋势图中“昨天”，显示天返回数据",
+        "number": 893
+      },
+      {
+        "id": "php_web_api_v0~test~I7f69b3e070fa4d50dee54e2f62151341222675a5",
+        "subject": "VTB-1049",
+        "number": 894
+      },
+      {
+        "id": "php_web_api_v0~test~I5e19988ef3b46eeaa524dffcc1c0d1b55f3d5007",
+        "subject": "VTF-1573",
+        "number": 889
+      },
+      {
+        "id": "php_web_api_v0~test~Ifeceb9db9f169d2335f26f6b458149f08c231a79",
+        "subject": "VTF-860 gps为0数据过滤逻辑取消",
+        "number": 888
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I36247e8fca07a34851d4817bbf617d7c34dbc1c8",
+        "subject": "VTF-1549",
+        "number": 886
+      },
+      {
+        "id": "php_web_api_v0~test~I0be14f99f68663951423c4eb593993ba9f01ff7c",
+        "subject": "VTF-1575 修改按钮一直加载状态",
+        "number": 890
+      },
+      {
+        "id": "php_web_api_v0~test~I9e56ddc0315afad5dfd6a5d2d356f7fa6f3fa65f",
+        "subject": "VTF-1563 修复yun环境间隔1天获取历史数据计算问题",
+        "number": 885
+      },
+      {
+        "id": "php_web_api_v0~test~I1b0317eae4ec211a447b96152a8832d1f55ca6eb",
+        "subject": "VTF-1576 VTB-1040",
+        "number": 884
+      },
+      {
+        "id": "php_web_api_v0~test~Ia739fca32d45ad5fc35f58e4ee19b7328491ed79",
+        "subject": "VTF-1444",
+        "number": 863
+      },
+      {
+        "id": "php_web_api_v0~test~If3141092a19e04519caed6b1623d41617c8678bd",
+        "subject": "VTF-1549",
+        "number": 883
+      },
+      {
+        "id": "php_web_api_v0~test~Ib9f023e232030f3ecdc86d131ebdeaaccb9f2b65",
+        "subject": "VTF-1549",
+        "number": 882
+      },
+      {
+        "id": "php_web_api_v0~test~Ib8da69025c71b7404232fa52af5d4cf710b57775",
+        "subject": "VTF-1562 用户管理新增时，添加手机号使用提示",
+        "number": 880
+      },
+      {
+        "id": "php_web_api_v0~test~I11184a39d8e7e9c9660af98a18f76b1f5779fd94",
+        "subject": "VTF-1542 VTF-1547 修复站点违规相关bug",
+        "number": 879
+      },
+      {
+        "id": "php_web_api_v0~test~Ie9ef3f80a67e42368e1060e09729b0771c60e33f",
+        "subject": "VTF-1499 VTF-1537 VTF-1532  fix bug",
+        "number": 872
+      },
+      {
+        "id": "php_web_api_v0~test~Ib7c94351e6d92c047a5cbd1682e6351a8f973cbd",
+        "subject": "VTF-976 严重报警音效改为预加载",
+        "number": 871
+      },
+      {
+        "id": "php_web_api_v0~test~I6bb131fe15fa383a22b248619f677aa2ab356fcc",
+        "subject": "VTF-1081 东莞新修改ecas系统页面判断规则,修改部分样式",
+        "number": 870
+      },
+      {
+        "id": "php_web_api_v0~test~I7bed8a7e540fdf5f8b597bdc9e131ae931e6046f",
+        "subject": "VTF-1523 车辆画像-故障列表 分页功能",
+        "number": 869
+      },
+      {
+        "id": "php_web_api_v0~test~I51ed380af9ef182b5bb2fda551e12423c1c63322",
+        "subject": "VTB-1030 real-map权限限制调整",
+        "number": 860
+      }
+    ]
+  },
+  {
+    "12": [
+      {
+        "id": "php_web_api_v0~test~I59594d4a72b0c09e9cfffc93f3e1c20fd33818f1",
+        "subject": "VTF-1523 车辆画像-故障列表 分页功能",
+        "number": 864
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ie2a9d9f8a5b1e755164a267550cb33d41cf42746",
+        "subject": "VTF-1510  VTF-1231",
+        "number": 862
+      },
+      {
+        "id": "php_web_api_v0~test~I9389f7d6508fd099c41a01cd082685ce6aaff0ef",
+        "subject": "VTF-1521  VTF-1515",
+        "number": 855
+      },
+      {
+        "id": "php_web_api_v0~test~I1920ceb6986fbf7d1abf6c028e52532fcca8e816",
+        "subject": "VTF-1540 排序页面增加高度,增加滚动条",
+        "number": 857
+      },
+      {
+        "id": "php_web_api_v0~test~I14f7b9e8bca085c10383b7091bd5ba5702d9eb50",
+        "subject": "VTF-1506 东莞调整仪表盘地图大小,调整表格文字大小",
+        "number": 854
+      },
+      {
+        "id": "php_web_api_v0~test~Id2f4d52e212d6e3ab4069e35f08f460da0f6febb",
+        "subject": "VTF-1492 VTF-1516",
+        "number": 852
+      },
+      {
+        "id": "php_web_api_v0~test~Ibe60b4185b7e83d8b8cc8d31e8e6f3db8665bdea",
+        "subject": "VTB-1041 故障推送模块-新增获取账号机构下全部角色",
+        "number": 851
+      },
+      {
+        "id": "php_web_api_v0~test~I097892687a5ecddf32be8444463e806ea79e60b3",
+        "subject": "VTF-1469 解决线路画像→黑点统计排名接口响应时间过长",
+        "number": 804
+      },
+      {
+        "id": "php_web_api_v0~test~I8fb558a3b95f6202454853fc66d233dcb7165692",
+        "subject": "VTF-1516",
+        "number": 848
+      },
+      {
+        "id": "php_web_api_v0~test~Ie21805535f3ac12e04a154cf0e404f0d0c439af6",
+        "subject": "VTB-1033 超速分析地图显示有白边",
+        "number": 845
+      },
+      {
+        "id": "php_web_api_v0~test~Idb519e23ee91023f98d9b71bd0e8816e64d0d9df",
+        "subject": "VTF-1519  VTF-1538 数据优化，gulp.js 优化；fix  bug;",
+        "number": 849
+      },
+      {
+        "id": "php_web_api_v0~test~I7402a360efc1577118b4a8f2c122f332a89be317",
+        "subject": "VTF-1505 角色管理弹出框抬头文案修改",
+        "number": 844
+      },
+      {
+        "id": "php_web_api_v0~test~I05206b744330087ab0de92b8a254120292a6dfcb",
+        "subject": "VTF-1505 角色管理弹出框抬头文案修改",
+        "number": 843
+      },
+      {
+        "id": "php_web_api_v0~test~I68996dd0d33f0010a8a46c589b3f4c4f0470661b",
+        "subject": "VTF-1426",
+        "number": 836
+      },
+      {
+        "id": "php_web_api_v0~test~I38f23ba734f05e8e43b2bc7beee56893840356a4",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 847
+      },
+      {
+        "id": "php_web_api_v0~test~Ibdd8994fdcea44107cca492c3b9016eb5ed78758",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 846
+      },
+      {
+        "id": "php_web_api_v0~test~Id2c83430116ab953efac7b59ee7dcdd1cdf8f14e",
+        "subject": "VTB-639 里程趋势图,能耗趋势图按照小时显示风格不一致",
+        "number": 841
+      },
+      {
+        "id": "php_web_api_v0~test~I32da974a4b012626ba72310ce1fd765ca5086e3f",
+        "subject": "VTF-1525  东莞修改实时地图车辆选中的bug",
+        "number": 838
+      },
+      {
+        "id": "php_web_api_v0~test~I027cd8ef26944229860e347314ff488df303284c",
+        "subject": "VTF-1508  故障分析优化；",
+        "number": 835
+      },
+      {
+        "id": "php_web_api_v0~test~If690bbd0401584f8f811b30757a57072f8103765",
+        "subject": "VTF-1488 报表导出点击明细后页面无数据",
+        "number": 830
+      },
+      {
+        "id": "php_web_api_v0~test~I9dd8f8e30c7e4e6019ead65104047bf0c5c75718",
+        "subject": "VTF-1480",
+        "number": 825
+      },
+      {
+        "id": "php_web_api_v0~test~I742a857048021ab6827333e59b41b6aba99463f5",
+        "subject": "VTF-1496 东莞调整右上角报警样式",
+        "number": 831
+      },
+      {
+        "id": "php_web_api_v0~test~I4a677a3172d7853634c081f4f32a95987989070f",
+        "subject": "VTF-1498  故障分析;",
+        "number": 833
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I5db25e09e8b8d66e779b2b8dad9e446c4cc9f5ff",
+        "subject": "VTF-1496 北京调整右上角报警样式",
+        "number": 832
+      },
+      {
+        "id": "php_web_api_v0~test~Ic6a0fc4c157e6aedc86baf49775c11519cb4e863",
+        "subject": "stomp测试页面增加稳定性测试功能",
+        "number": 824
+      }
+    ]
+  },
+  {
+    "13": [
+      {
+        "id": "php_web_api_v0~test~Ieeabf5c1d08e985d05b4f98a3c5fa40bd66e3da1",
+        "subject": "VTF-1480 VTB-1026 VTF-1132",
+        "number": 820
+      },
+      {
+        "id": "php_web_api_v0~test~I0e7665e125b4d2190f28a0a6693055ef8adf3770",
+        "subject": "VTF-1480 VTB-1026",
+        "number": 819
+      },
+      {
+        "id": "php_web_api_v0~test~Ibc805d1ae35a187d51c44ba43ce1c34f15b4c5a8",
+        "subject": "VTF-1478 车场选择弹出地图选择，详情内容增加车场GPS",
+        "number": 818
+      },
+      {
+        "id": "php_web_api_v0~test~I77404b22c8836a96eb4ddf7d5d4837f5925507f6",
+        "subject": "VTF-1485 公众号错误提示",
+        "number": 817
+      },
+      {
+        "id": "php_web_api_v0~test~I969a4ba872305a04417de405af83ddd37aed89e6",
+        "subject": "VTF-1455 线路画像",
+        "number": 806
+      },
+      {
+        "id": "php_web_api_v0~test~I7176bd3899315d70020cf3d2e29e2dc8d34641ae",
+        "subject": "VTF-1381  VTF-1486  角色管理，报表导出 fix bug;",
+        "number": 812
+      },
+      {
+        "id": "php_web_api_v0~test~I6f69f4ca70e85aaf06387cb10f1f9930904668ae",
+        "subject": "VTB-1020 VTF-1484",
+        "number": 811
+      },
+      {
+        "id": "php_web_api_v0~test~I89f4900039a71e8d747619c2d6bab7f4a0e2a94a",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 809
+      },
+      {
+        "id": "php_web_api_v0~test~Ic1e30218c8feb80109abbf8d59be4e8b34b0c0dd",
+        "subject": "VTB-1020 角色修改机构如果有相关推送任务提示重启 VTF-1484 明细报表-报表导出，机构信息-司机考勤 ，B3号线，点击导出页面报错",
+        "number": 810
+      },
+      {
+        "id": "php_web_api_v0~test~I41c0af00594fd829567e7625ec5f2bd9afc85ed9",
+        "subject": "故障推送列表隐藏推送时间",
+        "number": 807
+      },
+      {
+        "id": "php_web_api_v0~test~I5c1f3d00861de444ea360a0aef566f299bf86be7",
+        "subject": "VTF-1475 线路画像-违规分析页面样式修改",
+        "number": 801
+      },
+      {
+        "id": "php_web_api_v0~test~I20f22fb179fa19ef3cd1b6fbb623bee8e286594e",
+        "subject": "VTF-330  数据转发；",
+        "number": 808
+      },
+      {
+        "id": "php_web_api_v0~test~I6702372ef5a4129a2216e5bfe964e41e0027c78d",
+        "subject": "VTF-1461 解决驾驶员违规明细重复",
+        "number": 803
+      },
+      {
+        "id": "php_web_api_v0~test~I6779e99e32e95849e7d7b9fabbfc79e345100ec4",
+        "subject": "VTF-1392",
+        "number": 802
+      },
+      {
+        "id": "php_web_api_v0~test~Id1a22d5ec197cb026af7880f90423fb817495b96",
+        "subject": "VTF-1464  VTF-1468  VTF-1470  VTF-1376  VTF-1405  故障推送，报表导出； fix bug;",
+        "number": 800
+      },
+      {
+        "id": "php_web_api_v0~test~I35734f328aae4bae769a5b6c31428c6347bf6bac",
+        "subject": "VTF-1401",
+        "number": 799
+      },
+      {
+        "id": "php_web_api_v0~test~I55b405706f621b7e8095b3359bde08cb3c9d9498",
+        "subject": "VTF-1440 报警设置更新后添加刷新页面提示",
+        "number": 794
+      },
+      {
+        "id": "php_web_api_v0~test~I3c7e4e16491d15d20f93e65b4fd95f06ac25beb8",
+        "subject": "VTF-1455 线路画像多模块调用接口",
+        "number": 793
+      },
+      {
+        "id": "php_web_api_v0~test~I5742a0117a4e38bdf0b69216b47c45d716557a6c",
+        "subject": "VTF-1456 车场位置",
+        "number": 792
+      },
+      {
+        "id": "php_web_api_v0~test~Ib0db4e6d1f56338d4cdb3432b8e2a11ad0da9429",
+        "subject": "VTF-1405  VTF-1376  VTF-1203  VTF-1449  VTF-1381  故障推送提示，报表导出故障支持线路以上机构，违规停靠接口500，用户管理增加提示信息；",
+        "number": 797
+      },
+      {
+        "id": "php_web_api_v0~test~If5802d7aea725154fbe923b5f167d03dd2520f4b",
+        "subject": "VTF-1435 VTF-1434 VTF-1448",
+        "number": 795
+      },
+      {
+        "id": "php_web_api_v0~test~I7477142757800cca15d2925fff09b36534beddfa",
+        "subject": "VTF-1414 VTF-1415",
+        "number": 788
+      },
+      {
+        "id": "php_web_api_v0~test~I6fdd57bc2ed5f6fb04bcacb10007d96fd84c11c3",
+        "subject": "VTB-1014",
+        "number": 786
+      },
+      {
+        "id": "php_web_api_v0~test~I1a69f25f4817fd9eb1e5d20c835dca5665447291",
+        "subject": "VTF-1254 报警量修改",
+        "number": 775
+      },
+      {
+        "id": "php_web_api_v0~test~I13e0384d297da8b095a9983bb2b1902c33b6f376",
+        "subject": "VTF-1418 车辆维护调用两次接口",
+        "number": 774
+      }
+    ]
+  },
+  {
+    "14": [
+      {
+        "id": "php_web_api_v0~test~I757b2ad64ccb6d0b7582b40eeb3159d40563bfb4",
+        "subject": "VTF-1414 VTF-1415",
+        "number": 757
+      },
+      {
+        "id": "php_web_api_v0~test~Ic25900bc634b0fb2687a4d34b7602911cf1ec549",
+        "subject": "VTB-1009 VTF-1450",
+        "number": 787
+      },
+      {
+        "id": "php_web_api_v0~test~I12a5da11c99635f200647653bfeccf8aba0b2d87",
+        "subject": "VTB-1008 VTB-1007 VTF-1452",
+        "number": 785
+      },
+      {
+        "id": "php_web_api_v0~test~Ied7d955012ecc51c3a74d37c2c17dc7438a70b13",
+        "subject": "VTB-941 t_user_setting_copy1表修改为t_user_setting",
+        "number": 783
+      },
+      {
+        "id": "php_web_api_v0~test~I26e46ebad6b22a20d3054fe6cecd788d62b5f367",
+        "subject": "VTF-1410 解决queryDeptList接口缓慢问题",
+        "number": 779
+      },
+      {
+        "id": "php_web_api_v0~test~I5551d89107e92671fb3f83a95ef60a77cb052a82",
+        "subject": "VTF-1411 解决获取当前账号下所有偏移量接口缓慢",
+        "number": 773
+      },
+      {
+        "id": "php_web_api_v0~test~I19fe6d2a760b92f85eaf01ae14c7a4773a812b94",
+        "subject": "VTB-1011",
+        "number": 782
+      },
+      {
+        "id": "php_web_api_v0~test~I4892474f2b235a979bebaaaa3beab69d18ca370c",
+        "subject": "VTB-1011",
+        "number": 781
+      },
+      {
+        "id": "php_web_api_v0~test~If81fc575cd0b6931466ae24f797c5830a2455d60",
+        "subject": "VTF-1421 导入车辆信息时，验证车牌号和设备号是否重复查询v_vehicleinfo修改为查询t_vehicleinfo，提高查询速度",
+        "number": 767
+      },
+      {
+        "id": "php_web_api_v0~test~Iefa24419d77fcf46325a4615d89d84b46ca241d9",
+        "subject": "VTB-1009 VTF-1450",
+        "number": 780
+      },
+      {
+        "id": "php_web_api_v0~test~I76be38cefda7f70c97cbde769d8278cb47222868",
+        "subject": "test gerrit commit",
+        "number": 607
+      },
+      {
+        "id": "php_web_api_v0~test~I2aaf2907a4921cefb821bb1241d8886d2f075064",
+        "subject": "test commit",
+        "number": 625
+      },
+      {
+        "id": "php_web_api_v0~test~I96e561286a48400d29bb9e324465365ca3eedac8",
+        "subject": "VTF-1309 VTF-1382 VTB-1000 VTB-999 VTB-1008 VTB-1007 VTB-1006 VTB-1005 VTF-1446 VTF-1443 VTF-1425 VTF-1423",
+        "number": 778
+      },
+      {
+        "id": "php_web_api_v0~test~I1e543c73e6a8f299f80b9af5a913a21fdd5dc125",
+        "subject": "VTF-1363 东莞修改tab页过多的问题,去掉调试的alert",
+        "number": 764
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I390dd8f53659fe27b9bdf3e335f95d86d301f404",
+        "subject": "VTF-1363 北京修改tab页过多的问题",
+        "number": 763
+      },
+      {
+        "id": "php_web_api_v0~test~I225acb971685b569a78301fe82eb01f0c9ad08d2",
+        "subject": "VTF-1363 东莞修改tab页过多的问题",
+        "number": 762
+      },
+      {
+        "id": "php_web_api_v0~test~I0b582fa7607c33e75cfc16d870681202cc5793be",
+        "subject": "VTB-991 调整背景颜色",
+        "number": 755
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I7b7b420a16c93dfb111c8a8e1e541f83c7015932",
+        "subject": "VTF-1420 beijing电池画像布局修改",
+        "number": 751
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ic41b78f0ae414c255acb7df21b9a15522815d510",
+        "subject": "VTF-1420 beijing高危设置显示不全",
+        "number": 750
+      },
+      {
+        "id": "php_web_api_v0~test~I7ec01de936e3d9f50405cb3867dff700604cb60d",
+        "subject": "VTF-1420 test高危设置显示不全",
+        "number": 749
+      },
+      {
+        "id": "php_web_api_v0~test~I24b94d01ffc1305b3e122af835b934c04f833b4e",
+        "subject": "VTF-1350",
+        "number": 759
+      },
+      {
+        "id": "php_web_api_v0~test~I969e1e0132642fba44628112d6bdb45e947def73",
+        "subject": "VTF-1350",
+        "number": 758
+      },
+      {
+        "id": "php_web_api_v0~test~I4ef3440dc04d875522889f4a04de3b2a7da1a30e",
+        "subject": "VTF-1406 VTF-1382 VTF-1391 VTF-1390 VTF-1337",
+        "number": 753
+      },
+      {
+        "id": "php_web_api_v0~test~I3c9d206065b894e66afcbb40ce815d1251d7b3be",
+        "subject": "VTF-1092 注册页样式修改",
+        "number": 713
+      },
+      {
+        "id": "php_web_api_v0~test~I6549896774d7937df0ee47a69b83e7011f4656fd",
+        "subject": "VTF-1409 行车曲表格表头居中",
+        "number": 746
+      }
+    ]
+  },
+  {
+    "15": [
+      {
+        "id": "php_web_api_v0~test~I0b3f35116f368d3047316e7abf8799a002488912",
+        "subject": "VTF-1349 考核报表修改样式",
+        "number": 745
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ib3d0a36a164f6ab3d68317b8447a10d1f6866918",
+        "subject": "VTF-1409 行车曲表格表头居中",
+        "number": 747
+      },
+      {
+        "id": "php_web_api_v0~test~I267d42125940153934bffda515910a0fd6f823da",
+        "subject": "VTF-1303 角色管理按钮和输入框距离太大",
+        "number": 741
+      },
+      {
+        "id": "php_web_api_v0~test~Iab14fbe8e70cd53823fab4294227e9be6b9211fc",
+        "subject": "VTB-968 黑点管理调整页面布局",
+        "number": 739
+      },
+      {
+        "id": "php_web_api_v0~test~Ieb9b09f5db32c44665cb19bac650abd8b01124f7",
+        "subject": "Merge remote-tracking branch 'origin/test' into test Change-Id: Ieb9b09f5db32c44665cb19bac650abd8b01124f7",
+        "number": 738
+      },
+      {
+        "id": "php_web_api_v0~test~I06fb2f2bed836acc866e86137f8449b02c48e842",
+        "subject": "VTF-988 首页故障调整",
+        "number": 731
+      },
+      {
+        "id": "php_web_api_v0~test~I67556e31d053cd38cbb0ee27a54f57a115b5e691",
+        "subject": "VTF-1373 模拟地图页面显示不全",
+        "number": 730
+      },
+      {
+        "id": "php_web_api_v0~test~I3baa28614bff2195159834d6afa48504fcf88985",
+        "subject": "VTB-986 VTF-1393",
+        "number": 744
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I6f9fc42145d7548485415e5b5fe09f62855ca878",
+        "subject": "VTB-968 beijing黑点管理调整页面布局",
+        "number": 743
+      },
+      {
+        "id": "php_web_api_v0~test~I31d7c1fa75306c7f99d26c023f204407d1c87f70",
+        "subject": "VTF-1370 修改标题字体大小",
+        "number": 723
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I0a5baf209411a930ffb0aa437f8d721c73be8756",
+        "subject": "VTF-1303 角色管理按钮和输入框距离太大",
+        "number": 742
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I7129059922d42bcd951382150eb7faafc2bf6cf5",
+        "subject": "VTF-1397 车辆画像-单车故障无法下拉",
+        "number": 736
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ic13ae3d24cd3310ff2ab823366480c04962b2440",
+        "subject": "VTF-1372 beijing调整司机画像违规图表的显示",
+        "number": 732
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Id33e111ab65dcedb263d72ae3c7505593c8c9ed1",
+        "subject": "VTF-1373 模拟地图无法下拉",
+        "number": 724
+      },
+      {
+        "id": "php_web_api_v0~test~I9d03d631a0e16d0d7b7f5539bb9ceb714f5b7a33",
+        "subject": "VTF-1366 故障排名详情背景色修改",
+        "number": 722
+      },
+      {
+        "id": "php_web_api_v0~test~I7863ff58ce5cef2ddf7258ce66d20c98c7549554",
+        "subject": "VTF-1373 模拟地图页面无法下拉",
+        "number": 721
+      },
+      {
+        "id": "php_web_api_v0~test~I0d839be6b4b011c525217b5c494c5c651c78e82f",
+        "subject": "VTF-1092 注册页修改",
+        "number": 720
+      },
+      {
+        "id": "php_web_api_v0~test~I42d6936d5d0ab4a1edac7671078875f3cdcacd08",
+        "subject": "VTF-1037 东莞修改车辆拓扑样式",
+        "number": 729
+      },
+      {
+        "id": "php_web_api_v0~test~Icba72796657c04e8a8a089cf08c2448680031fec",
+        "subject": "VTF-1335",
+        "number": 728
+      },
+      {
+        "id": "php_web_api_v0~test~Ie6633448977567df9052ed3edb0d4088a32cd30c",
+        "subject": "VTF-1390",
+        "number": 727
+      },
+      {
+        "id": "php_web_api_v0~test~I60ff75121807719b0adbe3dbca2fecff7cec5f79",
+        "subject": "VTF-1391",
+        "number": 726
+      },
+      {
+        "id": "php_web_api_v0~test~I9cbbba6057444a69014ae6795697c7c70632fdb4",
+        "subject": "VTF-1333 明细报表->报表导出，驾驶员违规下的损车驾驶下的明细按钮被点击时接口响应超时",
+        "number": 718
+      },
+      {
+        "id": "php_web_api_v0~test~I83b6c9c045571b4ec24a25db1b91e8754988ec95",
+        "subject": "VTF-1337 明细报表->报表导出，危险驾驶导出文档比web页面中多一列“进出站无转向灯”",
+        "number": 717
+      },
+      {
+        "id": "php_web_api_v0~test~Ifd8d9abd2b054827740c574e0f7f0f50597dd9eb",
+        "subject": "VTF-1155 明细报表->报表导出，危险驾驶页面点击每页设置页数按钮未生效 VTF-1163 明细报表->驾驶员违规，20200323改造 VTF-1156 明细报表->报表导出，损车驾驶点击每页页面设置数按钮未生效 VTF-1157 明细报表->报表导出，驾驶员违规分页异常 VTF-1132 明细报表-驾驶员违规 驾驶员违规分数top5图表中包含未选线路驾驶员",
+        "number": 716
+      },
+      {
+        "id": "php_web_api_v0~test~I59dd7c769a305ee6a9b03665d9c7b448d883b557",
+        "subject": "VTB-980 明细报表->报表导出，驾驶员违规下的二级标签导出文档中未正确命名",
+        "number": 715
+      }
+    ]
+  },
+  {
+    "16": [
+      {
+        "id": "php_web_api_v0~test~Iff451491219944db6e8067732e0308936d9ee72a",
+        "subject": "提交贵阳登录接口",
+        "number": 714
+      },
+      {
+        "id": "php_web_api_v0~test~I1147570758b52964c0a405aed3c02b5d8c8de74a",
+        "subject": "VTF-1214 解决明细报表->故障分析，输入日期高级查询故障比例图有数据而故障趋势图无数据bug",
+        "number": 712
+      },
+      {
+        "id": "php_web_api_v0~test~Ia426c7b0853698ab6575680cb0e2691838569a30",
+        "subject": "VTF-988 首页故障新增报警故障总数返回",
+        "number": 694
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I480e0c7e8e04f23f77ba73f54217c5adb2152b6a",
+        "subject": "VTF-988 首页故障修改",
+        "number": 706
+      },
+      {
+        "id": "php_web_api_v0~test~Id6f629e780d55347de9e8c8f43cdd660ff3016f0",
+        "subject": "VTF-988 在原首页故障一般故障接口添加参数alarmLevel=2，返回报警故障详情列表",
+        "number": 705
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ie82475b1f67de618075bf82b76ae1f484e8ff5c1",
+        "subject": "VTF-988 首页动态显示报警故障，报警故障明细",
+        "number": 710
+      },
+      {
+        "id": "php_web_api_v0~test~Ie885a82eedbd25864217d737417952edc903b2a5",
+        "subject": "VTF-988 参数名称修改",
+        "number": 711
+      },
+      {
+        "id": "php_web_api_v0~test~Idfcf535a633d6e972ef1040c62fac9a8e201a60a",
+        "subject": "VTF-988 首页动态显示报警故障，报警故障明细",
+        "number": 709
+      },
+      {
+        "id": "php_web_api_v0~test~Ib07cf298fc985add2ed50f0d7e3d741cac341db0",
+        "subject": "VTF-1339 司机考勤页面显示错误",
+        "number": 707
+      },
+      {
+        "id": "php_web_api_v0~test~If4228dc0159817cb6790429f8411b5d2b7a35725",
+        "subject": "VTF-1364 线路画像删除遮罩层",
+        "number": 704
+      },
+      {
+        "id": "php_web_api_v0~test~I8fd6d3562d93dd2d256009122dbcd5318c436c00",
+        "subject": "VTF-1361 车辆节点缺少isOffline属性报错",
+        "number": 702
+      },
+      {
+        "id": "php_web_api_v0~test~If8b7c203babd658aff8b6294759697350185ee6a",
+        "subject": "VTF-1361 车辆节点缺少isOffline属性报错",
+        "number": 701
+      },
+      {
+        "id": "php_web_api_v0~test~I19819eead3959164222416a860b6a6df2a52d216",
+        "subject": "VTF-1362  实时地图车辆setfitview报错",
+        "number": 700
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I433a1c7535c96359fe174958959a08df66a5cb3e",
+        "subject": "VTF-1352 用户管理页面错误",
+        "number": 699
+      },
+      {
+        "id": "php_web_api_v0~test~Ib7439a8ca4d61638230a0662505a364eeb548f86",
+        "subject": "VTF-1340 线路画像故障删除多余数字",
+        "number": 697
+      },
+      {
+        "id": "php_web_api_v0~test~Idd302b22ab83e38b64a06c1ac47077a371ae247c",
+        "subject": "VTF-1092 test公众号最新设计图修改",
+        "number": 696
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ief4433f493ac099a237ca9a588ee0e38d1aa6e96",
+        "subject": "VTF-1357 考核报表页面显示不全问题",
+        "number": 698
+      },
+      {
+        "id": "php_web_api_v0~test~Ib50943f5b6db8bcd9e994004f7e8cd62f0e600e8",
+        "subject": "VTF-1288 VTF-1289 解决站点违规相关查询接口缓慢问题，解决冲突",
+        "number": 692
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I6bc224895875c62f6e746182fca8852a994859b8",
+        "subject": "VTF-1073 车辆跟踪北京更新",
+        "number": 693
+      },
+      {
+        "id": "php_web_api_v0~test~I02e3e1408bd9f4bb8f5ebb51886d5e4823d62321",
+        "subject": "VTF-1288 VTF-1289 解决站点违规相关查询接口缓慢问题",
+        "number": 686
+      },
+      {
+        "id": "php_web_api_v0~test~If730d038a50d13a20c6f4d0efeef04207bbe9429",
+        "subject": "VTF-1306 adas系统车距监测样式问题",
+        "number": 687
+      },
+      {
+        "id": "php_web_api_v0~test~I1c1068b252b7aa245993fa41a5ab1d6fbdc5323c",
+        "subject": "严重报警故障需求变更api修改",
+        "number": 690
+      },
+      {
+        "id": "php_web_api_v0~test~Ic703c9ffb96aff3c12a37f25ad3b80fd9dca1428",
+        "subject": "VTF-1290 解决明细报表->站点违规，贵阳B1号线近7天分段准点接口响应357ms后报500错误",
+        "number": 678
+      },
+      {
+        "id": "php_web_api_v0~test~Id303f15a35794cb18958530576b719d18a29441f",
+        "subject": "VTF-1287 解决明细报表->站点违规，越站中的营运线路、异常类型显示-未正确显示错误",
+        "number": 677
+      },
+      {
+        "id": "php_web_api_v0~test~I52661899b857a572376360efff38b860f4eb4f22",
+        "subject": "fix bug 报表导出和报警优化",
+        "number": 651
+      }
+    ]
+  },
+  {
+    "17": [
+      {
+        "id": "php_web_api_v0~test~I9a71948680c07820fd7d2a4a505ada01a6faeeab",
+        "subject": "故障推送api优化",
+        "number": 659
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I15800c681bf4e15892a0bf155087ae52d6865ee6",
+        "subject": "VTF-1331 北京仪表盘表格样式更新",
+        "number": 684
+      },
+      {
+        "id": "php_web_api_v0~test~Ic4809c8201b0c7cfae47090ff18578462195dcb4",
+        "subject": "VTB-960 调整模块背景色",
+        "number": 683
+      },
+      {
+        "id": "php_web_api_v0~test~I7709e3204457d74ceae3cd3d7215baeb221c6a11",
+        "subject": "VTF-1294 东莞修改仪表盘实时地图车辆驶出地图的问题",
+        "number": 681
+      },
+      {
+        "id": "php_web_api_v0~test~Ic13661a1ab1970754bb4227701b7456fdf133b97",
+        "subject": "测试",
+        "number": 680
+      },
+      {
+        "id": "php_web_api_v0~test~I3ddc235c56d1a3c76211a31090ebba0fad792978",
+        "subject": "VTF-1331 东莞提交仪表盘表格样式",
+        "number": 679
+      },
+      {
+        "id": "php_web_api_v0~test~I4ed2081504264be5116702c30409046c3a1d493c",
+        "subject": "VTF-1301 VTF-1302 用户管理添加编辑修改",
+        "number": 674
+      },
+      {
+        "id": "php_web_api_v0~test~Ic3a04538ddfdb0186d7215f548e5f7926f80a09d",
+        "subject": "VTF-1227 线路车辆修改传参",
+        "number": 673
+      },
+      {
+        "id": "php_web_api_v0~test~I74387b84a2cef4143d6e293492d46d85f79ce032",
+        "subject": "VTF-1305 故障车辆排名修改表头名称",
+        "number": 672
+      },
+      {
+        "id": "php_web_api_v0~test~I4b9559be25240f334a2779fe70f3ef8cba794cb8",
+        "subject": "VTF-1283 车辆信息导出添加提示",
+        "number": 671
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I1e06356693411684c6a6b35efa1af320c576241a",
+        "subject": "VTF-1301 VTF-1302 beijing用户管理添加编辑修改",
+        "number": 675
+      },
+      {
+        "id": "php_web_api_v0~test~Ic2ff7bbac1a6d27246b60273e8a430ef3cfa6857",
+        "subject": "VTF-1278 解决东莞系统高危电池报警查询接口404问题",
+        "number": 661
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I1b53fe1461c6dd466593d642fa5096f02b6ee7b6",
+        "subject": "VTF-1268 新增修改密码功能（不需要校验旧密码）",
+        "number": 663
+      },
+      {
+        "id": "php_web_api_v0~test~Ifb0cb103bc099a56f951487fc1daaa26f2c2586a",
+        "subject": "测试在test分支上更改代码  不merge的情况下其他人是否会拉下来",
+        "number": 670
+      },
+      {
+        "id": "php_web_api_v0~test~I0f89ab90e5b43088580b1ab3aba15f89df71c174",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 668
+      },
+      {
+        "id": "php_web_api_v0~test~I937b6396906b012932afcca73405d298db0f18c3",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 667
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I441351dc870d75c581038beab10f56fc6306c55a",
+        "subject": "VTF-1061 beijing修改列表统一样式，有排序功能的单独新增样式",
+        "number": 669
+      },
+      {
+        "id": "php_web_api_v0~test~I12b65f7d45ba4b9749bf967301189afec5372dcd",
+        "subject": "VTF-1061 test修改列表统一样式，有排序功能的单独新增样式",
+        "number": 666
+      },
+      {
+        "id": "php_web_api_v0~test~I367e8de895bbf2e6c815165f0188e0a24c85276c",
+        "subject": "VTF-1276 VTF-840 菏泽空调报错处理",
+        "number": 665
+      },
+      {
+        "id": "php_web_api_v0~test~Ieb8833f96ed0558f031c3152177b286d7272d505",
+        "subject": "VTF-1268 用户管理增加重置密码功能",
+        "number": 662
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ie941a7f70d30204e224d82fbe6937da88d9457d9",
+        "subject": "VTF-1268 beijing 用户管理增加重置密码功能",
+        "number": 664
+      },
+      {
+        "id": "php_web_api_v0~test~Idbd6dd7fc4d421068c8ed739ecc4cd27432c8ab6",
+        "subject": "VTF-1254 报警设置修改为走缓存查询报警量",
+        "number": 657
+      },
+      {
+        "id": "php_web_api_v0~test~I0e6c1903bd92df65343839d255d7bc991ccaede7",
+        "subject": "VTF-1279 车辆画像-单车故障 页面显示不完整",
+        "number": 656
+      },
+      {
+        "id": "php_web_api_v0~test~I33d23edc47f9f38d5c0291c7e8c0fc131254d8f3",
+        "subject": "VTF-1278 高位报警无可配置数据时添加提示",
+        "number": 655
+      },
+      {
+        "id": "php_web_api_v0~test~Idacabc3652407b6215a0ccad623b8a5df0256759",
+        "subject": "VTF-1196 车辆画像故障列表 /api/statistic/getAlarmSummary修改传参findKeyEqual1: vehicleNo findValEqual1: 贵A00886F 改为 findKeyEqual1: deviceId findValEqual1: 1809130000001175",
+        "number": 654
+      }
+    ]
+  },
+  {
+    "18": [
+      {
+        "id": "php_web_api_v0~test~I2b6bb0f08c2aacf9b1e3dd5a5ab6e37c0ea154dd",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 658
+      },
+      {
+        "id": "php_web_api_v0~test~I31a35019343d199435ccc0885f48d2dac1904de7",
+        "subject": "VTF-1073  解决东莞车辆跟踪1366*768分辨率下中心圆位置偏移的问题",
+        "number": 650
+      },
+      {
+        "id": "php_web_api_v0~test~Id9e85895bb1c70ad100326c7f807f37957abd017",
+        "subject": "VTF-1268 重置密码功能，新增两个接口",
+        "number": 649
+      },
+      {
+        "id": "php_web_api_v0~test~I67829cc2e53d29ac50a37fca38817c5637ddbf46",
+        "subject": "VTF-1227 修改根据线路主键获取线路车辆接口，原模糊查询修改为equel全匹配",
+        "number": 642
+      },
+      {
+        "id": "php_web_api_v0~test~I94c53165de3f81d568ca7df953c0122313ef3544",
+        "subject": "VTF-1239 web中大系统分类根据设置显示",
+        "number": 634
+      },
+      {
+        "id": "php_web_api_v0~test~I21a8663cfe0462b2a84009c41edf47e454a63445",
+        "subject": "VTF-1125 repeat修改根据驾驶员主键获取最近驾驶车辆信息bug",
+        "number": 631
+      },
+      {
+        "id": "php_web_api_v0~test~Ic29fd88f7fcef68ee84a241e7efdde1d7d48be34",
+        "subject": "VTF-1079 VTB-881 test同步修改样式问题",
+        "number": 648
+      },
+      {
+        "id": "php_web_api_v0~test~Iec3d34d68dbea8efd8c1139dff0a5434a24664f2",
+        "subject": "VTF-1227 线路画像-线路车辆 dataManagement/queryVehicleList修改为findKeyEqual1和findValEqual1",
+        "number": 647
+      },
+      {
+        "id": "php_web_api_v0~test~I0c54e2d81bd47d7764b3918b2176f8afe8daf20d",
+        "subject": "VTF-1188 修改高危报警文案",
+        "number": 646
+      },
+      {
+        "id": "php_web_api_v0~test~If4852da4147c900ff70fe8d56bbbb68095d9b3e6",
+        "subject": "VTF-1253   VTF-1255  VTF-1256  VTF-1259  VTF-1260  故障推送，fix bug;功能优化；",
+        "number": 645
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I0dfbf9fcce78ca12dfb9897cbc9fcfbf0554f5c0",
+        "subject": "VTF-1079 VTB-881 北京同步更新ebs系统样式,同时修改样式问题",
+        "number": 644
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Id4980d1382e0dc17a733acb1b4b62dd48d5af602",
+        "subject": "VTF-1079 VTB-881 北京同步更新ebs系统样式",
+        "number": 643
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I863c0e225af4ce5238a019a408daf55a2452a651",
+        "subject": "VTF-1261 角色管理页面显示不全",
+        "number": 640
+      },
+      {
+        "id": "php_web_api_v0~test~I11c9477010cb8333a41204d6f0a0cf1585fe9753",
+        "subject": "VTF-1261 角色管理页面显示不全",
+        "number": 639
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ic534df302d40ad0799dd452571c42e691aab43e2",
+        "subject": "VTF-1249 beijing用户管理，表头复选框未居中",
+        "number": 638
+      },
+      {
+        "id": "php_web_api_v0~test~I5793cafd16f1fe3a84c6c2e232b69de308b536eb",
+        "subject": "VTF-1265 报警设置显示不全",
+        "number": 637
+      },
+      {
+        "id": "php_web_api_v0~test~Ie3cdbfac466778369a8c1d60d650a8dce6cf68b2",
+        "subject": "VTF-1249 用户管理，表头复选框未居中",
+        "number": 636
+      },
+      {
+        "id": "php_web_api_v0~test~I7f1382911adb84d07dc990f31a196d4a343b22f1",
+        "subject": "VTF-1191 新增报警3查询type=2",
+        "number": 611
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I0f20fd414a5f27f1186705a8d2160b3fced2198d",
+        "subject": "VTB-944 高危电池报警可配置后，故障统计-》高危电池报警统计接口",
+        "number": 622
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I9bb1d8834297c6527382c8d46aa7293482e0d757",
+        "subject": "VTB-944 高危电池报警配置修改为按照总公司可配",
+        "number": 621
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ief5493cf2e7105322e72cc01afdc7f20076790fe",
+        "subject": "VTB-940 删除线路时增加是否存在司机判断",
+        "number": 620
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ief8aaf0e3fe930e0e4cfe3809e93b8c37676a7a7",
+        "subject": "VTB-941 北京系统修改用户设置表t_user_setting_copy1修改为t_user_setting",
+        "number": 619
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I30d544b12e3a5c0917935c6deceb54d2cb4ef4c1",
+        "subject": "VTB-944 关于高危电池报警类型web设置接口-2个",
+        "number": 618
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I8efecd0933ceafdc8e306fbfebc5cafe5ff461e9",
+        "subject": "VTF-1160  VTF-1230  驾驶员违规明细，电池画像；fix bug;",
+        "number": 635
+      },
+      {
+        "id": "php_web_api_v0~test~I9bac3dc1cfbe46a29f163ebf0f1032865a36cf60",
+        "subject": "VTF-1160  VTF-1230  VTF-1251  驾驶员违规明细，电池画像，故障推送显示；",
+        "number": 632
+      }
+    ]
+  },
+  {
+    "19": [
+      {
+        "id": "php_web_api_v0~dev_beijing~I730ba1d0a7c5978b0d7b1a23a5b9295036243508",
+        "subject": "VTF-1160  VTF-1230  驾驶员违规明细，电池画像；",
+        "number": 633
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I2eb6190f895d7b25aaf46c646a2e41bd855273e1",
+        "subject": "VTF-1159 违规设置新需求",
+        "number": 630
+      },
+      {
+        "id": "php_web_api_v0~test~I8704d1d9b3a420c80330abf45f27d1ca39e379fd",
+        "subject": "VTF-1228 故障统计、能耗统计无法下拉",
+        "number": 628
+      },
+      {
+        "id": "php_web_api_v0~test~Iea4a405f868d6d7e1d690883740dfe78e708bdd7",
+        "subject": "VTF-1159 违规设置新需求",
+        "number": 627
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I408a86363c8605ce023f13b989b03ad09fcd3501",
+        "subject": "VTF-1228 故障统计、能耗统计无法下拉",
+        "number": 629
+      },
+      {
+        "id": "php_web_api_v0~test~I0322e4050183e62b53b96ec46b9a960dac0ce0fd",
+        "subject": "VTF-1148 VTB-916 VTB-914 VTF-1149 VTF-1171 VTF-1216",
+        "number": 626
+      },
+      {
+        "id": "php_web_api_v0~test~I0d40f8a73794482af75e0cb0a63ae2066361fc2e",
+        "subject": "VTF-1203  报警汇总；",
+        "number": 624
+      },
+      {
+        "id": "php_web_api_v0~test~I8b3c4ee0de55bfa4ce49ba735bac8ed4a30966f2",
+        "subject": "VTF-1106 VTF-1107 VTF-1108 VTF-1109 重新提交持续报警改动",
+        "number": 623
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~Ic7251409bdbcc34e1d602c802740cca0d69f71da",
+        "subject": "VTF-1224 驾驶员行为设置文案修改",
+        "number": 615
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I0bba7120aa6a039b5f6f2fbdd0a4ed0446636006",
+        "subject": "VTF-1008 调整页面布局，解决导航树下方空白",
+        "number": 614
+      },
+      {
+        "id": "php_web_api_v0~test~Ibce477f04e26a7e717018481940877912f6a0602",
+        "subject": "VTF-1106 VTF-1107 VTF-1108 VTF-1109 重新提交持续报警改动",
+        "number": 617
+      },
+      {
+        "id": "php_web_api_v0~test~Iab05892775dbe2e205d9e646a99e99d9caacea92",
+        "subject": "cs",
+        "number": 616
+      },
+      {
+        "id": "php_web_api_v0~test~Ib1de9d75f3697c3d913f2c97d86291909b1d697e",
+        "subject": "VTF-1190 stomp测试页面增加电池系统字段判断,单独字段查看",
+        "number": 595
+      },
+      {
+        "id": "php_web_api_v0~test~I693ee9c61e616ef9c27621911f343ff9996edbde",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 594
+      },
+      {
+        "id": "php_web_api_v0~master~Ia30b5175eee47216f3d7f73ec801a96d2773e660",
+        "subject": "test test to master",
+        "number": 584
+      },
+      {
+        "id": "php_web_api_v0~test~I4bfc1c03c75e581acae2deea31afaac25ab8f9e5",
+        "subject": "Merge remote-tracking branch 'origin/test' into test",
+        "number": 593
+      },
+      {
+        "id": "php_web_api_v0~test~I16b2dd348ace5314079e2e67b0062d9eb62add56",
+        "subject": "VTF-1106  VTF-1107 VTF-1108 VTF-1109 东莞增加重置查询条件代码,使持续报警分页正常显示",
+        "number": 602
+      },
+      {
+        "id": "php_web_api_v0~test~If71936732b7756f732588739106590e856d9f857",
+        "subject": "test test_xyh to test",
+        "number": 585
+      },
+      {
+        "id": "php_web_api_v0~test~Ia714cdbab2ae7286d8f3f76f311fa87abdf3bafb",
+        "subject": "wzy test push",
+        "number": 591
+      },
+      {
+        "id": "php_web_api_v0~test~I70d959243619a67df66353fe1045ef3458834895",
+        "subject": "test test_xyh to test first abandon",
+        "number": 586
+      },
+      {
+        "id": "php_web_api_v0~master~I56648554057830eb22d28b9ee3e2315e5f6be300",
+        "subject": "test Gerrit",
+        "number": 583
+      },
+      {
+        "id": "php_web_api_v0~test~Ibba32c7a85cb86f776a67b7fb894609e052af42f",
+        "subject": "文档演示",
+        "number": 587
+      },
+      {
+        "id": "php_web_api_v0~test~I99e8f9ea6c34b7bdf11a4c236e69a1cd145a0931",
+        "subject": "VTF-1106  VTF-1107 VTF-1108 VTF-1109 东莞同步优化代码,使持续报警分页正常显示",
+        "number": 604
+      },
+      {
+        "id": "php_web_api_v0~test~I24af99bfe848c85ded79b6f6270de6f9b537b1d2",
+        "subject": "VTF-1190 stomp测试页面增加电池系统字段判断",
+        "number": 613
+      },
+      {
+        "id": "php_web_api_v0~test~Ia30b5175eee47216f3d7f73ec801a96d2773e660",
+        "subject": "test test to master",
+        "number": 612
+      }
+    ]
+  },
+  {
+    "20": [
+      {
+        "id": "php_web_api_v0~dev_beijing~I2ca199f24c29f4d3f3c9ef032db47cd222b69390",
+        "subject": "VTF-1106  VTF-1107 VTF-1108 VTF-1109 北京同步重置查询条件代码,使持续报警分页正常显示",
+        "number": 603
+      },
+      {
+        "id": "php_web_api_v0~test~Id558fc9d7fb993263bda89606b04b421ddbc4e70",
+        "subject": "VTF-1203  报警汇总，导出；",
+        "number": 610
+      },
+      {
+        "id": "php_web_api_v0~test~I5fbf73c1c8017c25d9eb541ce128e3ad86b89126",
+        "subject": "VTF-1224 驾驶员行为设置文案修改",
+        "number": 609
+      },
+      {
+        "id": "php_web_api_v0~test~I3609df394838fb180e17e3812017834c968bc663",
+        "subject": "VTF-1008 调整页面布局，解决导航树下方空白",
+        "number": 608
+      },
+      {
+        "id": "php_web_api_v0~test~I7c9da7fdcc8d50989ef2317b9a4f4721f5393fb3",
+        "subject": "VTB-922  报表导出；",
+        "number": 601
+      },
+      {
+        "id": "php_web_api_v0~test~I88f069cbf6716be120e630b2539cc9889fee92a4",
+        "subject": "VTF-966  故障推送;",
+        "number": 606
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I13325df40e5d96a4a0d2feccbe9a66ffa1d13409",
+        "subject": "VTF-1213 beijing,违规列表菜单背景修改白色",
+        "number": 599
+      },
+      {
+        "id": "php_web_api_v0~test~Iba8a211897e659c2c2a62875eeb540f813c0c190",
+        "subject": "VTF-1213 违规列表菜单背景修改白色，表格排序图标添加内边距",
+        "number": 598
+      },
+      {
+        "id": "php_web_api_v0~test~If2b4976e677639ae36473f9a4d058d1d86d7125b",
+        "subject": "VTF-1212 故障列表添加分页",
+        "number": 597
+      },
+      {
+        "id": "php_web_api_v0~test~I54cb8cf83f2c71c080804170f6d39cb9b0a6c5c5",
+        "subject": "VTF-1204  VTF-1218  gerrit 合并；",
+        "number": 592
+      },
+      {
+        "id": "php_web_api_v0~test~I355435f25364feeff699f8a0c7bfa5c6302cb70a",
+        "subject": "VTF-1215 test、31号之后更新代码",
+        "number": 589
+      },
+      {
+        "id": "php_web_api_v0~dev_beijing~I3e4b91fd5034ba945187b0b40aa399181fd89961",
+        "subject": "VTF-1215 北京31号之后更新代码",
+        "number": 588
+      },
+      {
+        "id": "php_web_api_v0~test_fanyin~I54b5993a91728f08b967bc7cf0d3bfa7b74e5ad3",
+        "subject": "test gerrit",
+        "number": 564
+      },
+      {
+        "id": "php_web_api_v0~master~I41057503e6dee37a98117912852fb359f123fce0",
+        "subject": "test gerrit",
+        "number": 548
+      }
+    ]
+  }
+]

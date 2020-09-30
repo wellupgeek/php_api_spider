@@ -1,0 +1,492 @@
+{
+  "meta_a": {
+    "name": "public/heu_assets/component/analog-map/analog-map.component.js",
+    "content_type": "text/javascript",
+    "lines": 326,
+    "web_links": [
+      {
+        "name": "gitweb",
+        "url": "/gitweb?p\u003dphp_web_api_v0.git;hb\u003d8c891f2b8677571563ba28cb25038836690be0de;f\u003dpublic%2Fheu_assets%2Fcomponent%2Fanalog-map%2Fanalog-map.component.js"
+      }
+    ]
+  },
+  "meta_b": {
+    "name": "public/heu_assets/component/analog-map/analog-map.component.js",
+    "content_type": "text/javascript",
+    "lines": 333,
+    "web_links": [
+      {
+        "name": "gitweb",
+        "url": "/gitweb?p\u003dphp_web_api_v0.git;hb\u003drefs%2Fchanges%2F60%2F1160%2F1;f\u003dpublic%2Fheu_assets%2Fcomponent%2Fanalog-map%2Fanalog-map.component.js"
+      }
+    ]
+  },
+  "intraline_status": "OK",
+  "change_type": "MODIFIED",
+  "diff_header": [
+    "diff --git a/public/heu_assets/component/analog-map/analog-map.component.js b/public/heu_assets/component/analog-map/analog-map.component.js",
+    "index 17a9717..1c1e485 100644",
+    "--- a/public/heu_assets/component/analog-map/analog-map.component.js",
+    "+++ b/public/heu_assets/component/analog-map/analog-map.component.js"
+  ],
+  "content": [
+    {
+      "ab": [
+        "angular.module(\u0027app\u0027)",
+        "    .directive(\u0027analogMap\u0027, function () {",
+        "        return {",
+        "            scope: {},",
+        "            templateUrl: \u0027/heu_assets/component/analog-map/analog-map.template.html\u0027,",
+        "            require: [\"analogMap\", \"^leftTree\"],",
+        "            link: function ($scope, $elem, $attr, ctrls, controller) {",
+        "                var childCtrl \u003d ctrls[0];",
+        "                var parentCtrl \u003d ctrls[1];",
+        "                parentCtrl.register(childCtrl);",
+        "                parentCtrl.register(childCtrl);",
+        "                $scope.parentCtrl \u003d parentCtrl;",
+        "            },",
+        "            controller: [\"Nav\", \"vehicle\", \"$scope\", \"$DrawMapService\", \"$HttpClient\", \"stomp\", \"$rootScope\", \"$window\", \"offset\",",
+        "                function (Nav, vehicle, $scope, $DrawMapService, $HttpClient, stomp, $rootScope, $window, offset) {",
+        "                    var vm \u003d this;",
+        "                    vm.isShowMap \u003d false;",
+        "                    vm.noStand \u003d false;",
+        "                    vm.nowSubscription \u003d null;",
+        "                    vm.nowdeviceInfo \u003d null;",
+        "                    $scope.businfo \u003d {};",
+        "                    $scope.languageDict \u003d $rootScope.languageDict;",
+        "                    $scope.language \u003d $rootScope.languageOption;",
+        "                    $scope.$on(\u0027top_bar_option\u0027, function (data) {",
+        "                        vm.isShowMap \u003d data.targetScope.SLPCtl.topBarData[8].isShow;    //父级能得到值",
+        "                        vm.vehicleCurve \u003d data.targetScope.SLPCtl.topBarData[8].isJurisdiction;",
+        "                        if (vm.isShowMap \u003d\u003d true \u0026\u0026 vm.vehicleCurve \u0026\u0026 vm.checkLine) {",
+        "                            querySite();",
+        "                        }",
+        "                    });",
+        "                    //选中节点",
+        "                    vm.checkedNodes \u003d function (checkedNode) {",
+        "                        vm.checkLineId \u003d checkedNode.deptId;",
+        "                        vm.checkLineNode \u003d checkedNode;",
+        "                        vm.checkLine \u003d checkedNode.checked;",
+        "                        if (vm.isShowMap \u0026\u0026 vm.vehicleCurve \u0026\u0026 vm.checkLine) {",
+        "                            querySite()",
+        "                        }",
+        "                    };",
+        "",
+        "                    //点击车辆查询车辆信息",
+        "                    vm.ChangeVehicle \u003d function (deviceId) {",
+        "                        /**",
+        "                         * API: api/dataManagement/queryVehicleList",
+        "                         * @name: 线路画像-线路模拟地图-线路车辆查询",
+        "                         * @author: 高伶",
+        "                         * @edittime: 2020-06-18",
+        "                         * @mode: post",
+        "                         *",
+        "                         * @param: \\Http\\Request $request （请求参数）",
+        "                         * parameter1: findKey,description:查询Key",
+        "                         * parameter2: findVal,description:查询Val",
+        "                         * parameter3: count,description:条数",
+        "                         * parameter4: page,description:页码",
+        "                         * @return: \\Illuminate\\Http\\JsonResponse|mixed",
+        "                         * @throws: \\App\\Exception\\ParamException",
+        "                         */",
+        "                        $.ajax({",
+        "                            url: \u0027/api/dataManagement/queryVehicleList\u0027,",
+        "                            data: {",
+        "                                count: 10,",
+        "                                findKey: \u0027deviceId\u0027,",
+        "                                findVal: deviceId,",
+        "                                page: 1",
+        "                            },",
+        "                            success: function (response) {",
+        "                                $scope.businfo.sbh \u003d deviceId;"
+      ]
+    },
+    {
+      "b": [
+        "                                $scope.businfo.clbh \u003d response.data.body.data[0].vehicleSN;"
+      ]
+    },
+    {
+      "ab": [
+        "                                $scope.businfo.cph \u003d response.data.body.data[0].vehicleNo;",
+        "                                $scope.businfo.gs \u003d response.data.body.data[0].companyName;",
+        "                                $scope.businfo.cllx \u003d response.data.body.data[0].motorType;",
+        "                                $scope.businfo.cx \u003d response.data.body.data[0].vehicleType;",
+        "                                offset(response.data.body.data[0].vehicleId, function (offsetting) {",
+        "                                    vm.Offset \u003d offsetting;",
+        "                                });",
+        "",
+        "                                driverDataApi($scope.businfo);",
+        "                                gpsStomerManager($scope.businfo, deviceId);",
+        "                            }",
+        "                        });",
+        "                    };",
+        "",
+        "                    //车辆站点，车辆订阅",
+        "                    function querySite() {",
+        "                        $HttpClient.QueryDept(\u0027\u0027, function (response) {",
+        "                            let deptId \u003d response.data.data[0].dept_id;",
+        "                            $HttpClient.QueryShowType(deptId, function (res) {",
+        "                                vm.showtype \u003d res.data.data[1];",
+        "                            })",
+        "                        });",
+        "                        let gcn \u003d JSON.parse(window.sessionStorage.getItem(\u0027global_checked_node\u0027));",
+        "                        if (gcn) {",
+        "                            vm.checkLineId \u003d gcn.deptId;",
+        "                            vm.checkLineNode \u003d gcn;",
+        "                            vm.checkLine \u003d gcn.checked;",
+        "                            /**",
+        "                             * API: api/mauth/querySiteList",
+        "                             * @name: 线路画像-线路模拟地图-获取线路站点",
+        "                             * @author: 高伶",
+        "                             * @edittime: 2020-06-18",
+        "                             * @mode: post",
+        "                             *",
+        "                             * @param: \\Http\\Request $request （请求参数）",
+        "                             * parameter1: lineId,description:线路ID",
+        "                             * @return: \\Illuminate\\Http\\JsonResponse|mixed",
+        "                             * @throws: \\App\\Exception\\ParamException",
+        "                             */",
+        "                            $HttpClient.QuerySiteList(vm.checkLineId, function (response) {",
+        "                                vm.upDrivingSite \u003d [];",
+        "                                vm.downDrivingSite \u003d [];",
+        "                                vm.loopDrivingSite \u003d [];",
+        "                                if (response.data.retcode \u003d\u003d 1) {",
+        "                                    if (response.data.data.body.length \u003d\u003d 0) {",
+        "                                        vm.noStand \u003d true;",
+        "                                    } else {",
+        "                                        vm.noStand \u003d false;",
+        "                                        for (let j \u003d 0; j \u003c response.data.data.body.length; j++) {",
+        "                                            if (response.data.data.body[j].type \u003d\u003d 1) {",
+        "                                                vm.upDrivingSite.push(response.data.data.body[j]);",
+        "                                            } else if (response.data.data.body[j].type \u003d\u003d 2) {",
+        "                                                vm.downDrivingSite.push(response.data.data.body[j]);",
+        "                                            } else if (response.data.data.body[j].type \u003d\u003d 0) {",
+        "                                                vm.loopDrivingSite.push(response.data.data.body[j]);",
+        "                                            }",
+        "                                        }",
+        "                                        if (vm.loopDrivingSite.length \u003e 0) {",
+        "                                            vm.isloop \u003d true;",
+        "                                            vm.loopDrivingSite.push(response.data.data.body[0]);",
+        "                                        } else {",
+        "                                            vm.isloop \u003d false",
+        "                                        }",
+        "                                        locationStomerManager(vm.checkLineId);",
+        "                                    }",
+        "                                }",
+        "                            });",
+        "                            /**",
+        "                             * API: api/mauth/queryVehicleList",
+        "                             * @name: 线路画像-线路模拟地图-获取线路车辆",
+        "                             * @author: 高伶",
+        "                             * @edittime: 2020-06-18",
+        "                             * @mode: post",
+        "                             *",
+        "                             * @param: \\Http\\Request $request （请求参数）",
+        "                             * parameter1: dept_id,description:机构ID",
+        "                             * @return: \\Illuminate\\Http\\JsonResponse|mixed",
+        "                             * @throws: \\App\\Exception\\ParamException",
+        "                             */",
+        "                            $HttpClient.QueryVehicleList(vm.checkLineId, function (res) {",
+        "                                vm.vehicleInfo \u003d res.data.data;",
+        "                            });",
+        "                        }",
+        "                    }",
+        "",
+        "                    function locationStomerManager(id) {",
+        "                        if (vm.nowSubscription) {",
+        "                            vm.nowSubscription.unSub();",
+        "                        }",
+        "                        vm.nowSubscription \u003d stomp.sub(\"sim.line.\" + id, \"analog_map_component\", function (data) {",
+        "                            vm.upDriving \u003d [];",
+        "                            vm.downDriving \u003d [];",
+        "                            vm.unknown \u003d [];",
+        "                            vm.online \u003d 0;",
+        "                            vm.offline \u003d 0;//devId",
+        "                            for (let k \u003d 0; k \u003c data.vehiCoordList.length; k++) {",
+        "                                for (let index in vm.vehicleInfo) {",
+        "                                    if (vm.vehicleInfo[index].deviceId \u003d\u003d data.vehiCoordList[k].devId) {",
+        "                                        data.vehiCoordList[k].vehicleNo \u003d vm.vehicleInfo[index][vm.showtype];",
+        "                                        data.vehiCoordList[k].top \u003d -65;",
+        "                                        data.vehiCoordList[k].left \u003d Number(data.vehiCoordList[k].coord) * 50 - 30;",
+        "                                    }",
+        "                                }",
+        "                                if (data.vehiCoordList[k].msg \u003d\u003d \u0027normal\u0027) {",
+        "                                    vm.online++;",
+        "                                } else if (data.vehiCoordList[k].msg \u003d\u003d \u0027offline\u0027) {",
+        "                                    vm.offline++;",
+        "                                }"
+      ]
+    },
+    {
+      "a": [
+        "                                if (data.vehiCoordList[k].dir \u003d\u003d 0 \u0026\u0026 data.vehiCoordList[k].coord !\u003d -1) {"
+      ],
+      "b": [
+        "                                if (data.vehiCoordList[k].dir \u003d\u003d 0 \u0026\u0026 data.vehiCoordList[k].coord !\u003d -1 \u0026\u0026 data.vehiCoordList[k].msg !\u003d \"offline\") {"
+      ],
+      "edit_a": [],
+      "edit_b": [
+        [
+          103,
+          42
+        ]
+      ]
+    },
+    {
+      "ab": [
+        "                                    vm.upDriving.push(data.vehiCoordList[k]);",
+        "",
+        "                                } else if (data.vehiCoordList[k].dir \u003d\u003d 1 \u0026\u0026 data.vehiCoordList[k].coord !\u003d -1) {",
+        "                                    vm.downDriving.push(data.vehiCoordList[k]);"
+      ]
+    },
+    {
+      "a": [
+        "                                } else if (data.vehiCoordList[k].dir \u003d\u003d -1 || data.vehiCoordList[k].coord \u003d\u003d -1) {"
+      ],
+      "b": [
+        "                                } else if (data.vehiCoordList[k].dir \u003d\u003d -1 || data.vehiCoordList[k].coord \u003d\u003d -1 || data.vehiCoordList[k].msg \u003d\u003d \"offline\") {"
+      ],
+      "edit_a": [],
+      "edit_b": [
+        [
+          111,
+          42
+        ]
+      ]
+    },
+    {
+      "ab": [
+        "                                    vm.unknown.push(data.vehiCoordList[k]);",
+        "                                }",
+        "                            }"
+      ]
+    },
+    {
+      "a": [
+        "                            handleOverLaps(vm.upDriving);",
+        "                            handleOverLaps(vm.downDriving);"
+      ],
+      "b": [
+        "                            handleOverLaps(vm.upDriving,vm.showtype);",
+        "                            handleOverLaps(vm.downDriving,vm.showtype);"
+      ],
+      "edit_a": [],
+      "edit_b": [
+        [
+          55,
+          12
+        ],
+        [
+          60,
+          12
+        ]
+      ]
+    },
+    {
+      "ab": [
+        "                        });",
+        "                    }",
+        "",
+        "                    /**",
+        "                     * API: api/dataManagement/queryDriverAttendanceDetailInfo",
+        "                     * @name: 线路画像-线路模拟地图-司机信息查询",
+        "                     * @author: 高伶",
+        "                     * @edittime: 2020-06-18",
+        "                     * @mode: post",
+        "                     *",
+        "                     * @param: \\Http\\Request $request （请求参数）",
+        "                     * parameter1: vehicleNo,description:司机编号",
+        "                     * @return: \\Illuminate\\Http\\JsonResponse|mixed",
+        "                     * @throws: \\App\\Exception\\ParamException",
+        "                     */",
+        "                    function driverDataApi(temp) {",
+        "                        $HttpClient.QueryDriverInfo(temp.cph, function (response) {",
+        "                            if (response.data.retcode \u003d\u003d 1) {",
+        "                                temp.sjxm \u003d response.data.data[0].drivername;",
+        "                                temp.sjdh \u003d response.data.data[0].drivertel;",
+        "                            }",
+        "                        });",
+        "                    }",
+        ""
+      ]
+    },
+    {
+      "a": [
+        "                    function handleOverLaps(vehicle) {"
+      ],
+      "b": [
+        "                    function handleOverLaps(vehicle,type) {"
+      ],
+      "edit_a": [],
+      "edit_b": [
+        [
+          51,
+          5
+        ]
+      ]
+    },
+    {
+      "ab": [
+        "                        let high \u003d {};",
+        "                        for (let i \u003d 0; i \u003c vehicle.length; i++) {",
+        "                            let i_data \u003d vehicle[i];",
+        "                            for (let j \u003d 0; j \u003c vehicle.length; j++) {",
+        "                                let j_data \u003d vehicle[j];"
+      ]
+    },
+    {
+      "a": [
+        "                                if (Math.abs(i_data.coord - j_data.coord) \u003c 2 \u0026\u0026 i_data.vehicleNo !\u003d j_data.vehicleNo) {",
+        "                                    high[j_data.devId] \u003d j_data"
+      ],
+      "b": [
+        "                                if (type \u003d\u003d \u0027vehicleSN\u0027){",
+        "                                    if (Math.abs(i_data.coord - j_data.coord) \u003c 0.8 \u0026\u0026 i_data.vehicleNo !\u003d j_data.vehicleNo) {",
+        "                                        high[j_data.devId] \u003d j_data",
+        "                                    }",
+        "                                }else if (type \u003d\u003d \u0027vehicleNo\u0027){",
+        "                                    if (Math.abs(i_data.coord - j_data.coord) \u003c 1.5 \u0026\u0026 i_data.vehicleNo !\u003d j_data.vehicleNo) {",
+        "                                        high[j_data.devId] \u003d j_data",
+        "                                    }"
+      ],
+      "edit_a": [
+        [
+          76,
+          1
+        ]
+      ],
+      "edit_b": [
+        [
+          0,
+          359
+        ],
+        [
+          76,
+          3
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          28,
+          38
+        ]
+      ]
+    },
+    {
+      "ab": [
+        "                                }",
+        "                            }",
+        "                        }",
+        "                        let arr \u003d [];",
+        "                        for (let devId in high) {",
+        "                            arr.push(high[devId]);",
+        "                        }",
+        "                        //冒泡排序",
+        "                        for (let i \u003d 0; i \u003c arr.length - 1; i++) {",
+        "                            // 内层循环,控制比较的次数，并且判断两个数的大小",
+        "                            for (let j \u003d 0; j \u003c arr.length - 1 - i; j++) {",
+        "                                // 白话解释：如果前面的数大，放到后面(当然是从小到大的冒泡排序)",
+        "                                if (arr[j].coord \u003e arr[j + 1].coord) {",
+        "                                    let temp \u003d arr[j];",
+        "                                    arr[j] \u003d arr[j + 1];",
+        "                                    arr[j + 1] \u003d temp;",
+        "                                }",
+        "                            }",
+        "",
+        "                        }",
+        "                        let heightArr \u003d [];",
+        "                        let tempIndex \u003d 0;",
+        "                        //比较分组",
+        "                        for (let i \u003d 0; i \u003c arr.length; i++) {",
+        "                            let now \u003d arr[i];",
+        "                            let temp \u003d arr[i + 1];",
+        "                            if (temp) {",
+        "                                if (temp.coord - now.coord \u003e 2) {",
+        "                                    let tempArr \u003d arr.slice(tempIndex, i);",
+        "                                    console.log(\"tempArr:\", tempArr);",
+        "                                    heightArr.push(tempArr);",
+        "                                    tempIndex \u003d i + 1;",
+        "                                }",
+        "                            } else {",
+        "                                let tempArr \u003d arr.slice(tempIndex, arr.length - 1);",
+        "                                heightArr.push(tempArr);",
+        "                            }",
+        "",
+        "                        }",
+        "                        for (let i \u003d 0; i \u003c heightArr.length; i++) {",
+        "                            let twoArr \u003d heightArr[i];",
+        "                            for (let n \u003d 0; n \u003c twoArr.length; n++) {",
+        "                                for (let j \u003d 0; j \u003c vehicle.length; j++) {",
+        "                                    if (vehicle[j].devId \u003d\u003d twoArr[n][\u0027devId\u0027]) {",
+        "                                        vehicle[j].top -\u003d -15 * (n + 1);",
+        "                                    }",
+        "                                }",
+        "                            }",
+        "                        }",
+        "                    }",
+        "",
+        "                    function gpsStomerManager(temp, deviceid) {",
+        "                        if (vm.nowdeviceInfo) {",
+        "                            vm.nowdeviceInfo.unSub();",
+        "                        }",
+        "                        temp.address \u003d \"\";",
+        "                        vm.nowdeviceInfo \u003d stomp.sub(\u0027WEB.*.*.*.*.\u0027 + deviceid, \"analog_map_component\", function (msg) {",
+        "                            if (msg.dataTypeId !\u003d\u003d \"0\")",
+        "                                return;",
+        "                            temp.cs \u003d msg.protocolData.speed;",
+        "                            temp.zs \u003d msg.protocolData.engine;",
+        "                            if (vm.Offset) {",
+        "                                temp.cs \u003d TransDataOffSet(\u0027speed\u0027, msg.protocolData.speed, true, vm.Offset);",
+        "                                temp.zs \u003d TransDataOffSet(\u0027engine\u0027, msg.protocolData.engine, true, vm.Offset);",
+        "                            }",
+        "",
+        "",
+        "                            if (\"\" \u003d\u003d\u003d temp.address) {",
+        "                                //地图上所标点的坐标",
+        "                                var lnglatXY \u003d msg.protocolData.gpsx + \u0027,\u0027 + msg.protocolData.gpsy;",
+        "                                /**",
+        "                                 * API: http://restapi.amap.com/v3/geocode/regeo",
+        "                                 * @name: 线路画像-线路模拟地图-查询GPS位置坐标",
+        "                                 * @author: 高伶",
+        "                                 * @edittime: 2020-06-18",
+        "                                 * @mode: post",
+        "                                 *",
+        "                                 * @param: \\Http\\Request $request （请求参数）",
+        "                                 * parameter1: key,description:Key",
+        "                                 * parameter2: location,description:GPS",
+        "                                 * @return: \\Illuminate\\Http\\JsonResponse|mixed",
+        "                                 * @throws: \\App\\Exception\\ParamException",
+        "                                 */",
+        "                                $HttpClient.QueryGpsPositionAddress(GEOCODER_KEY_WEB, lnglatXY, function (response) {",
+        "                                    if (response.data.status \u003d\u003d 1) {",
+        "                                        temp.address \u003d response.data.regeocode.formatted_address;",
+        "                                    }",
+        "                                });",
+        "                            }",
+        "                        });",
+        "",
+        "                        function TransDataOffSet(key, value, haveUnit, offset) {",
+        "                            if (null !\u003d offset \u0026\u0026 offset[key] \u0026\u0026 (typeof value) \u003d\u003d \u0027number\u0027) {",
+        "                                let ret \u003d parseFloat(value * parseFloat(offset[key].res)",
+        "                                    + parseFloat(offset[key].offset)).toFixed(2);",
+        "                                if (true \u003d\u003d haveUnit) {",
+        "                                    ret +\u003d offset[key].unit;",
+        "                                }",
+        "                                return ret;",
+        "                            } else {",
+        "                                return value;",
+        "                            }",
+        "                        }",
+        "                    }",
+        "                }],",
+        "            controllerAs: \u0027ctrl\u0027",
+        "        };",
+        "    });"
+      ]
+    }
+  ]
+}

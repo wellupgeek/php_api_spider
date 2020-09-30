@@ -1,0 +1,59 @@
+api.editUserSetting({
+    setting: JSON.stringify(vm.vehicleBaseField),
+    vehicleId: vm.selectedVehicle.vehicleId
+}).then(() => {
+    if (data.data) {
+        alert('修改成功');
+        initializationHomePage(vm.selectedVehicle.vehicleId);
+        vm.showLiveDataComponentInfoSort(1);
+    } else {
+        alert('修改失败')
+    }
+});
+
+api.editUserSetting({ setting: JSON.stringify()})
+
+即api.function名({...})里面, 需要的代码是从api.开始往下
+
+$.ajax
+$.ajax({
+    url: '/api/dataManagement/queryDriverDetailInfoByCard',
+    data: {
+        'driverCard': driverNo
+    },
+    async: false,
+    dataType: 'json',
+    type: 'get',
+    success: function (data) {
+        console.log(data);
+        if (data.retcode == 1) {
+            let driver = data.data;
+            vm.liveData.dashboard.baseField.driverid.val = driver[0].driverid;
+            vm.liveData.dashboard.baseField.drivername.val = driver[0].drivername;
+            vm.liveData.basicInfos.drivername = driver[0].drivername;
+        } else {
+            console.warn("没有司机基本信息")
+        }
+    },
+    error: function () {
+        console.warn("司机信息查询失败")
+    }
+});
+即重要的也就是，url和data，在$.ajax({})里面，同时data: {}
+需要的代码也是$.ajax以下的部分
+
+$http
+$http({
+	method: 'post',
+	url: '/api/statistic/getAllVehicleSystems',
+	params: {
+	    vehicleNo: vm.vehicleNo,
+	    vehicleId: vm.vehicleId
+	}
+})
+需要的是url和params，其中params:{}
+需要的代码也是$http以下部分
+
+php
+
+需要的是public function 函数名，以及$rules中的代码，$rules = [...]中的代码，参数还涉及public function f(params)中的params

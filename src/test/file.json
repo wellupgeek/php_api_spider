@@ -1,0 +1,19 @@
+{
+  "/COMMIT_MSG": {
+    "status": "A",
+    "lines_inserted": 9,
+    "size_delta": 479,
+    "size": 479
+  },
+  "app/Http/Controllers/Api/ApiStatisticController.php": {
+    "lines_inserted": 61,
+    "lines_deleted": 21,
+    "size_delta": 2000,
+    "size": 799208
+  }
+}
+
+http://111.42.40.137:8083/changes/php_web_api_v0~1200/revisions/1/files
+
+http://111.42.40.137:8083/changes/data-service%2Fdata-feed-in~343/revisions/3/files
+http://111.42.40.137:8083/changes/data-service%2Fdata-feed-in~343/revisions/2/files
