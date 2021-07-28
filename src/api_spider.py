@@ -4,7 +4,7 @@ from urllib.parse import quote
 import re
 
 class Web_api:
-    def __init__(self, pname, ip, port):  # ip = 111.42.40.137   port = 8083
+    def __init__(self, pname, ip, port):  # ip = xxxx   port = xxxx
         self.proj_name = pname
         base_ip = "http://" + ip + ":" + port
         self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"}
@@ -15,7 +15,7 @@ class Web_api:
         self.session = None
 
     def login(self):
-        account = {"username":"liuqingli", "password":"liuqingli"}
+        account = {"username":"xxxx", "password":"xxxx"}
         session = requests.session()
         session.post(self.login_url, headers=self.headers, data=account)
         return session
@@ -456,7 +456,7 @@ class Web_api:
         # 关于缓存，我个人的意见是把已经确定的文件链接进行标记（包含patch），然后每次遍历时可以防止重复从而减少时间
 
 if __name__ == "__main__":
-    web_api = Web_api("php_web_api_v0", "111.42.40.137", "8083")
+    web_api = Web_api("php_web_api_v0", "xxxx", "xxxx")
     print("开始运行！")
     web_api.run()
     print("运行结束！")
